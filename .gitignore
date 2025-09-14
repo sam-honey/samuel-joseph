@@ -1,0 +1,13 @@
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Ignore build/output folders if you use them
+node_modules/
+dist/
+build/
