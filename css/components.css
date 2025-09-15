@@ -1,0 +1,259 @@
+/* ========================================
+   Friendly Warm Contact Button - Full CSS
+   ======================================== */
+.btn-warm {
+  display: inline-block;
+  padding: clamp(0.5em, 1.5vw, 1em) clamp(1.5em, 3vw, 2em); /* responsive padding */
+  
+  font-weight: 600;
+  color: #fff;                              /* text color */
+  background: linear-gradient(135deg, #ff8c42, #ffb06b); /* warm gradient */
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 140, 66, 0.3);
+  text-decoration: none;                     /* remove underline */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Handle all link states to avoid browser defaults */
+.btn-warm:link,
+.btn-warm:visited,
+.btn-warm:hover,
+.btn-warm:focus,
+.btn-warm:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hover: brighten + lift */
+.btn-warm:hover,
+.btn-warm:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 140, 66, 0.4);
+  background: linear-gradient(135deg, #ff9e57, #ffc388);
+}
+
+/* Active: press effect */
+.btn-warm:active {
+  transform: translateY(1px);
+  box-shadow: 0 4px 12px rgba(255, 140, 66, 0.25);
+  background: linear-gradient(135deg, #ffb075, #ffd0a0);
+}
+
+/* Optional subtle shine */
+.btn-warm::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 60%);
+  transform: rotate(25deg);
+  transition: all 0.5s ease;
+}
+
+.btn-warm:hover::after {
+  top: -40%;
+  left: -40%;
+}
+
+
+/* ========================================
+   THumb wrap grid and components
+   ======================================== */
+
+#thumb-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* flexible */
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px; /* keep it from going crazy wide */
+  margin: 0 auto;    /* center in the page */
+  padding: 1rem;
+}
+
+
+/* Each project card */
+.projects-thumb {
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Hover effect */
+.projects-thumb:hover {
+  
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+}
+/* Zoom the image on hover */
+.projects-thumb:hover img {
+  transform: scale(1.02); /* 5% zoom */
+}
+.thumb-image-wrap {
+  overflow: hidden;       /* contain the zoom */
+  border-radius: 1rem 1rem 0 0 ;    /* same as card if needed */
+}
+
+/* Image */
+.projects-thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+   transition: transform 0.4s ease; /* smooth zoom */
+}
+
+/* Project title */
+.projects-thumb .project-title {
+  
+  font-weight: 600;
+  margin: 1rem 0;
+  padding: 0 1rem;
+  color: #333;
+    transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.projects-thumb:hover .project-title {
+  color: #e67e22;            /* warm orange accent */
+  text-shadow: 0 2px 4px rgba(230, 126, 34, 0.4);
+  
+  text-decoration: none;
+}
+
+/* Links */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+
+/* ========================================
+   FOrm
+   ======================================== */
+/* =========================
+   Contact Form 7 – Warm Style
+========================= */
+
+/* Form container */
+.wpcf7 {
+  max-width: 600px;           /* readable width */
+  margin: 0 auto;             /* center */
+  padding: 2rem;
+  background: #fff9f4;        /* soft warm background */
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  font-family: "Inter", sans-serif;
+}
+
+/* Labels */
+.wpcf7 label {
+  font-weight: 500;
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+  
+}
+
+/* Inputs and textarea */
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="url"],
+.wpcf7 textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid #f0d9c2;  /* light warm border */
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: inherit;
+}
+
+/* Input focus state */
+.wpcf7 input:focus,
+.wpcf7 textarea:focus {
+  border-color: #e67e22;      /* warm accent */
+  box-shadow: 0 0 8px rgba(230, 126, 34, 0.2);
+  outline: none;
+}
+
+/* Textarea resize */
+.wpcf7 textarea {
+  resize: vertical;
+}
+
+/* Submit button – reuse .btn-warm styles */
+.wpcf7 .wpcf7-submit {
+  background-color: #e67e22;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.wpcf7 .wpcf7-submit:hover {
+  background-color: #d96b16;
+  transform: translateY(-2px);
+}
+
+/* Center the submit button */
+.wpcf7 p {
+  margin: 0 0 1.5rem;   /* remove extra top/bottom margin if needed */
+  text-align: center;    /* center content inside <p> */
+  
+  
+}
+
+/* Make the button position relative so spinner can be absolute */
+.wpcf7 .wpcf7-submit {
+  position: relative;
+  display: inline-block; /* ensures centering */
+}
+
+/* Position the spinner inside the button */
+.wpcf7 .wpcf7-spinner {
+  position: absolute;
+  right: 0.75rem;       /* inside button, adjust spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #fff; /* spinner matches button text */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  display: none;        /* hidden by default */
+}
+
+/* Show spinner when CF7 is submitting */
+.wpcf7 .wpcf7-submit.wpcf7-spinning .wpcf7-spinner {
+  display: inline-block;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+

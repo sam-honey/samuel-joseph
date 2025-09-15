@@ -1,0 +1,74 @@
+ /* layout  temp */
+  #temp-container {
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #temp-container img {
+    width: 90%;
+    max-width: 1000px;
+    padding: 0 0 var(--space-32) 0;
+    ;
+  }
+  #temp-container p {
+    font-size: var(--space-32);
+  }
+  #temp-container a {
+    color: #333;
+    font-size: var(--space-20);
+  }
+/*--------------------------
+layout 
+----------------------------*/
+
+  #contact {
+    max-width: 1000px;
+  }
+  /* layout  home */
+  #home-page #container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #home-page #container section {
+   
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 0;
+    background: #f7f8f3 url('../img/backgrounds/pattern-white-01.jpg') top center;
+    background-size: 50%;
+    background-attachment: fixed;
+    padding: 4rem 0
+  }
+ 
+  #home-page #container section:nth-child(even) {
+    
+  }
+  #home-page #container .section-content {
+    background: rgb(255, 255, 255, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+    max-width: 1000px;
+    padding: clamp(1rem, 3vw, 4rem);
+  }
+
+
+  #home-page #container .section-content p {
+    text-align: center;
+    height: auto;
+   
+   
+    
+  }
+

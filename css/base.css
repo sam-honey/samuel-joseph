@@ -1,0 +1,118 @@
+/* ============================================================
+   BASE STYLES
+   Element-level defaults (typography, links, forms, tables)
+   Uses CSS variables from variables.css
+   ============================================================ */
+
+/* Document */
+html {
+  font-size: 100%; /* 16px base */
+}
+
+body {
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: var(1rem);
+  line-height: 1.5;
+  color: var(--color-text, #222);
+  background-color: var(--color-background, #fff);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0 0 var(--space-3, 1rem);
+  color: var(--color-heading, inherit);
+}
+
+h1, h2, h3, h4, h5{ font-size: clamp(2rem, 5vw, 3rem); }
+
+
+/* Paragraphs */
+p {
+  margin: 0 0 var(--space-4, 1.5rem);
+  font-size: var(--font-size-1);
+
+}
+
+/* Links */
+a {
+  color: var(--color-link, #0066cc);
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  font-size: var(--font-size-1);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover, #004999);
+  text-decoration: none;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 var(--space-4, 1.5rem) var(--space-5, 2rem);
+  padding: 0;
+}
+
+li {
+  margin: 0 0 var(--space-2, 0.5rem);
+}
+
+/* Blockquotes */
+blockquote {
+  margin: var(--space-4, 1.5rem) 0;
+  padding-left: var(--space-4, 1.5rem);
+  border-left: 3px solid var(--color-border, #ccc);
+  color: var(--color-text-muted, #555);
+  font-style: italic;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 var(--space-4, 1.5rem);
+}
+
+th, td {
+  border: 1px solid var(--color-border, #ddd);
+  padding: var(--space-2, 0.5rem) var(--space-3, 1rem);
+  text-align: left;
+}
+
+/* Forms */
+input,
+textarea,
+select,
+button {
+  font: inherit;
+  color: inherit;
+  background-color: var(--color-form-bg, #fff);
+  border: 1px solid var(--color-border, #ccc);
+  padding: var(--space-2, 0.5rem);
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: var(--color-primary, #0066cc);
+  color: #fff;
+  border: none;
+  padding: var(--space-2, 0.5rem) var(--space-3, 1rem);
+}
+
+button:hover,
+button:focus {
+  background-color: var(--color-primary-dark, #004999);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
