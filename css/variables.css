@@ -7,13 +7,17 @@
   --color-accent: #0073e6;
   --primary-color: #ed7014;
   --primary-color-alt: #be5504;
+  --orange-light: #FFB06B;
+  --orange-mid: #FF8C42;
+  --orange-dark: #E66A00;
   --max-width: 1200px;
+  --max-width-1: 800px;
   --gutter: 1rem;
   --line-height: 1.6;
   --transition: 0.2s ease-in-out;
   
   /* Layout */
-  --max-width: 1200px;
+  --max-width-1: 800px;
   --line-height: 1.6;
   --transition: 0.2s ease-in-out;
   /* Spacing scale (1rem = 16px base) */
@@ -68,8 +72,5 @@
   /* H1 */
   --font-h1: clamp(32px, 4vw + 1rem, 64px);
 
-  --skiffkey: #495b69;
-  --brinjal: #5f4348;
-  --incarnadine: #994245 ;
+ 
 
---colour-1: var();

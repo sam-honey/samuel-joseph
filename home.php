@@ -12,13 +12,13 @@ SJHoney Property Solutions offers complete home and workplace transformations. A
 <p>
 Get in touch today for a free and friendly consultation.
 </p>
-<a href="#"class="btn-warm">Contact</a>
+<a href="#"class="btn">Contact</a>
 </div>
 </section>
 
 <section>
 
-<div class="section-content">
+<div class="section-content hidden">
 
 <?php get_template_part('template-parts/content', 'project-thumbs'); ?>
 
@@ -27,11 +27,37 @@ Get in touch today for a free and friendly consultation.
 </section>
 
 <section>
-<div class="section-content"><h2 class="page-title">Gallery</h2>
+<div class="section-content" id="here">
+  <h2>Contact Me</h2>
+  <div class="contact-links">
+  <p>
+    <strong>
+    <a class="btn" href="tel:07123456789">
+      <span class="short-text">Telephone</span>
+      <span class="full-text">: 07123 456 789</span>
+     
+    </a>
+     </strong>
+  </p>
+
+  <p>
+    <strong>
+    <a class="btn" href="mailto:info@yourdomain.com">
+      <span class="short-text">Email </span>
+      <span class="full-text">: info@yourdomain.com</span>
+     
+    </a>
+     </strong>
+  </p>
+</div>
+
+  <!-- Hidden form -->
+
 <?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
 
 
 </div>
+
 </section>
 <section>
 <div class="section-content">
@@ -49,6 +75,9 @@ Get in touch today for a free and friendly consultation.
 <script>
 const oneVW = window.innerWidth * 0.01;
 console.log(oneVW + "px");
+
+d
+
 </script>
 
 

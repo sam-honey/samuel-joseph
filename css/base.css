@@ -40,7 +40,8 @@ p {
 
 /* Links */
 a {
-  color: var(--color-link, #0066cc);
+
+  color: var(--color-text, #222);
   text-decoration: none;
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
   font-size: var(--font-size-1);
@@ -48,7 +49,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--color-link-hover, #004999);
+  color: var(--orange-mid, #0066cc);
   text-decoration: none;
 }
 
@@ -97,17 +98,50 @@ button {
   border-radius: 4px;
 }
 
-button {
-  cursor: pointer;
-  background-color: var(--color-primary, #0066cc);
+
+/* ===========================
+   Universal Button Styles
+   =========================== */
+.btn,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  display: inline-block;
+  padding: clamp(0.5em, 1vw, 0.2em) clamp(1.5em, 3vw, 2em);
+  font-weight: 600;
   color: #fff;
+  background: var(--orange-mid);
   border: none;
-  padding: var(--space-2, 0.5rem) var(--space-3, 1rem);
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 140, 66, 0.3);
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
 }
 
+/* Hover state – lighter gradient */
+.btn:hover,
 button:hover,
-button:focus {
-  background-color: var(--color-primary-dark, #004999);
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  background: var(--orange-light);
+  box-shadow: 0 6px 18px rgba(255, 140, 66, 0.35);
+   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+}
+
+/* Active/Pressed state – darker + slight shrink */
+.btn:active,
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active {
+  background: var(--orange-dark);
+  transform: scale(0.98);
+  box-shadow: 0 3px 8px rgba(255, 140, 66, 0.25);
 }
 
 /* Images */
