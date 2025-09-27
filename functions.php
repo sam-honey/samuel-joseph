@@ -270,3 +270,36 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 /**
  * Enqueue scripts and styles.
  */
+
+function display_image($sub_dir, $image_file, $alt = 'Image Alt Text', $width = null, $height = null) {
+    // Get the template directory URL
+    $template_directory_url = esc_url(get_template_directory_uri());
+
+    // Construct the image tag
+    $image_src = $template_directory_url . $sub_dir . $image_file;
+
+    // Build additional attributes based on provided values
+    $attributes = '';
+    if ($width !== null) {
+        $attributes .= ' width="' . esc_attr($width) . '"';
+    }
+    if ($height !== null) {
+        $attributes .= ' height="' . esc_attr($height) . '"';
+    }
+
+    // Construct the complete image tag
+    $image_tag = '<img src="' . $image_src . '" alt="' . esc_attr($alt) . '"' . $attributes . '>';
+
+    // Output the image tag
+    echo $image_tag;
+}
+
+register_post_type('projects', array(
+    'labels' => array(
+        'name' => 'Projects',
+        'singular_name' => 'Project',
+    ),
+    'public' => true,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'), // include 'thumbnail'
+));

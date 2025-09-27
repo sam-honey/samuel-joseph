@@ -13,10 +13,16 @@
 
 <footer id="footer-container">
 <?php wp_footer(); ?>
+<div class="width-constraints">
+<p>SJHoney Property Solutions</p>
 
+<img class="fb-logo"  src="<?php echo get_template_directory_uri(); ?>/img/fb-logo.svg" alt="Logo For FAcebook">
+
+</div>
 <div id="fixed-bottom">
 
 <div id="contact-button-position">
+
 <a href="#contact-button" id="fab-contact" class="contact-toggle btn fab-contact">Contact</a>
 </div>
 </div>

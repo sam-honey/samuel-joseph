@@ -39,47 +39,35 @@ window.addEventListener('resize', adjustContentPadding);
 </div>
 
 
-<section id="single-project-wrap"> 
-<div id="fade-in-target"></div>
-	<article class="single-project-wrap" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <section id="single-project-wrap"> 
+    <div id="fade-in-target"></div>
+	 <article class="single-project-wrap" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<?php get_template_part( 'content', 'projects' ); ?>	
-
-	</article>
-
-        <div id="project-contact-wrapper">
-        
-            <a class="contact-link-projects-page" id="contact-link" class="contact-toggle" href="#contact">Get in touch | </a>  
-            <a class="contact-link-projects-page" href="<?php echo esc_url( home_url( '#projects' ) ); ?>">
-   | Back to Projects
-</a> 
-
-      </div>
+	 </article>
+    <div id="project-contact-wrapper">
+      <a class="contact-link-projects-page" href="<?php echo esc_url( home_url( '#projects' ) ); ?>">
+        Back to Projects
+      </a> 
+    </div>
 	</section>
+
+
   <section id="contact-section">
-
-
-<div class="section-content" >
-  <h2>Contact Me</h2>
-
-  <div id="contact-options">
-
-
-        <a class="btn-contact" href="mailto:sjhoney.c.uk">
+    <div class="section-content" >
+    <h2>Contact Me</h2>
+    <div id="contact-options">
+      <a class="btn-contact" href="mailto:info@sjhoney.co.uk">
         <span class="mobile-label">Email</span>
-         <span class="desktop-label">info@sjhoney.co.uk</span>
-         </a>
-          <a class="btn-contact" href="#" id="callLink">
-          <span class="mobile-label">Telephone</span>
-          <span class="desktop-label">767676767</span>
-           </a>
-      </div>
-
-  <!-- Hidden form -->
-
-<?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
-
-<p class="address" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
-</div>
+        <span class="desktop-label">info@sjhoney.co.uk</span>
+      </a>
+      <a class="btn-contact" href="#" id="callLink">
+        <span class="mobile-label">Telephone</span>
+        <span class="desktop-label">767676767</span>
+      </a>
+    </div>
+    <?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
+    <p class="address" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
+  </div>
 
 </section>
 

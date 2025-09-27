@@ -65,6 +65,22 @@ layout
  section#section-logo {
   padding: 0;
  }
+
+
+ /*--------
+Footer*/
+  .fb-logo{
+    width: 60px;
+  }
+ .width-constraints{
+  width: 90%;
+  
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
  footer#footer-container {
   width: 100%;
   display: flex;
@@ -75,8 +91,14 @@ layout
   background: var(--blue);
   background-size: 50%;
   background-attachment: fixed;
-  padding: 4rem 0;
+  padding: 0.5rem 0 1rem 0;
  }
+footer#footer-container p{
+color: #fff;
+padding: 0 0 0.5rem 0;
+margin: 0;
+ }
+
  footer #footer-content {
   background: rgb(255, 255, 255, 0.75);
   display: flex;
