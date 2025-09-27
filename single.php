@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-
+<!-- posts poage -->
 	<main id="primary" class="site-main">
 
 		<?php

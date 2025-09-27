@@ -7,10 +7,61 @@
  * @package sjhoney
  */
 
+
+function sjhoney_enqueue_scripts() {
+    $theme_dir = get_template_directory_uri() . '/js/';
+
+    wp_enqueue_script(
+        'light-box',
+        $theme_dir . 'light-box.js',
+        array(),
+        filemtime(get_template_directory() . '/js/light-box.js'),
+        true
+    );
+
+    wp_enqueue_script(
+        'fixed-header',
+        $theme_dir . 'fixed-header.js',
+        array(),
+        filemtime(get_template_directory() . '/js/fixed-header.js'),
+        true
+    );
+
+    wp_enqueue_script(
+        'float-contact-form',
+        $theme_dir . 'float-contact-form.js',
+        array(),
+        filemtime(get_template_directory() . '/js/float-contact-form.js'),
+        true
+    );
+
+    # wp_enqueue_script(
+    #     'contact',
+    #     $theme_dir . 'contact.js',
+    #     array(),
+    #     filemtime(get_template_directory() . '/js/contact.js'),
+    #     true
+    # );
+
+    wp_enqueue_script(
+        'main',
+        $theme_dir . 'main.js',
+        array('float-contact-form', 'fixed-header'),
+        filemtime(get_template_directory() . '/js/main.js'),
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'sjhoney_enqueue_scripts');
+
+
+
+
+
 if ( ! defined( '_S_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
 	define( '_S_VERSION', '1.0.0' );
 }
+
 
 /**
  * Sets up theme defaults and registers support for various WordPress features.
