@@ -22,7 +22,7 @@ document.documentElement.classList.add('js-enabled');
 
 	
 <?php wp_body_open(); ?>
-<div >
+
 <header>
 <div id="sticky-header">
 <div class="inner-width-constraint">

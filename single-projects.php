@@ -6,12 +6,26 @@
 
 <?php get_header(); ?>
 <!-- single-projexts.php -->
+<script>
+function adjustContentPadding() {
+    const header = document.getElementById('sticky-header');
+    const firstSection = document.querySelector('#single-project-wrap'); // or 'main' or first section
+
+    if (header && firstSection) {
+        const headerHeight = header.offsetHeight + 30; // actual rendered height
+        firstSection.style.paddingTop = `${headerHeight}px`;
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', adjustContentPadding);
+
+// Update on window resize (responsive)
+window.addEventListener('resize', adjustContentPadding);
+
+</script>
 
 
-<div id="contact-button-position">
-<a href="#contact-button" id="fab-contact" class="contact-toggle btn fab-contact">Contact</a>
-</div>
-</div>
 <!-- V1 
 <div id="fullWidthElement"></div>
 -->
@@ -33,11 +47,40 @@
 	</article>
 
         <div id="project-contact-wrapper">
-            <a class="contact-link-projects-page" id="contact-link" href="#contact">Get in touch</a> 
+        
+            <a class="contact-link-projects-page" id="contact-link" class="contact-toggle" href="#contact">Get in touch | </a>  
             <a class="contact-link-projects-page" href="<?php echo esc_url( home_url( '#projects' ) ); ?>">
-    Back to Projects
+   | Back to Projects
 </a> 
+
       </div>
 	</section>
+  <section id="contact-section">
+
+
+<div class="section-content" >
+  <h2>Contact Me</h2>
+
+  <div id="contact-options">
+
+
+        <a class="btn-contact" href="mailto:sjhoney.c.uk">
+        <span class="mobile-label">Email</span>
+         <span class="desktop-label">info@sjhoney.co.uk</span>
+         </a>
+          <a class="btn-contact" href="#" id="callLink">
+          <span class="mobile-label">Telephone</span>
+          <span class="desktop-label">767676767</span>
+           </a>
+      </div>
+
+  <!-- Hidden form -->
+
+<?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
+
+<p class="address" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
+</div>
+
+</section>
 
 <?php get_footer(); ?>

@@ -30,3 +30,6 @@
 
 </body>
 </html>
+<?php
+// Remove closing tag if present
+// Make sure there is nothing after this file, no whitespace or numbers

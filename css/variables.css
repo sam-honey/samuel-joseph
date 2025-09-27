@@ -10,13 +10,18 @@
   --orange-light: #FFB06B;
   --orange-mid: #FF8C42;
   --orange-dark: #E66A00;
+  --blue: #094463;;
   --contact-form-bg: #fff9f4;
   --max-width: 1200px;
-  --max-width-1: 450px;
+  --max-width-1: 450px
   --gutter: 1rem;
   --line-height: 1.6;
   --transition: 0.2s ease-in-out;
-  
+  /* #094463;
+     #878787;
+ #f3bd48;
+ #c6c6c6;
+
   /* Layout */
   --max-width-1: 500px;
   --line-height: 1.6;

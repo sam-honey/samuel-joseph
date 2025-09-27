@@ -69,7 +69,25 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
 <script>
+function adjustContentPadding() {
+    const header = document.getElementById('sticky-header');
+    const firstSection = document.querySelector('#projects'); // or 'main' or first section
+
+    if (header && firstSection) {
+        const headerHeight = header.offsetHeight + 30; // actual rendered height
+        firstSection.style.paddingTop = `${headerHeight}px`;
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', adjustContentPadding);
+
+// Update on window resize (responsive)
+window.addEventListener('resize', adjustContentPadding);
+
+</script>
 
 
 

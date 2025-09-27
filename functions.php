@@ -188,20 +188,58 @@ add_action( 'widgets_init', 'sjhoney_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-
 function sjhoney_enqueue_styles() {
-    // Minimal main style.css (required by WP)
-    wp_enqueue_style( 'main-style', get_stylesheet_uri() );
+    // Enqueue the main style.css (required by WordPress)
+    wp_enqueue_style(
+        'main-style',
+        get_stylesheet_uri()
+    );
 
-    // Modular CSS files in proper order
-    wp_enqueue_style( 'reset-style', get_template_directory_uri() . '/css/reset.css', array('main-style'), '1.0.0' );
-    wp_enqueue_style( 'variables-style', get_template_directory_uri() . '/css/variables.css', array('reset-style'), '1.0.0' );
-    wp_enqueue_style( 'base-style', get_template_directory_uri() . '/css/base.css', array('variables-style'), '1.0.0' );
-    wp_enqueue_style( 'layout-style', get_template_directory_uri() . '/css/layout.css', array('base-style'), '1.0.0' );
-    wp_enqueue_style( 'components-style', get_template_directory_uri() . '/css/components.css', array('layout-style'), '1.0.0' );
-    wp_enqueue_style( 'custom-style', get_template_directory_uri() . '/css/custom.css', array('components-style'), '1.0.0' );
+    // Enqueue modular CSS files in proper dependency order
+    wp_enqueue_style(
+        'reset-style',
+        get_template_directory_uri() . '/css/reset.css',
+        array('main-style'), // dependent on main-style
+        '1.0.0'
+    );
+
+    wp_enqueue_style(
+        'variables-style',
+        get_template_directory_uri() . '/css/variables.css',
+        array('reset-style'), // dependent on reset-style
+        '1.0.0'
+    );
+
+    wp_enqueue_style(
+        'base-style',
+        get_template_directory_uri() . '/css/base.css',
+        array('variables-style'), // dependent on variables-style
+        '1.0.0'
+    );
+
+    wp_enqueue_style(
+        'layout-style',
+        get_template_directory_uri() . '/css/layout.css',
+        array('base-style'), // dependent on base-style
+        '1.0.0'
+    );
+
+    wp_enqueue_style(
+        'components-style',
+        get_template_directory_uri() . '/css/components.css',
+        array('layout-style'), // dependent on layout-style
+        '1.0.0'
+    );
+
+    wp_enqueue_style(
+        'custom-style',
+        get_template_directory_uri() . '/css/custom.css',
+        array('components-style'), // dependent on components-style
+        '1.0.0'
+    );
 }
-add_action( 'wp_enqueue_scripts', 'sjhoney_enqueue_styles' ); 
+add_action('wp_enqueue_scripts', 'sjhoney_enqueue_styles');
+
 
 /**
  * Implement the Custom Header feature.
