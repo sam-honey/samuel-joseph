@@ -1,6 +1,8 @@
 <?php /* Template Name: Example Template */ ?>
 <?php get_header(); ?>
-
+<style>
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+</style>
 <div id="home-page" class="home-page">
   <div id="container">
 

@@ -92,6 +92,7 @@ function sjhoney_setup() {
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
+    add_image_size('project-thumb', 800, 600, true);
 
 	/*
 		* Let WordPress manage the document title.
