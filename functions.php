@@ -19,6 +19,13 @@ function sjhoney_enqueue_scripts() {
         true // load in footer
     );
 
+  wp_enqueue_script(
+        'parallax',
+        $theme_dir . 'parallax.js',
+        array(), // dependencies if any (like jQuery), empty here
+        filemtime(get_template_directory() . '/js/parallax.js'),
+        true // load in footer
+    );
 
 
 

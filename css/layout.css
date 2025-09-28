@@ -50,6 +50,13 @@ layout
   background-attachment: fixed;
   padding: 4rem 0;
  }
+.parallax {
+    background-size: cover;
+    background-attachment: fixed; /* optional, for classic parallax */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ 
  #home-page #container section:nth-child(even) {}
  .home-page .section-content {
   background: rgb(255, 255, 255, 0.75);

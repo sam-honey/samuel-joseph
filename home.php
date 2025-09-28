@@ -14,7 +14,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="section-about">
+    <section id="section-about" class="parallax">
       <div id="fade-in-target"></div>
       <div class="section-content">
         <p>
@@ -32,14 +32,14 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="parallax">
       <div class="section-content">
         <?php get_template_part('template-parts/content', 'project-thumbs'); ?>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section">
+    <section id="contact-section" class="parallax">
       <div class="section-content">
         <h2>Contact Me</h2>
         <div id="contact-options">

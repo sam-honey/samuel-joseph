@@ -3,5 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
      lightBox.init();
      fixedHeader.init();
      FadeInOnScroll.init();
+     Parallax.init();
+
     //alert("Modules loaded"); // simple test
 });
