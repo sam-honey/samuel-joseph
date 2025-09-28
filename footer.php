@@ -16,7 +16,7 @@
 <div class="width-constraints">
 <p>SJHoney Property Solutions</p>
 
-<img class="fb-logo"  src="<?php echo get_template_directory_uri(); ?>/img/fb-logo.svg" alt="Logo For FAcebook">
+<a href="https://www.facebook.com/profile.php?id=61580757021753" target="_blank"> <img class="fb-logo"  src="<?php echo get_template_directory_uri(); ?>/img/fb-logo.svg" alt="Logo For FAcebook"></a>
 
 </div>
 <div id="fixed-bottom">

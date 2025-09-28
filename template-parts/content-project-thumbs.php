@@ -20,7 +20,7 @@ $the_query = new WP_Query( $args );
                     <div class="thumb-image-wrap">
                         <?php 
                             // Use 'medium' or 'large' for a bigger default size
-                            the_post_thumbnail( 'medium', array(
+                            the_post_thumbnail( get_the_ID(), array(
                                 'class' => 'thumb-image',
                                 'loading' => 'lazy',
                                 'alt' => get_the_title() // fallback if alt not set
