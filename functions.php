@@ -12,6 +12,17 @@ function sjhoney_enqueue_scripts() {
     $theme_dir = get_template_directory_uri() . '/js/';
 
     wp_enqueue_script(
+        'fadein-scroll',
+        $theme_dir . 'fadein-scroll.js',
+        array(), // dependencies if any (like jQuery), empty here
+        filemtime(get_template_directory() . '/js/fadein-scroll.js'),
+        true // load in footer
+    );
+
+
+
+
+    wp_enqueue_script(
         'light-box',
         $theme_dir . 'light-box.js',
         array(),

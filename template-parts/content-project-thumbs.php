@@ -13,7 +13,7 @@ $the_query = new WP_Query( $args );
 
 <?php if ( $the_query->have_posts() ) : ?>
     <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?> 
-        <div class="projects-thumb init-ani-upfade">
+        <div class="projects-thumb fade-in">
             <a class="project-link" href="<?php the_permalink(); ?>">
                 
                 <?php if ( has_post_thumbnail() ) : ?>

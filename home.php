@@ -65,11 +65,15 @@
 <!-- Scripts -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const enableAutoScroll = true; 
+  const enableAutoScroll = true;
   if (!enableAutoScroll) return;
 
-  let userScrolled = false;
-  window.addEventListener("scroll", () => { userScrolled = true; }, { once: true });
+  // Track if user has scrolled
+  let userScrolled = window.scrollY > 0; // initial check if page loaded scrolled down
+
+  window.addEventListener("scroll", () => {
+    userScrolled = true;
+  });
 
   function smoothScrollTo(targetY, duration = 2800) {
     const startY = window.scrollY;
@@ -98,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const lastElement = document.querySelector(".fadein-with-delay-3");
   if (lastElement) {
     lastElement.addEventListener("animationend", function () {
-      if (!userScrolled) {
+      // Only scroll if user hasn't scrolled and still at the top
+      if (!userScrolled && window.scrollY === 0) {
         const nextSection = document.querySelector("#section-about");
         if (nextSection) {
           smoothScrollTo(nextSection.offsetTop, 2800);
