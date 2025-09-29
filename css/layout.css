@@ -205,6 +205,7 @@ single project page*/
   width: auto;
   /* maintain aspect ratio */
   max-height: clamp(40px, 10vw, 80px);
+  padding-left: 10%;
   /* min 40px, scales with viewport, max 80px */
  }
  /* Show after fade-in trigger */

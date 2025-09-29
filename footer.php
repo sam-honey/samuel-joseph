@@ -34,7 +34,7 @@
 
 <div id="contact-button-position">
 
-<a href="#contact-button" id="fab-contact" class="contact-toggle btn fab-contact">Contact</a>
+<a href="#contact-button" id="fab-contact" class="contact-toggle pulse-button btn fab-contact">Contact</a>
 </div>
 </div>
 

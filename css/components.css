@@ -346,7 +346,7 @@ p.address{
 }
 .fab-contact {
   position: absolute;
-  bottom: 50px;     /* distance from bottom */
+  bottom: 100px;     /* distance from bottom */
   right: 20px; /* 600px = half of your max-width */      /* distance from right */
  
   border-radius: 50%;
@@ -362,15 +362,21 @@ p.address{
   z-index: 999;  /* keep above other elements */
  opacity: 0;
 padding: 0.5rem 1.5rem; 
-animation: fadeInContactButton 3s ease forwards;
+animation: fadeInContactButton 3s ease forwards, pulse 2s infinite ease-in-out;
 animation-delay: 4s;
 
 }
+
 @keyframes fadeInContactButton {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
 
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
 
 .fab-contact:hover {
 background: var(--orange-light);

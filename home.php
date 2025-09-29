@@ -40,29 +40,100 @@
 
     <!-- Contact Section -->
     <section id="contact-section" class="parallax">
-      <div class="section-content">
-        <h2>Contact Me</h2>
-        <div id="contact-options">
-          <a class="btn-contact" href="mailto:info@sjhoney.co.uk">
-            <span class="mobile-label">Email</span>
-            <span class="desktop-label">info@sjhoney.co.uk</span>
-          </a>
-          <a class="btn-contact" href="#" id="callLink">
-            <span class="mobile-label">Telephone</span>
-            <span class="desktop-label">767676767</span>
-          </a>
-        </div>
+  <div class="section-content">
+    <h2>Contact Me</h2>
+    <div id="contact-options">
 
-        <?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
+      <!-- Email -->
+      <a class="btn-contact" href="#" id="emailLink">
+        <span class="mobile-label">Email</span>
+        <span class="desktop-label"></span>
+      </a>
 
-        <p class="address">
-          SJHoney Property Solutions, 55 Ringwood Rd, Oldfield, Bath, BA2 3JL
-        </p>
-      </div>
-    </section>
+      <!-- Telephone -->
+      <a class="btn-contact" href="#" id="callLink">
+        <span class="mobile-label">Telephone</span>
+        <span class="desktop-label"></span>
+      </a>
+    </div>
+
+    <?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
+
+    <p class="address" id="addressBlock"></p>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  /* Email */
+  const emailParts = ["info", "@", "sjhoney", ".", "co", ".", "uk"];
+  const emailFull = emailParts.join("");
+  const emailLink = document.getElementById("emailLink");
+  if (emailLink) {
+    emailLink.href = "mailto:" + emailFull;
+    emailLink.querySelector(".desktop-label").textContent = emailFull;
+  }
+
+  /* Phone */
+  const numberParts = ["+44", "7932", "877017"];
+  const fullNumber = numberParts.join(" ");
+  const callLink = document.getElementById("callLink");
+  if (callLink) {
+    callLink.href = "tel:" + fullNumber.replace(/\s+/g, "");
+    callLink.querySelector(".desktop-label").textContent = fullNumber;
+  }
+
+  /* Address */
+  const addressParts = [
+    "SJHoney Property Solutions, ",
+    "55 Ringwood Rd, ",
+    "Oldfield, Bath, ",
+    "BA2 3JL"
+  ];
+  const addressBlock = document.getElementById("addressBlock");
+  if (addressBlock) {
+    addressBlock.textContent = addressParts.join("");
+  }
+});
+</script>
+
 
   </div>
 </div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  /* Email */
+  const emailParts = ["info", "@", "sjhoney", ".", "co", ".", "uk"];
+  const emailFull = emailParts.join("");
+  const emailLink = document.getElementById("emailLink");
+  if (emailLink) {
+    emailLink.href = "mailto:" + emailFull;
+    emailLink.querySelector(".desktop-label").textContent = emailFull;
+  }
+
+  /* Phone */
+  const numberParts = ["+44", "7932", "877017"];
+  const fullNumber = numberParts.join(" ");
+  const callLink = document.getElementById("callLink");
+  if (callLink) {
+    callLink.href = "tel:" + fullNumber.replace(/\s+/g, "");
+    callLink.querySelector(".desktop-label").textContent = fullNumber;
+  }
+
+  /* Address */
+  const addressParts = [
+    "SJHoney Property Solutions, ",
+    "55 Ringwood Rd, ",
+    "Oldfield, Bath, ",
+    "BA2 3JL"
+  ];
+  const addressBlock = document.getElementById("addressBlock");
+  if (addressBlock) {
+    addressBlock.textContent = addressParts.join("");
+  }
+});
+</script>
 
 <!-- Scripts -->
 <script>
@@ -130,16 +201,6 @@ document.addEventListener('DOMContentLoaded', adjustContentPadding);
 window.addEventListener('resize', adjustContentPadding);
 </script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const numberParts = ["+44", "7932", "877017"];
-  const fullNumber = numberParts.join("");
-  const link = document.getElementById("callLink");
-  if (link) {
-    link.href = "tel:" + fullNumber;
-    link.querySelector(".desktop-label").textContent = fullNumber;
-  }
-});
-</script>
+
 
 <?php get_footer(); ?>
