@@ -3,9 +3,8 @@ const Parallax = (() => {
 
   let elements = [];
   let speed = 0.5;
-  let ticking = false;
 
-  function update() {
+  function onScroll() {
     const scrollTop = window.pageYOffset;
     const windowHeight = window.innerHeight;
 
@@ -18,15 +17,6 @@ const Parallax = (() => {
         el.style.backgroundPosition = `center ${yPos}px`;
       }
     });
-
-    ticking = false; // allow new updates
-  }
-
-  function onScroll() {
-    if (!ticking) {
-      window.requestAnimationFrame(update);
-      ticking = true;
-    }
   }
 
   function init(options = {}) {
@@ -34,8 +24,8 @@ const Parallax = (() => {
     speed = options.speed || 0.5;
 
     if (!elements.length) return;
-    window.addEventListener('scroll', onScroll, { passive: true });
-    update(); // initial position
+    window.addEventListener('scroll', onScroll);
+    onScroll(); // initial position
   }
 
   function destroy() {
