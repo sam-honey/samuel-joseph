@@ -28,7 +28,7 @@
             <div class="img-frame">
                 <img class="clickableImage" 
                      src="<?php echo esc_url($image['url']); ?>" 
-                     alt="<?php echo esc_attr($image['alt']); ?>" 
+                     alt="SJHoney Project Image"
                      data-fullsize="<?php echo esc_url($image['url']); ?>" />
             </div>
         <?php endif;
