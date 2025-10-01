@@ -322,3 +322,12 @@ register_post_type('projects', array(
     'has_archive' => true,
     'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'), // include 'thumbnail'
 ));
+
+add_filter( 'wp_get_attachment_image_attributes', function( $attr, $attachment, $size ) {
+    if ( get_post_type() === 'projects' ) {
+        if ( empty( $attr['alt'] ) ) {
+            $attr['alt'] = 'SJHoney Project Image';
+        }
+    }
+    return $attr;
+}, 10, 3 );

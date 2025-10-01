@@ -1,0 +1,476 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"--",
+				"--colour-1"
+			],
+			[
+				"--color",
+				"--colour-2"
+			],
+			[
+				"li",
+				"linear"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"dark",
+				"darkGrey"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "template-parts/content-project-thumbs.php",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney",
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney/template-parts"
+	],
+	"file_history":
+	[
+		"/G/node-pro-3/routes/user1Routes.js",
+		"/G/node-pro-3/controllers/user1ContentController.js",
+		"/G/node-pro-3/models/DecoratorProfile.js",
+		"/G/node-pro-3/routes/authRoutes.js",
+		"/G/node-pro-3/server.js",
+		"/G/node-pro-3/views/login.ejs",
+		"/G/node-pro-3/scripts/seed.js",
+		"/G/node-pro-3/createAdmin.js",
+		"/G/node-pro-3/routes/adminRoutes.js",
+		"/G/node-pro-3/models/User.js",
+		"/G/node-pro-3/.env",
+		"/G/node-pro-3/public/CSS/user.css",
+		"/G/node-pro-3/views/partials/user1-head.ejs",
+		"/D/SJH-P-S/Email/email-signature.html",
+		"/G/WP Backups/sjhoney.co.uk/Full Installation Backups/24-05-12/livel.sql",
+		"/C/Users/samue/Desktop/local.sql",
+		"/H/WAMP/www/sjhoney.co.uk/wp-config.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/C/Users/samue/Desktop/sjhoney.co.uk/wp-config.php",
+		"/H/WAMPP/www/sjhoney.co.uk/wp-config.php",
+		"/G/node-pro-3/views/user1/create-profile-decorator.ejs",
+		"/G/node-pro-3/routes/decoratorRoutes.js",
+		"/G/node-pro-3/views/signup-user-1.ejs",
+		"/G/node-pro-3/views/partials/decorators-head.ejs",
+		"/G/node-pro-3/models/decoratorProfile.js",
+		"/G/node-pro-3/views/user1/user1-dashboard.ejs",
+		"/G/node-pro-3/views/decorator/signup-decorator.ejs",
+		"/G/node-pro-3/views/partials/admin-header.ejs",
+		"/G/node-pro-3/public/index.html",
+		"/G/node-pro-3/views/admin/users-accounts.ejs",
+		"/G/node-pro-3/public/CSS/admin-style.css",
+		"/G/node-pro-3/views/admin/dashboard.ejs",
+		"/G/node-pro-3/views/partials/admin-footer.ejs",
+		"/G/node-pro-3/views/user2/user2-dashboard.ejs",
+		"/D/SamuelJoseph/Webpage-holding/index-v2.html",
+		"/D/SamuelJoseph/Webpage-holding/index-v1.html",
+		"/D/SamuelJoseph/Styles/logo-dev/restroked for ani/test-stroke.svg",
+		"/D/Downloads_PC/sj-logo-master-cut-for-ani-basic (2).svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/test.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/sj-logo-master-cut-for-ani.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/sj-logo-master-cut-for-ani-2.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Logo/sj-logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/test.svg",
+		"/D/SamuelJoseph/Styles/logo-version/test stuff/logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/images/favicon/site.webmanifest",
+		"/G/node-pro-3/jobs/ipBanMonitor.js",
+		"/G/node-pro-3/middleware/checkIpBan.js",
+		"/G/node-pro-3/views/admin/dev.ejs",
+		"/G/node-pro-3/middleware/loginLimiter.js",
+		"/G/node-pro-3/middleware/checkBanStatus.js",
+		"/G/node-pro-3/views/admin/ip-activity.ejs",
+		"/G/node-pro-3/utils/isUserOrIpBanned.js",
+		"/G/node-pro-3/middleware/securityManager.js",
+		"/G/node-pro-3/views/admin/ip-bans.ejs",
+		"/G/node-pro-3/views/admin/bans.ejs",
+		"/G/node-pro-3/models/LogAllLogins.js",
+		"/G/node-pro-3/models/bannedIp.js",
+		"/G/node-pro-3/models/loglockout.js",
+		"/G/node-pro-3/models/logSemiPermBlock.js",
+		"/G/node-pro-3/models/logTempBlock.js",
+		"/G/node-pro-3/scripts/test-login.js",
+		"/G/node-pro-3/middleware/authMiddleware.js",
+		"/G/node-pro-3/middleware/validateSignUp.js",
+		"/G/node-pro-3/utils/sendConfirmationEmail.js",
+		"/G/node-pro-3/views/reset-password.ejs",
+		"/G/node-pro-3/middleware/ipMonitor.js",
+		"/G/node-pro-3/middleware/checkBanStatus-x.js",
+		"/G/node-pro-3/middleware/checkBannedIp.js",
+		"/G/node-pro-3/controllers/authController.js",
+		"/G/node-pro-3/views/forgot-password.ejs",
+		"/G/node-pro-3/models/lockout.js",
+		"/G/node-pro-3/models/LockedOuted.js",
+		"/G/node-pro-3/models/LoginAttemptCount.js",
+		"/G/node-pro-3/models/logFailedLogin.js",
+		"/G/node-pro-3/models/LoginLog.js",
+		"/G/node-pro-3/models/Lockout.js",
+		"/G/node-pro-3/Notes/Security system brute force.txt",
+		"/G/node-pro-3/middleware/checkLockout.js",
+		"/G/node-pro-3/utils/logTemporaryLockout.js",
+		"/G/node-pro-3/Notes/bruteforcesystem.txt",
+		"/G/node-pro-3/middleware/sanitizeInputs.js",
+		"/G/node-pro-3/middleware/logIP.js",
+		"/G/node-pro-3/views/partials/users-head.ejs",
+		"/G/node-pro-3/routes/user2Routes.js",
+		"/G/node-pro-3/views/signup-user-2.ejs",
+		"/G/node-pro-3/models/loginAttemt.js",
+		"/G/node-pro-3/views/partials/public-header.ejs",
+		"/G/node-pro-3/logs/ip-log.txt",
+		"/G/node-pro-3/views/testpage.ejs",
+		"/G/node-pro-3/routes/testroute.js",
+		"/G/node-pro-3/views/user1/content-list.ejs",
+		"/G/node-pro-3/views/user1/create-content.ejs",
+		"/G/node-pro-3/middleware/verifyCsrfToken.js",
+		"/G/node-pro-3/middleware/csrfProtection.js",
+		"/G/node-pro-3/middleware/xssSanitizer.js",
+		"/G/node-pro-3/utils/passwordPolicy.js",
+		"/G/node-pro-3/controllers/testExport.js",
+		"/G/node-pro-3/middleware/flashSession.js",
+		"/G/node-pro-3/middleware/validateInput.js",
+		"/G/node-pro-3/routes/testRoute.js",
+		"/G/node-pro-3/routes/hello.js",
+		"/G/node-pro-3/utils/emailTransporter.js",
+		"/G/node-pro-3/utils/sendVerification.js",
+		"/G/node-pro-3/utils/sendResetEmail.js",
+		"/G/node-pro-3/views/test-email.ejs",
+		"/G/node-pro-3/public/CSS/style.css",
+		"/G/node-pro-3/public/login.html",
+		"/G/node-pro-3/models/User1Content.js",
+		"/G/node-pro-3/views/partials/head.ejs",
+		"/G/node-pro-3/test.js",
+		"/G/node-pro-3/config/db.js",
+		"/G/node-pro-3/public/signup-user-2.html",
+		"/G/node-pro-3/views/user1-dashboard.ejs",
+		"/G/node-pro-3/views/user1-dashborad.ejs",
+		"/G/node-pro-3/views/user-1dashboard.ejs",
+		"/G/node-pro-3/public/X_index.html",
+		"/G/node-pro-3/views/admin/user1-dashboard.ejs",
+		"/G/node-pro-3/views/admin/users-list.ejs",
+		"/G/node-pro-3/public/signup-user-1.html",
+		"/G/node-pro-3/.gitignore",
+		"/G/node-pro-3/package.json",
+		"/G/node-pro-3/public/signup.html",
+		"/G/node-pro-3/server-3.js",
+		"/G/node-pro-3/server-xx.js",
+		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/css/style.css",
+		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/master-split-type.svg",
+		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/home-3.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"http://192.168.1.109/sjhoney.co.uk/",
+			"1rem",
+			"--font-size:",
+			"#0056b3",
+			"var(--primary-color);;",
+			"#007bff",
+			"ff0000",
+			"</g>",
+			"<g>",
+			"block-user",
+			"checkBannedIp",
+			"handleSignup",
+			"admin",
+			"LockOuted",
+			"\"Lockout\"",
+			"Lockout",
+			"LockOuted",
+			"await",
+			"logTemporaryLockout",
+			"LoginAttempt ",
+			"},\n",
+			"sendVerificationEmail",
+			"authMiddleware",
+			"ffffff",
+			"red",
+			"samhoney.design",
+			"##",
+			"h1",
+			"##P",
+			"## Pos]",
+			"scrolldelay",
+			"target",
+			"navigation",
+			"initiate-header-fade-effect ",
+			"#hp-sct-1 ",
+			"home-section-more",
+			" home-section-reviews",
+			"home-section-profile",
+			"hp-sct-3",
+			"profile-grid",
+			"orange",
+			"home-section-brief",
+			"#hp-sct-3",
+			"paintdec",
+			"home-section",
+			"slide-up-on-load",
+			"autoScrollup",
+			"fade-out",
+			"scaleAnimationForwards",
+			"home-page-section-1",
+			"home-page-section-2",
+			"home-page-section-3",
+			"home-page-section-2",
+			"home-page-section-1",
+			"home-page",
+			"rockAndScroll",
+			"targetEl",
+			"backgrounds",
+			"home-section-about",
+			"init-fade-in-element",
+			"contact-items",
+			"contact-content",
+			"static-form-wrap",
+			"extension=json",
+			"logo",
+			"logo-trigger",
+			"##",
+			"row",
+			"floatingbutton",
+			"home-s2",
+			"rgb(0,0,1",
+			"rgb(224,126,60)",
+			"https://sjhoney.co.uk",
+			"content",
+			"contact",
+			"#container ",
+			"thumb-wrap",
+			".page-title",
+			"#thumb-wrap",
+			"gallery.php",
+			"container",
+			"static-form-wrap",
+			"floating-form-wrap",
+			"contact",
+			"contact-page",
+			"	\n@import",
+			"fonts.googleapis.com",
+			"ul"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://sjhoney.co.uk/",
+			"--font-size-1:",
+			"var(--primary-color-variation);",
+			"var(--primary-color);",
+			"LogTempBlock",
+			"SemiPermBlock",
+			"samueljhoney.com",
+			"home-sections",
+			"hp-sct-1",
+			"hp-sct-2",
+			"hp-sct-3",
+			"hp-sct-2",
+			"hp-sct-1",
+			"rgb(9,68,99",
+			"rgb(243,189,72)",
+			"http://192.168.1.109/sjhoney.co.uk/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "template-parts/content-project-thumbs.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime-project.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"css\\style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 550.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
