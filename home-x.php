@@ -1,4 +1,4 @@
-<?php /* Template Name: samueljoseph home page  */ ?>
+<?php /* Template Name: Example Template */ ?>
 <?php get_header(); ?>
 <style>
 .fade-in.visible { opacity: 1; transform: translateY(0); }
@@ -10,10 +10,7 @@
     <section id="section-logo"> 
       <div id="logo">
         <?php get_template_part('template-parts/main-logo'); ?>
-
       </div>
-      <h1 id="samuel-joseph">SAMUEL JOSEPH</h1>
-        <h2 id="decor">DECOR</h2>
     </section>
 
     <!-- About Section -->
@@ -138,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<!-- Auto scroll  -->
+<!-- Scripts -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   const enableAutoScroll = true;

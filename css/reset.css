@@ -8,13 +8,8 @@ BASE.CSS - Typography and essential elements
   box-sizing: border-box;
 }
 /* Body typography */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #404040;
-  background: #fff;
-}
+
+
 
 /* Headings */
 h1 { font-size: 2rem; margin-bottom: 0.5em; }

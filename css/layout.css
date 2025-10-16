@@ -22,6 +22,34 @@
   color: #333;
   font-size: var(--space-20);
  }
+
+ /* ========================================
+   ## Logo fade presentation
+   ======================================== */
+#logo{
+ 
+  
+  display: flex;
+  justify-content: center;
+  border: dashed 1px red;
+  
+}
+
+
+#logo svg{
+  width: 90%;
+  max-width: var(--max-width);
+}
+
+#logo {
+  opacity: 1;
+  transition: opacity 2.5s ease; /* slow, subtle fade */
+}
+
+#logo.fade-out {
+  opacity: 0;
+}
+
  /*--------------------------
 layout 
 ----------------------------*/
@@ -32,6 +60,21 @@ layout
  }
  /* layout  home */
 
+ section#section-logo {
+  padding: 0;
+  background: #777;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+   width: 100%;
+  min-height: 100vh;
+ }
+
+
+
+ 
  #home-page #container {
   width: 100%;
   display: flex;
@@ -70,9 +113,7 @@ layout
   max-width: 1000px;
   padding: clamp(1rem, 3vw + 20rem, 4rem) clamp(1rem, 3vw, 4rem);
  }
- section#section-logo {
-  padding: 0;
- }
+
 
 
  /*--------
