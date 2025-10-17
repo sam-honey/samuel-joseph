@@ -1,19 +1,13 @@
 <svg data-name="Layer 1" id="sj-logo" viewBox="0 0 1018.05 1018.05" xmlns="http://www.w3.org/2000/svg">
 
-       <style>
-
-
-               
- 
-
-
+ <style>
 
 
 @keyframes fadeText {
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
+/*
  #contact {
   display: flex;
   justify-content: space-around;
@@ -21,6 +15,7 @@
   max-width: 800px;
   width: 90vw;
  }
+*/
  .cls-1, .cls-2 {
   stroke: #fff;
   stroke-miterlimit: 10;

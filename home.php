@@ -3,7 +3,7 @@
 <style>
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 </style>
-<div id="home-page" class="home-page">
+<div id="home-page" class="home-page parallax">
   <div id="container">
 
     <!-- Logo Section -->
@@ -176,10 +176,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     requestAnimationFrame(animation);
   }
-
+  const triggerAni = document.getElementById("decor");
   const lastElement = document.querySelector(".fadein-with-delay-3");
-  if (lastElement) {
-    lastElement.addEventListener("animationend", function () {
+  if (triggerAni) {
+    triggerAni.addEventListener("animationend", function () {
       // Only scroll if user hasn't scrolled and still at the top
       if (!userScrolled && window.scrollY === 0) {
         const nextSection = document.querySelector("#section-about");
