@@ -14,10 +14,11 @@ body {
   font-size: var(1rem);
   line-height: 1.5;
   color: var(--color-text, #222);
-  background-color: var(--color-background, #fff);
+  background-color: var(--color-background, #fff) url( );
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  background-image: url('../img/blue-wallpaper.jpg');
 }
 
 /* Headings */

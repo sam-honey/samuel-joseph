@@ -37,13 +37,13 @@
   opacity: 0;
   animation: fadeNScale 2s ease-out forwards;
   transform: scale(0.8);
-
+  min-height: 0;  
   
-  max-width: 60%;
-  max-height: 60%;
-  padding-bottom: 2rem;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 0rem;
   stroke-width: 10px;
-  
+ 
 
 
  }

@@ -8,12 +8,14 @@
 
     <!-- Logo Section -->
     <section id="section-logo"> 
-      <div id="logo">
-        <?php get_template_part('template-parts/main-logo'); ?>
+    <div id="logo-wrap">
+      
+        <?php  get_template_part('template-parts/main-logo'); ?>
 
-      </div>
+      
       <h1 id="samuel-joseph">SAMUEL JOSEPH</h1>
         <h2 id="decor">DECOR</h2>
+        </div>
     </section>
 
     <!-- About Section -->

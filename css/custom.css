@@ -10,8 +10,8 @@
     align-items: center;
   }
   #temp-container img {
-    width: 90%;
-    max-width: 1000px;
+    width: 100%;
+    max-width: 100%;
     padding: 0 0 var(--space-32) 0;
     ;
   }
@@ -23,26 +23,5 @@
     font-size: var(--space-20);
  
 }
- h1#samuel-joseph{
- 
-  padding: 0;
-  margin: 0;
-  font-weight: strong;
- font-family: 'palantino', serif;
- font-size: clamp(0.5rem, 5vw + 1rem, 5rem);
- opacity: 1; 
-  animation: fadeText 3s ease-in-out 2s forwards; 
-}
 
- h2#decor{
- 
-  padding: 0;
-  margin: 0;
- 
- font-family: 'JosefinSansSubset', serif;
- letter-spacing: 3px;
- font-size: clamp(0.5rem, 5vw + 1rem, 5rem);
- opacity: 1; 
-  animation: fadeText 3s ease-in-out 2s forwards; 
-}
 

@@ -26,30 +26,61 @@
  /* ========================================
    ## Logo fade presentation
    ======================================== */
-#logo{
- 
-  
+section#section-logo {
+  padding: 0;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  border: dashed 1px red;
-  
+  width: 100%;
+  min-height: 100vh;
 }
-
-
-#logo svg{
-  width: 90%;
-  max-width: var(--max-width);
+#logo-wrap {
+  flex: 1 1 0;
+  /* flex-grow and shrink properly */
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  /* stack vertically */
+  height: 100%;
+  /* fill the section */
+  width: 100%;
+  justify-content: center;
+  max-width: 1900px;
+  border: dashed 1px green;
 }
-
+svg#sj-logo {
+  padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
+}
+h1#samuel-joseph {
+  color: #fff;
+  padding: clamp(0vw, 7vh, 3rem) 0 4% 0;
+  margin: 0;
+  font-family: 'palatino', serif;
+  font-size: clamp(0.5rem, 10vw, 6rem);
+  text-align: center;
+  opacity: 0;
+  animation: fadeText 3s ease-in-out 2s forwards;
+}
+h2#decor {
+  color: #eee;
+  padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
+  margin: 0;
+  font-family: 'JosefinSansSubset', serif;
+  letter-spacing: 3px;
+  font-size: clamp(1.5rem, 6vw, 4rem);
+  opacity: 0;
+  animation: fadeText 3s ease-in-out 3s forwards;
+  text-align: center;
+}
 #logo {
   opacity: 1;
-  transition: opacity 2.5s ease; /* slow, subtle fade */
+  transition: opacity 2.5s ease;
+  /* slow, subtle fade */
 }
-
 #logo.fade-out {
   opacity: 0;
 }
-
  /*--------------------------
 layout 
 ----------------------------*/
@@ -60,17 +91,6 @@ layout
  }
  /* layout  home */
 
- section#section-logo {
-  padding: 0;
-  background: #777;
-  border: solid 2px red;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-   width: 100%;
-  min-height: 100vh;
- }
 
 
 
@@ -88,9 +108,7 @@ layout
   align-content: center;
   justify-content: center;
   flex: 0;
-  background: #f7f8f3 url('../img/backgrounds/pattern-white-01.jpg') top center;
-  background-size: 50%;
-  background-attachment: fixed;
+ 
   padding: 4rem 0;
  }
  
@@ -233,6 +251,8 @@ single project page*/
   padding: 0.5rem 1rem;
   /* optional spacing around logo */
   height: auto;
+
+  display: none;
  }
  .inner-width-constraint {
   width: 100%;
