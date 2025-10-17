@@ -24,4 +24,9 @@
  
 }
 
-
+.parallax {
+    background-size: cover;
+    background-attachment: fixed; /* optional, for classic parallax */
+    background-repeat: no-repeat;
+    background-position: center center;
+}

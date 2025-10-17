@@ -19,15 +19,11 @@
     </section>
 
     <!-- About Section -->
-    <section id="section-about" class="parallax">
+    <section id="section-about" >
       <div id="fade-in-target"></div>
       <div class="section-content">
         <p>
-          SJHoney Property Solutions delivers complete home and workplace transformations. 
-          Services include professional painting and decorating as well as a wide range of 
-          renovations, from updated fixtures and fittings to full bathroom installations. 
-          Each project is carried out with care, attention to detail, and a consistently 
-          professional finish.
+          Samuel Joseph Decor delivers exceptional decorating services backed by years of professional experience. Every project is approached with meticulous attention to detail, creativity, and a commitment to exceeding expectations. From small refreshes to full-scale renovations, each space is transformed with care, professionalism, and a passion for quality. Customer satisfaction is always the top priority..
         </p>
         <p>
           View past <a href="#projects">projects</a> to see the range of services provided 
@@ -37,14 +33,14 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="parallax">
+    <section id="projects" >
       <div class="section-content">
         <?php get_template_part('template-parts/content', 'project-thumbs'); ?>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section" class="parallax">
+    <section id="contact-section" >
   <div class="section-content">
     <h2>Contact Me</h2>
     <div id="contact-options">
@@ -177,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(animation);
   }
   const triggerAni = document.getElementById("decor");
-  const lastElement = document.querySelector(".fadein-with-delay-3");
+ 
   if (triggerAni) {
     triggerAni.addEventListener("animationend", function () {
       // Only scroll if user hasn't scrolled and still at the top
@@ -186,6 +182,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (nextSection) {
           smoothScrollTo(nextSection.offsetTop, 2800);
         }
+
       }
     });
   }
@@ -205,6 +202,34 @@ function adjustContentPadding() {
 document.addEventListener('DOMContentLoaded', adjustContentPadding);
 window.addEventListener('resize', adjustContentPadding);
 </script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+  const fab = document.querySelector(".fab-contact");
+  if (!fab) return;
+  
+  const sections = document.querySelectorAll("#section-about, #projects");
+  if (sections.length === 0) {
+    console.log("Error: #section-about or its siblings not found in the DOM!");
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        fab.classList.add("fade-in-contact-button");
+        observer.disconnect(); // fade in only once
+      }
+    });
+  }, { threshold: 0.3});
+
+  sections.forEach(section => observer.observe(section));
+});
+</script>
+
+
 
 
 

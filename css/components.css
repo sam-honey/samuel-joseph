@@ -336,10 +336,13 @@ p.address{
   z-index: 999;  /* keep above other elements */
  opacity: 0;
 padding: 0.5rem 1.5rem; 
-animation: fadeInContactButton 3s ease forwards, pulse 2s infinite ease-in-out;
-animation-delay: 4s;
 
 
+
+}
+
+.fade-in-contact-button {
+  animation: fadeInContactButton 3s ease 2s forwards, pulse  infinite ease-in-out;
 }
 
 @keyframes fadeInContactButton {

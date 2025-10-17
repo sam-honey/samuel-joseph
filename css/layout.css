@@ -22,11 +22,11 @@
   color: #333;
   font-size: var(--space-20);
  }
-
  /* ========================================
    ## Logo fade presentation
    ======================================== */
-section#section-logo {
+
+ section#section-logo {
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -34,8 +34,8 @@ section#section-logo {
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-}
-#logo-wrap {
+ }
+ #logo-wrap {
   flex: 1 1 0;
   /* flex-grow and shrink properly */
   min-height: 0;
@@ -48,11 +48,11 @@ section#section-logo {
   justify-content: center;
   max-width: 1900px;
   border: dashed 1px green;
-}
-svg#sj-logo {
+ }
+ svg#sj-logo {
   padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
-}
-h1#samuel-joseph {
+ }
+ h1#samuel-joseph {
   color: #fff;
   padding: clamp(0vw, 7vh, 3rem) 0 4% 0;
   margin: 0;
@@ -61,8 +61,8 @@ h1#samuel-joseph {
   text-align: center;
   opacity: 0;
   animation: fadeText 3s ease-in-out 2s forwards;
-}
-h2#decor {
+ }
+ h2#decor {
   color: #eee;
   padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
   margin: 0;
@@ -72,15 +72,15 @@ h2#decor {
   opacity: 0;
   animation: fadeText 3s ease-in-out 3s forwards;
   text-align: center;
-}
-#logo {
+ }
+ #logo {
   opacity: 1;
   transition: opacity 2.5s ease;
   /* slow, subtle fade */
-}
-#logo.fade-out {
+ }
+ #logo.fade-out {
   opacity: 0;
-}
+ }
  /*--------------------------
 layout 
 ----------------------------*/
@@ -91,21 +91,14 @@ layout
  }
  /* layout  home */
 
-
-
-#home-page{
+ #home-page {
   background: url('../img/blue-wallpaper.jpg') top center repeat fixed;
-
-}
-}
-
-
- 
+ }
+ }
  #home-page #container {
   width: 100%;
   display: flex;
   flex-direction: column;
-
  }
  #project-single section, .home-page section {
   width: 100%;
@@ -114,46 +107,44 @@ layout
   align-content: center;
   justify-content: center;
   flex: 0;
- 
   padding: 4rem 0;
  }
- 
-.parallax {
-    background-size: cover;
-    background-attachment: fixed; /* optional, for classic parallax */
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
- #home-page #container section:nth-child(even) {}
  .home-page .section-content {
-  background: rgb(255, 255, 255, 0.75);
+  background: rgb(255, 255, 255, 0.25);
   display: flex;
+  border-radius: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 90%;
   align-self: center;
   max-width: 1000px;
-  padding: clamp(1rem, 3vw + 20rem, 4rem) clamp(1rem, 3vw, 4rem);
+  padding: 
+  clamp(1rem, 3vw, 4rem) 
+  clamp(1rem, 3vw, 4rem) 
+  clamp(1rem, 3vw, 4rem)
+  clamp(1rem, 3vw, 4rem);
  }
 
 
+#section-about{
+  
+}
 
  /*--------
 Footer*/
-  .fb-logo{
-    width: 60px;
-  }
- .width-constraints{
+
+ .fb-logo {
+  width: 60px;
+ }
+ .width-constraints {
   width: 90%;
-  
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-}
+ }
  footer#footer-container {
   width: 100%;
   display: flex;
@@ -166,12 +157,11 @@ Footer*/
   background-attachment: fixed;
   padding: 0.5rem 0 1rem 0;
  }
-footer#footer-container p{
-color: #fff;
-padding: 0 0 0.5rem 0;
-margin: 0;
+ footer#footer-container p {
+  color: #fff;
+  padding: 0 0 0.5rem 0;
+  margin: 0;
  }
-
  footer #footer-content {
   background: rgb(255, 255, 255, 0.75);
   display: flex;
@@ -184,19 +174,12 @@ margin: 0;
   position: relative;
   padding: clamp(1rem, 3vw + 20rem, 4rem) clamp(1rem, 3vw, 4rem);
  }
-
-
- #footer-icons{
- 
+ #footer-icons {
   display: flex;
   flex-direction: row;
   gap: 10px;
  }
-
-.footer-icon{
-
-
- }
+ .footer-icon {}
  /*--------
 single project page*/
 
@@ -257,7 +240,6 @@ single project page*/
   padding: 0.5rem 1rem;
   /* optional spacing around logo */
   height: auto;
-
   display: none;
  }
  .inner-width-constraint {
