@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   /* Email */
-  const emailParts = ["info", "@", "sjhoney", ".", "co", ".", "uk"];
+  const emailParts = ["info", "@", "samueljoseph", ".", "uk"];
   const emailFull = emailParts.join("");
   const emailLink = document.getElementById("emailLink");
   if (emailLink) {

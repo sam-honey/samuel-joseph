@@ -2,21 +2,17 @@
 :root {
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "Fira Code", "Courier New", monospace;
-  --color-text: #3B2F2F;/*Dark brown*/
-  --color-bg: #fff;
-  --color-accent: #0073e6;
-  --primary-color: #ed7014;
-  --primary-color-alt: #be5504;
-  --orange-light: #FFB06B;
-  --orange-mid: #FF8C42;
-  --orange-dark: #E66A00;
-  --blue: #094463;;
+  --color-text: #3B2F2F;/*Dark brown --contrast-1:#ba4864;*/
+  --darkblue : #355866;
+
+  --contrast-1:#c55a4a;
   --contact-form-bg: #fff9f4;
   --max-width: 1200px;
-  --max-width-1: 450px
+  --max-width-1: 450px;
   --gutter: 1rem;
   --line-height: 1.6;
   --transition: 0.2s ease-in-out;
+
   /* #094463;
      #878787;
  #f3bd48;

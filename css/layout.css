@@ -54,13 +54,21 @@
  }
  h1#samuel-joseph {
   color: #fff;
-  padding: clamp(0vw, 7vh, 3rem) 0 4% 0;
-  margin: 0;
+  margin: clamp(0vw, 7vh, 3rem) 0 4% 0;
   font-family: 'palatino', serif;
   font-size: clamp(0.5rem, 10vw, 6rem);
   text-align: center;
   opacity: 0;
   animation: fadeText 3s ease-in-out 2s forwards;
+  display: inline-block;
+  width: auto;
+  opacity: 0;
+  
+  /*
+  background: #355866;
+  background: rgb(53, 88, 102, 0.5);
+  */
+
  }
  h2#decor {
   color: #eee;
@@ -119,18 +127,11 @@ layout
   width: 90%;
   align-self: center;
   max-width: 1000px;
-  padding: 
-  clamp(1rem, 3vw, 4rem) 
-  clamp(1rem, 3vw, 4rem) 
-  clamp(1rem, 3vw, 4rem)
-  clamp(1rem, 3vw, 4rem);
+  padding: clamp(1rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem) clamp(1rem, 6vw, 4rem) clamp(1rem, 4vw, 4rem);
+
+
  }
-
-
-#section-about{
-  
-}
-
+ #section-about {}
  /*--------
 Footer*/
 
@@ -211,16 +212,65 @@ single project page*/
   justify-content: center;
   padding: 1rem;
  }
+ /*--------------------------
+Hearder
+----------------------------*/
+
+ h1#header-title-name {
+  font-family: 'palatino', serif;
+  display: inline-block;
+  color: #fff;
+  
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  padding: 0;
+  margin: 0;
+ }
+ h2#header-title-service {
+  font-family: 'JosefinSansSubset', serif;
+  display: inline-block;
+  color: #fff;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  padding: 5px 0 0 0;
+  margin: 0;
+  letter-spacing: 3px;
+ }
+
+ #logo-header {
+  display: block;
+  width: 50px;
+  height: 50px;
+  
+ 
+ margin-right: 1vw;
+ margin-left: 1.25vw;
+  padding: 0.25vw;
+
+ 
+ }
+
+ #sticky-header  * {
+  
+ }
  /* ===========================
    Sticky Header
    =========================== */
 
+ #header-el-wrap {
+  display: flex;
+  flex-direction: row;
+align-items: center;
+padding: 1vh 0 1.5vh 0;
+ }
+ #header-text {
+  display: flex;
+  flex-direction: column;
+ }
  #sticky-header {
   position: fixed;
   /* or fixed if you want it always on top */
   top: 0;
   width: 100%;
-  background: #fff;
+  background: #355866;
   /* or your site background */
   z-index: 997;
   border-bottom: solid 2px var(--blue);
@@ -237,10 +287,10 @@ single project page*/
   display: flex;
   align-items: center;
   /* vertically center logo + nav */
-  padding: 0.5rem 1rem;
+
   /* optional spacing around logo */
   height: auto;
-  display: none;
+  flex-direction: row;
  }
  .inner-width-constraint {
   width: 100%;
@@ -262,7 +312,6 @@ single project page*/
  #sticky-header.visible {
   opacity: 1;
  }
- }
  #sticky-header nav a {
   display: inline-block;
   padding: 0.5rem 1rem;
@@ -274,7 +323,7 @@ single project page*/
 
  @media (max-width: 768px) {
   #sticky-header {
-    padding: 0.5rem 0.75rem;
+    
   }
   #sticky-header nav a {
     padding: 0.25rem 0.5rem;
