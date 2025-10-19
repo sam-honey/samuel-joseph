@@ -89,13 +89,83 @@
  #logo.fade-out {
   opacity: 0;
  }
+
+ a.header-links{
+  font-family: Georgia, "Times New Roman", Times, serif;
+ }
+
+#header-el-2-contact{
+  justify-content: flex-end;
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+}
+ #header-el-2-contact a{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: right;
+ }
+
+
+ #header-el-2-contact a:first-child{
+  padding-right: 10px;
+ }
+
+
+#sticky-header .inner-width-constraint{
+  display: flex;
+  
+  justify-content: space-between;
+
+
+  flex-direction: column;
+}
+
+
+@media (min-width: 768px) {
+#sticky-header .inner-width-constraint{
+flex-direction: row;
+}
+
+#header-el-2-contact{
+  flex: 1;
+justify-content: center;
+padding-left: 30%;
+  }
+
+
+.mobile-label-header {
+    display: none;
+  }
+  .desktop-label-display-header {
+    display: inline-block;
+    width:;
+  }
+}
+
+
+ #sticky-header .inner-width-constraint> div{
+border: solid 1px #fff;
+
+ }
+#sticky-header .inner-width-constraint a{
+  display: inline-block;
+}
+a.header-link{
+ font-family: "Times New Roman", Times, serif;
+}
  /*--------------------------
+}
 layout 
 ----------------------------*/
 
- #container {}
+ #container {
+  padding-bottom: 2rem;
+ }
  #contact {
   max-width: 1000px;
+
  }
  /* layout  home */
 
@@ -115,7 +185,7 @@ layout
   align-content: center;
   justify-content: center;
   flex: 0;
-  padding: 4rem 0;
+  padding-top: 4rem ;
  }
  .home-page .section-content {
   background: rgb(255, 255, 255, 0.25);
@@ -130,10 +200,19 @@ layout
   padding: clamp(1rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem) clamp(1rem, 6vw, 4rem) clamp(1rem, 4vw, 4rem);
 
 
+
+
  }
- #section-about {}
- /*--------
-Footer*/
+.home-page .section-content p {
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .home-page .section-content p {
+    text-align: left;
+  }
+}
+
 
  .fb-logo {
   width: 60px;
@@ -152,8 +231,8 @@ Footer*/
   align-content: center;
   justify-content: center;
   flex: 0;
-  background: #f7f8f3 url('../img/backgrounds/pattern-white-01.jpg') top center;
-  background: var(--blue);
+  background: var(--dark-blue);
+
   background-size: 50%;
   background-attachment: fixed;
   padding: 0.5rem 0 1rem 0;
@@ -270,7 +349,7 @@ padding: 1vh 0 1.5vh 0;
   /* or fixed if you want it always on top */
   top: 0;
   width: 100%;
-  background: #355866;
+  background: var(--dark-blue);/* #355866;
   /* or your site background */
   z-index: 997;
   border-bottom: solid 2px var(--blue);
@@ -281,7 +360,7 @@ padding: 1vh 0 1.5vh 0;
   align-items: center;
   /* vertically center content */
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   /* start hidden for home page fade-in */
   transition: opacity 1s ease;
   display: flex;

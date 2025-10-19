@@ -19,7 +19,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="section-about" >
+    <section id="section-about" class="js-top-padding" >
       <div id="fade-in-target"></div>
       <div class="section-content">
         <p>
@@ -46,15 +46,15 @@
     <div id="contact-options">
 
       <!-- Email -->
-      <a class="btn-contact" href="#" id="emailLink">
-        <span class="mobile-label">Email</span>
-        <span class="desktop-label"></span>
+      <a class="btn-contact" href="#" class="emailLink">
+        <span class="mobile-label mobile-label-display">Email</span>
+        <span class="desktop-label desktop-label-display"></span>
       </a>
 
       <!-- Telephone -->
-      <a class="btn-contact" href="#" id="callLink">
-        <span class="mobile-label">Telephone</span>
-        <span class="desktop-label"></span>
+      <a class="btn-contact" href="#" class="callLink">
+        <span class="mobile-label mobile-label-display">Telephone</span>
+        <span class="desktop-label desktop-label-display"></span>
       </a>
     </div>
 
@@ -63,26 +63,29 @@
     <p class="address" id="addressBlock"></p>
   </div>
 </section>
-
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   /* Email */
   const emailParts = ["info", "@", "sjhoney", ".", "co", ".", "uk"];
   const emailFull = emailParts.join("");
-  const emailLink = document.getElementById("emailLink");
-  if (emailLink) {
-    emailLink.href = "mailto:" + emailFull;
-    emailLink.querySelector(".desktop-label").textContent = emailFull;
-  }
+  const emailLinks = document.querySelectorAll(".emailLink");
+  
+  emailLinks.forEach(link => {
+    link.href = "mailto:" + emailFull;
+    const label = link.querySelector(".desktop-label");
+    if (label) label.textContent = emailFull;
+  });
 
   /* Phone */
-  const numberParts = ["+44", "7932", "877017"];
+  const numberParts = ["07932", "877017"];
   const fullNumber = numberParts.join(" ");
-  const callLink = document.getElementById("callLink");
-  if (callLink) {
-    callLink.href = "tel:" + fullNumber.replace(/\s+/g, "");
-    callLink.querySelector(".desktop-label").textContent = fullNumber;
-  }
+  const callLinks = document.querySelectorAll(".callLink");
+  
+  callLinks.forEach(link => {
+    link.href = "tel:" + fullNumber.replace(/\s+/g, "");
+    const label = link.querySelector(".desktop-label");
+    if (label) label.textContent = fullNumber;
+  });
 
   /* Address */
   const addressParts = [
@@ -91,10 +94,12 @@ document.addEventListener("DOMContentLoaded", function() {
     "Oldfield, Bath, ",
     "BA2 3JL"
   ];
-  const addressBlock = document.getElementById("addressBlock");
-  if (addressBlock) {
-    addressBlock.textContent = addressParts.join("");
-  }
+  const fullAddress = addressParts.join("");
+  const addressBlocks = document.querySelectorAll(".addressBlock");
+  
+  addressBlocks.forEach(block => {
+    block.textContent = fullAddress;
+  });
 });
 </script>
 
@@ -102,38 +107,7 @@ document.addEventListener("DOMContentLoaded", function() {
   </div>
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  /* Email */
-  const emailParts = ["info", "@", "samueljoseph", ".", "uk"];
-  const emailFull = emailParts.join("");
-  const emailLink = document.getElementById("emailLink");
-  if (emailLink) {
-    emailLink.href = "mailto:" + emailFull;
-    emailLink.querySelector(".desktop-label").textContent = emailFull;
-  }
-
-  /* Phone */
-  const numberParts = ["+44", "7932", "877017"];
-  const fullNumber = numberParts.join(" ");
-  const callLink = document.getElementById("callLink");
-  if (callLink) {
-    callLink.href = "tel:" + fullNumber.replace(/\s+/g, "");
-    callLink.querySelector(".desktop-label").textContent = fullNumber;
-  }
-
-  /* Address */
-  const addressParts = [
-    "SJHoney Property Solutions, ",
-    "55 Ringwood Rd, ",
-    "Oldfield, Bath, ",
-    "BA2 3JL"
-  ];
-  const addressBlock = document.getElementById("addressBlock");
-  if (addressBlock) {
-    addressBlock.textContent = addressParts.join("");
-  }
-});
+<
 </script>
 
 <!-- Auto scroll  -->

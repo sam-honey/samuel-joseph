@@ -23,61 +23,75 @@ echo "<script>console.log('test' + " . json_encode($foo) . ");</script>";
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js-enabled');
 </script>
-
-
-
-
-	<?php wp_head(); ?>
+<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
 
-	
+<body <?php body_class(); ?>>	
 <?php wp_body_open(); ?>
-
 <header>
-<div id="sticky-header">
+	<div id="sticky-header">
+		<div class="inner-width-constraint">
+			<div id="header-el-wrap">
+				<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-symbol[master][expanded]trans.svg" alt="LOgo">
+				<div id="header-text">
+					<h1 id="header-title-name">SAMUEL JOSEPH</h1>
+					<h2 id="header-title-service">DECOR</h2>
+				</div>
+			</div>
 
-<div class="inner-width-constraint">
 
-	<div id="header-el-wrap">
+			<div id="header-el-2-contact">
 
-		<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-symbol[master][expanded]trans.svg" alt="LOgo">
-		
-		<div id="header-text">
-			<h1 id="header-title-name">SAMUEL JOSEPH</h1>
-			<h2 id="header-title-service">DECOR</h2>
+				<a class="emailLink header-link" href="#">
+					<span class="mobile-label mobile-label-display">Email</span>
+        <span class="desktop-label desktop-label-display"></span>
+				</a> 
+
+				<a href="#" class="callLink header-link">
+        			<span class="mobile-label mobile-label-display">Telephone</span>
+        <span class="desktop-label desktop-label-display"></span
+      			</a>
+
+			</div>
 		</div>
-
-	</div>
-
-</div>
-</div>
+	</div><!-- #masthead -->
 	</header><!-- #masthead -->
+
+
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const headerText = document.getElementById("header-text");
-  const logo = document.getElementById("logo-header");
+  const headerText = document.getElementById("header-text");     // text wrap (2 lines)
+  const logo = document.getElementById("logo-header");           // logo image
+  const stickyHeader = document.getElementById("sticky-header"); // entire sticky header
+  const jsTopPaddingEls = document.querySelectorAll(".js-top-padding");
 
-  if (!headerText || !logo) return;
+  if (!headerText || !logo || !stickyHeader) return;
 
-  // Function to set logo height and width (square)
-  function updateLogoSize(height) {
-    logo.style.height = height + "px";
-    logo.style.width = height + "px"; // keep square
+  function updateLayout() {
+    const textHeight = headerText.offsetHeight;
+    const headerHeight = stickyHeader.offsetHeight;
+
+    // 1️⃣ Make logo same height as header text
+    logo.style.height = textHeight + "px";
+    logo.style.width = textHeight + "px"; // keep square
+
+    // 2️⃣ Add top padding to sections based on full header height
+    jsTopPaddingEls.forEach(el => {
+      el.style.paddingTop = (headerHeight + 20) + "px";
+    });
   }
 
-  // Initial sizing
-  updateLogoSize(headerText.offsetHeight);
+  // Initial setup
+  updateLayout();
 
-  // Observe text height changes dynamically
-  const resizeObserver = new ResizeObserver(entries => {
-    for (let entry of entries) {
-      const newHeight = entry.contentRect.height;
-      updateLogoSize(newHeight);
-    }
-  });
-
+  // Observe header-text and sticky-header for dynamic changes
+  const resizeObserver = new ResizeObserver(() => updateLayout());
   resizeObserver.observe(headerText);
+  resizeObserver.observe(stickyHeader);
+
+  // Also update on window resize just in case
+  window.addEventListener("resize", updateLayout);
 });
 </script>

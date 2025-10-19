@@ -14,7 +14,7 @@
 <footer id="footer-container">
 <?php wp_footer(); ?>
 <div class="width-constraints">
-<p>SJHoney Property Solutions</p>
+<p>Samuel Jospeh Decor - 55 Ringwood Rd, Bath, BA2 3JL</p>
 
 <div id="footer-icons">
 
