@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
      lightBox.init();
      fixedHeader.init();
      FadeInOnScroll.init();
-     Parallax.init();
+     parallax.init();
+   addContactDetails.init();
 
     //alert("Modules loaded"); // simple test
 });

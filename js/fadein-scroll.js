@@ -1,5 +1,5 @@
 const FadeInOnScroll = (() => {
-  console.log("fade in script2");
+  console.log("fade in on scroll module");
   function init(options = {}) {
     const elements = document.querySelectorAll(options.selector || '.fade-in');
     const observer = new IntersectionObserver((entries, observer) => {

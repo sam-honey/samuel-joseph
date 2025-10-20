@@ -90,71 +90,194 @@
   opacity: 0;
  }
 
- a.header-links{
-  font-family: Georgia, "Times New Roman", Times, serif;
- }
-
-#header-el-2-contact{
-  justify-content: flex-end;
-  align-items: flex-end;
+/* -----------------------------------   */
+/* ## Header   */
+/* -----------------------------------   */
+#sticky-header .inner-width-constraint {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  flex-direction: column;
 }
- #header-el-2-contact a{
+#sticky-header .inner-width-constraint div:last-child {
+  align-self: flex-end;
+}
+a.header-links {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#header-el-2-contact {
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+  padding: 0.1rem 0.3rem;
+  justify-content: center;
+  border: solid 1px #fff;
+}
+#header-el-2-contact a {
   display: flex;
   flex-direction: column;
   color: #fff;
   text-align: right;
- }
-
-
- #header-el-2-contact a:first-child{
-  padding-right: 10px;
- }
-
-
-#sticky-header .inner-width-constraint{
-  display: flex;
-  
-  justify-content: space-between;
-
-
-  flex-direction: column;
+  font-size: 1rem;
 }
-
+#header-el-2-contact a:first-child {
+  padding-right: 10px;
+}
+.desktop-header-display {
+    display:none;
+  }
 
 @media (min-width: 768px) {
-#sticky-header .inner-width-constraint{
-flex-direction: row;
-}
-
-#header-el-2-contact{
-  flex: 1;
-justify-content: center;
-padding-left: 30%;
+  #sticky-header .inner-width-constraint {
+    flex-direction: row;
+    justify-content: space-between;
   }
-
-
-.mobile-label-header {
+  #header-el-2-contact {
+    justify-content: flex-end;
+    padding-left: 0;
+    flex: 0;
+    border:none;
+    flex-direction: column;
+  }
+  #header-el-2-contact a:first-child {
+    padding-right: 0px;
+  }
+  .mobile-header-display {
     display: none;
   }
-  .desktop-label-display-header {
+  .desktop-header-display {
     display: inline-block;
-    width:;
   }
+  #header-el-2-contact a{
+    font-size: clamp(1rem, 2.5vw, 1.75rem);
+  } 
 }
 
 
- #sticky-header .inner-width-constraint> div{
-border: solid 1px #fff;
-
- }
-#sticky-header .inner-width-constraint a{
+#sticky-header .inner-width-constraint>div {}
+#sticky-header .inner-width-constraint a {
   display: inline-block;
 }
-a.header-link{
- font-family: "Times New Roman", Times, serif;
+a.header-link {
+  font-family: "Times New Roman", Times, serif;
 }
+
+ /*--------------------------
+Hearder
+----------------------------*/
+
+ h1#header-title-name {
+  font-family: 'palatino', serif;
+  display: inline-block;
+  color: #fff;
+  
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  padding: 0;
+  margin: 0;
+ }
+ h2#header-title-service {
+  font-family: 'JosefinSansSubset', serif;
+  display: inline-block;
+  color: #fff;
+  font-size: clamp(1.3rem, 2.8vw, 2rem);
+  padding: 5px 0 0 0;
+  margin: 0;
+  letter-spacing: 3px;
+ }
+
+ #logo-header {
+  display: block;
+  width: 50px;
+  height: 50px;
+  
+ 
+ margin-right: 1vw;
+ margin-left: 1.25vw;
+  padding: 0.25vw;
+
+ 
+ }
+
+ #sticky-header  * {
+  
+ }
+ /* ===========================
+   Sticky Header
+   =========================== */
+
+ #header-el-wrap {
+  display: flex;
+  flex-direction: row;
+align-items: center;
+padding: 1vh 0 1.5vh 0;
+ }
+ #header-text {
+  display: flex;
+  flex-direction: column;
+ }
+ #sticky-header {
+  position: fixed;
+  /* or fixed if you want it always on top */
+  top: 0;
+  width: 100%;
+  background: var(--dark-blue);/* #355866;
+  /* or your site background */
+  z-index: 997;
+  border-bottom: solid 2px var(--blue);
+  padding: 0.75rem 1rem;
+  /* vertical + horizontal padding defines height */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* vertically center content */
+  justify-content: center;
+  opacity: 1;
+  /* start hidden for home page fade-in */
+  transition: opacity 1s ease;
+  display: flex;
+  align-items: center;
+  /* vertically center logo + nav */
+
+  /* optional spacing around logo */
+  height: auto;
+  flex-direction: row;
+ }
+ .inner-width-constraint {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+ }
+ #sticky-header img.logo {
+  display: block;
+  max-height: 60px;
+  /* constrain if needed */
+  width: auto;
+  /* maintain aspect ratio */
+  max-height: clamp(40px, 10vw, 80px);
+  padding-left: 10%;
+  /* min 40px, scales with viewport, max 80px */
+ }
+ /* Show after fade-in trigger */
+
+ #sticky-header.visible {
+  opacity: 1;
+ }
+ #sticky-header nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #333;
+ }
+ /* Responsive adjustments */
+
+ @media (max-width: 768px) {
+  #sticky-header {
+    
+  }
+  #sticky-header nav a {
+    padding: 0.25rem 0.5rem;
+  }
+ }
  /*--------------------------
 }
 layout 
@@ -290,121 +413,4 @@ single project page*/
   display: flex;
   justify-content: center;
   padding: 1rem;
- }
- /*--------------------------
-Hearder
-----------------------------*/
-
- h1#header-title-name {
-  font-family: 'palatino', serif;
-  display: inline-block;
-  color: #fff;
-  
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  padding: 0;
-  margin: 0;
- }
- h2#header-title-service {
-  font-family: 'JosefinSansSubset', serif;
-  display: inline-block;
-  color: #fff;
-  font-size: clamp(1.3rem, 2.8vw, 2rem);
-  padding: 5px 0 0 0;
-  margin: 0;
-  letter-spacing: 3px;
- }
-
- #logo-header {
-  display: block;
-  width: 50px;
-  height: 50px;
-  
- 
- margin-right: 1vw;
- margin-left: 1.25vw;
-  padding: 0.25vw;
-
- 
- }
-
- #sticky-header  * {
-  
- }
- /* ===========================
-   Sticky Header
-   =========================== */
-
- #header-el-wrap {
-  display: flex;
-  flex-direction: row;
-align-items: center;
-padding: 1vh 0 1.5vh 0;
- }
- #header-text {
-  display: flex;
-  flex-direction: column;
- }
- #sticky-header {
-  position: fixed;
-  /* or fixed if you want it always on top */
-  top: 0;
-  width: 100%;
-  background: var(--dark-blue);/* #355866;
-  /* or your site background */
-  z-index: 997;
-  border-bottom: solid 2px var(--blue);
-  padding: 0.75rem 1rem;
-  /* vertical + horizontal padding defines height */
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  /* vertically center content */
-  justify-content: center;
-  opacity: 1;
-  /* start hidden for home page fade-in */
-  transition: opacity 1s ease;
-  display: flex;
-  align-items: center;
-  /* vertically center logo + nav */
-
-  /* optional spacing around logo */
-  height: auto;
-  flex-direction: row;
- }
- .inner-width-constraint {
-  width: 100%;
-  max-width: 1100px;
-  position: relative;
- }
- #sticky-header img.logo {
-  display: block;
-  max-height: 60px;
-  /* constrain if needed */
-  width: auto;
-  /* maintain aspect ratio */
-  max-height: clamp(40px, 10vw, 80px);
-  padding-left: 10%;
-  /* min 40px, scales with viewport, max 80px */
- }
- /* Show after fade-in trigger */
-
- #sticky-header.visible {
-  opacity: 1;
- }
- #sticky-header nav a {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  line-height: 1.5rem;
-  text-decoration: none;
-  color: #333;
- }
- /* Responsive adjustments */
-
- @media (max-width: 768px) {
-  #sticky-header {
-    
-  }
-  #sticky-header nav a {
-    padding: 0.25rem 0.5rem;
-  }
  }

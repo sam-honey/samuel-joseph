@@ -53,6 +53,14 @@ function sjhoney_enqueue_scripts() {
         true
     );
 
+      wp_enqueue_script(
+        'add-contact-details',
+        $theme_dir . 'contact-details.js',
+        array(),
+        filemtime(get_template_directory() . '/js/contact-details.js'),
+        true
+    );
+
     # wp_enqueue_script(
     #     'contact',
     #     $theme_dir . 'contact.js',

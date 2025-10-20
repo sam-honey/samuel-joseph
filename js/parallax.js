@@ -1,4 +1,4 @@
-const Parallax = (() => {
+const parallax = (() => {
   console.log("Parallax script loaded");
 
   let elements = [];

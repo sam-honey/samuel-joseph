@@ -32,7 +32,9 @@ document.documentElement.classList.add('js-enabled');
 <header>
 	<div id="sticky-header">
 		<div class="inner-width-constraint">
+
 			<div id="header-el-wrap">
+
 				<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-symbol[master][expanded]trans.svg" alt="LOgo">
 				<div id="header-text">
 					<h1 id="header-title-name">SAMUEL JOSEPH</h1>
@@ -44,13 +46,13 @@ document.documentElement.classList.add('js-enabled');
 			<div id="header-el-2-contact">
 
 				<a class="emailLink header-link" href="#">
-					<span class="mobile-label mobile-label-display">Email</span>
-        <span class="desktop-label desktop-label-display"></span>
+					<span class="mobile-label mobile-header-display">Email</span>
+        			<span class="desktop-label desktop-header-display"></span>
 				</a> 
 
 				<a href="#" class="callLink header-link">
-        			<span class="mobile-label mobile-label-display">Telephone</span>
-        <span class="desktop-label desktop-label-display"></span
+        			<span class="mobile-label mobile-header-display">Telephone</span>
+       				<span class="desktop-label desktop-header-display"></span>
       			</a>
 
 			</div>
@@ -60,7 +62,9 @@ document.documentElement.classList.add('js-enabled');
 
 
 
+
 <script>
+/*Size logo to text and sibling padding */
 document.addEventListener("DOMContentLoaded", function () {
   const headerText = document.getElementById("header-text");     // text wrap (2 lines)
   const logo = document.getElementById("logo-header");           // logo image

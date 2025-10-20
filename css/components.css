@@ -111,7 +111,7 @@
   justify-content: center;
   padding: 20px 0 30px 0;
 }
-.desktop-label {
+.desktop-form-display {
   display: none;
 }
 #contact-options a.btn-contact {
@@ -159,10 +159,10 @@ p.address {
     /* vertical centering (optional) */
     width: 100%;
   }
-  .mobile-label-display {
+  .mobile-form-display {
     display: none;
   }
-  .desktop-label-display {
+  .desktop-form-display {
     display: inline;
   }
   #contact-options a.btn-contact {
