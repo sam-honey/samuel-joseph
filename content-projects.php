@@ -16,7 +16,7 @@
         <img src="<?php echo esc_url($image['url']); ?>" 
              alt="<?php echo esc_attr($alt); ?>" />
     </div>
-<?php endif; ?>>
+<?php endif; ?>
 
 
 <?php if( get_field('txt-1')): ?>

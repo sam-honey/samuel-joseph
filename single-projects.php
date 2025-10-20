@@ -7,6 +7,7 @@
 <?php get_header(); ?>
 <!-- single-projexts.php -->
 <script>
+/*
 function adjustContentPadding() {
     const header = document.getElementById('sticky-header');
     const firstSection = document.querySelector('#single-project-wrap'); // or 'main' or first section

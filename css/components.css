@@ -80,15 +80,15 @@
   font-weight: 600;
   margin: 1rem 0;
   padding: 0 1rem;
-  color: #333;
-  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
+  color:var(--dark-blue);
+  transition: color 0.3s ease,  transform 0.3s ease;
 }
 /* Hover effect */
 
 .projects-thumb:hover .project-title {
-  color: #e67e22;
+  color:var(--blue);
   /* warm orange accent */
-  text-shadow: 0 2px 4px rgba(230, 126, 34, 0.4);
+  
   text-decoration: none;
 }
 /* Links */
@@ -291,7 +291,7 @@ p.address {
   width: 100%;
   max-width: 1100px;
   position: relative;
-  border: solid 1px red;
+  
 }
 .fab-contact {
   position: absolute;
@@ -313,7 +313,8 @@ p.address {
   z-index: 999;
   /* keep above other elements */
   opacity: 0;
-  transition: opacity 0.5s ease;
+  text-align: center;
+  transition: opacity 2s ease;
   padding: 0.5rem 1.5rem;
 }
 
@@ -328,38 +329,18 @@ p.address {
   }
 }
 
-/*
-.fade-in-contact-button {
-  animation: fadeInContactButton 3s ease 0s forwards, pulse infinite ease-in-out;
-}
-
-@keyframes fadeInContactButton {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-}
-
-*/
 .fab-contact:hover {
-  background: var(--orange-light);
+  background: var(--contrast-1);
   box-shadow: 0 6px 18px rgba(255, 140, 66, 0.35);
+  color: #fff;
+  scale:1.05;
 }
 .fab-contact:active {
-  background: var(--orange-dark);
+  background: var(--contrast-1);
   transform: scale(0.98);
   box-shadow: 0 3px 8px rgba(255, 140, 66, 0.25);
   color: #fff;
+  scale:0.95;
 }
 .fab-contact:visited {
   color: #ffffff;
@@ -449,13 +430,17 @@ section#contact-section.active .section-content {
 .hero-image img {
   width: 100%;
   height: auto;
+  max-height: 80vh;
   border-radius: 8px;
   margin-bottom: 1.5rem;
+
 }
-.project-txt {
+p.project-txt {
   margin-bottom: 2rem;
   line-height: 1.6;
   padding: 0 clamp(10px, 5%, 100px);
+  color: #444;
+  
 }
 /*  */
 

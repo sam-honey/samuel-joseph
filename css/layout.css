@@ -230,7 +230,7 @@ padding: 1vh 0 1.5vh 0;
   align-items: center;
   /* vertically center content */
   justify-content: center;
-  opacity: 1;
+  opacity: 0;
   /* start hidden for home page fade-in */
   transition: opacity 1s ease;
   display: flex;
@@ -364,7 +364,11 @@ layout
   color: #fff;
   padding: 0 0 0.5rem 0;
   margin: 0;
+  font-size: clamp(1rem, 1.5vw , 1.25remrem);
+  
  }
+
+
  footer #footer-content {
   background: rgb(255, 255, 255, 0.75);
   display: flex;

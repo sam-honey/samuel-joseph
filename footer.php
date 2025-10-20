@@ -14,7 +14,7 @@
 <footer id="footer-container">
 <?php wp_footer(); ?>
 <div class="width-constraints">
-<p>Samuel Jospeh Decor - 55 Ringwood Rd, Bath, BA2 3JL</p>
+<p class="addressBlock"><!--JS--></p>
 
 <div id="footer-icons">
 

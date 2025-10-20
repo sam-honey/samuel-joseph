@@ -27,6 +27,14 @@ function sjhoney_enqueue_scripts() {
         true // load in footer
     );
 
+   wp_enqueue_script(
+        'siblingPadding',
+        $theme_dir . 'siblingPadding.js',
+        array(), // dependencies if any (like jQuery), empty here
+        filemtime(get_template_directory() . '/js/siblingPadding.js'),
+        true // load in footer
+    );
+
 
 
     wp_enqueue_script(

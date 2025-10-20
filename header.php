@@ -47,12 +47,12 @@ document.documentElement.classList.add('js-enabled');
 
 				<a class="emailLink header-link" href="#">
 					<span class="mobile-label mobile-header-display">Email</span>
-        			<span class="desktop-label desktop-header-display"></span>
+        			<span class="desktop-label desktop-header-display"><!--JS--></span>
 				</a> 
 
 				<a href="#" class="callLink header-link">
         			<span class="mobile-label mobile-header-display">Telephone</span>
-       				<span class="desktop-label desktop-header-display"></span>
+       				<span class="desktop-label desktop-header-display"><!--JS--></span>
       			</a>
 
 			</div>
