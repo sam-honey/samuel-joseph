@@ -69,7 +69,7 @@
   </div>
 </div>
 
-<
+
 </script>
 
 <!-- Auto scroll  -->
@@ -141,6 +141,7 @@ window.addEventListener('resize', adjustContentPadding);
 
 
 <script>
+/*
 document.addEventListener("DOMContentLoaded", function () {
   const fab = document.querySelector(".fab-contact");
   if (!fab) return;
@@ -186,6 +187,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fadeOutObserver.observe(footer);
   }
 });
+*/
 
 </script>
 

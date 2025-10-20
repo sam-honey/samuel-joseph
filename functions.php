@@ -53,6 +53,14 @@ function sjhoney_enqueue_scripts() {
         true
     );
 
+     wp_enqueue_script(
+        'fade-in-contact-button',
+        $theme_dir . 'fade-in-contact-button.js',
+        array(),
+        filemtime(get_template_directory() . '/js/fade-in-contact-button.js'),
+        true
+    );
+
       wp_enqueue_script(
         'add-contact-details',
         $theme_dir . 'contact-details.js',
