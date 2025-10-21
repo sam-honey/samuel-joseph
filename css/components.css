@@ -392,7 +392,7 @@ section#contact-section.active h2 {
 
 section#contact-section .section-content {
   background: #fff;
-  padding: 2rem clamp(4px, 2vw, 20px);
+  padding: 2rem clamp(4px, 2vw, 20px) 2rem clamp(4px, 2vw, 20px) ;
   margin: 0 auto;
   /* optional: prevent content from exceeding viewport too much */
   overflow: visible;
@@ -405,66 +405,7 @@ section#contact-section .section-content {
   /* slightly below final position */
   transition: opacity 1s ease 0.2s, transform 0.4s ease 0.2s;
   /* delay for stagger */
-}
-/* Inner content visible when overlay active */
-
-section#contact-section.active .section-content {
-  opacity: 1;
-  transform: translateY(0);
-}
-/* Light bx   */
-
-#enlarged-image {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-#enlarged-image img {
-  max-width: 90%;
-  max-height: 90%;
-}
-.hero-image img {
   width: 100%;
-  height: auto;
-  max-height: 80vh;
-  border-radius: 8px;
-  margin-bottom: 1.5rem;
+}
 
-}
-p.project-txt {
-  margin-bottom: 2rem;
-  line-height: 1.6;
-  padding: 0 clamp(10px, 5%, 100px);
-  color: #444;
-  
-}
-/*  */
 
-/* Thumbnails grid */
-
-#project-thumbs {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 1rem;
-}
-#project-thumbs .img-frame img {
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-#project-thumbs .img-frame img:hover {
-  transform: scale(1.05);
-}
-.image-wrap {
-  border: solid 2px red;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
