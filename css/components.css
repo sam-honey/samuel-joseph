@@ -390,7 +390,7 @@ section#contact-section.active h2 {
 }
 /* Inner content */
 
-section#contact-section .section-content {
+section#contact-section .section-content{
   background: #fff;
   padding: 2rem clamp(4px, 2vw, 20px) 2rem clamp(4px, 2vw, 20px) ;
   margin: 0 auto;
@@ -407,5 +407,7 @@ section#contact-section .section-content {
   /* delay for stagger */
   width: 100%;
 }
+
+
 
 
