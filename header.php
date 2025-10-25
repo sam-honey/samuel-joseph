@@ -35,7 +35,7 @@ document.documentElement.classList.add('js-enabled');
 
 			<div id="header-el-wrap">
 
-				<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-symbol[master][expanded]trans.svg" alt="LOgo">
+				<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-transbg.svg" alt="LOgo">
 				<div id="header-text">
 					<h1 id="header-title-name">SAMUEL JOSEPH</h1>
 					<h2 id="header-title-service">DECOR</h2>

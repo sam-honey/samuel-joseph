@@ -34,7 +34,7 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  border: solid 2px yellow;flex: 1 1 0;
+ flex: 1 1 0;
   /* flex-grow and shrink properly */
   
   display: flex;
@@ -45,7 +45,7 @@
   width: 100%;
   justify-content: center;
   max-width: 1900px;
-  border: dashed 2px green;
+  
   max-height: 100vh;
 height: 100vh;
 align-items: center;
@@ -226,7 +226,7 @@ Hearder
  
  margin-right: 1vw;
  margin-left: 1.25vw;
-  padding: 0.25vw;
+  padding: 0.30vw;
 
  
  }
