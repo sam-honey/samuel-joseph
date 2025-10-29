@@ -34,9 +34,8 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
- flex: 1 1 0;
+  flex: 1 1 0;
   /* flex-grow and shrink properly */
-  
   display: flex;
   flex-direction: column;
   /* stack vertically */
@@ -45,37 +44,21 @@
   width: 100%;
   justify-content: center;
   max-width: 1900px;
-  
   max-height: 100vh;
-height: 100vh;
-align-items: center;
+  height: 100vh;
+  align-items: center;
  }
-
- #logo-wrap {
-  
+ #logo-wrap {}
+ #main-logo-svg {
+  display: block;
+  padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
+  width: 50%;
+  padding: 0;
+  max-width: 20rem;
  }
-
-
-
-#main-logo-svg{
- 
-display: block;
-padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
-width: 50%;
-padding: 0;
-max-width: 20rem;
-}
-
-
-
-
-
  svg#sj-logo {
   padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
-
  }
-
-
  h1#samuel-joseph {
   color: #fff;
   margin: clamp(0vw, 7vh, 3rem) 0 4% 0;
@@ -86,13 +69,10 @@ max-width: 20rem;
   animation: fadeText 3s ease-in-out 2s forwards;
   display: inline-block;
   width: auto;
- 
-  
   /*
   background: #355866;
   background: rgb(53, 88, 102, 0.5);
   */
-
  }
  h2#decor {
   color: #eee;
@@ -100,18 +80,20 @@ max-width: 20rem;
   margin: 0;
   font-family: 'JosefinSansSubset', serif;
   letter-spacing: 3px;
-  font-size: clamp(1.5rem, 6vw, 4rem);
+  font-size: clamp(1.3rem, 5.5vw, 4rem);
   opacity: 0;
   animation: fadeText 3s ease-in-out 3s forwards;
   text-align: center;
  }
-
-
  @keyframes fadeText {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-/*This trigger slide up of home screen "
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+ }
+ /*This trigger slide up of home screen "
 "
 
 
@@ -119,48 +101,50 @@ max-width: 20rem;
   opacity: 1;
   transition: opacity 2.5s ease;
   /* slow, subtle fade */
+
  }
  #logo.fade-out {
   opacity: 0;
  }
+ /* -----------------------------------   */
 
-/* -----------------------------------   */
-/* ## Header   */
-/* -----------------------------------   */
-#sticky-header .inner-width-constraint {
+ /* ## Header   */
+
+ /* -----------------------------------   */
+
+ #sticky-header .inner-width-constraint {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-#sticky-header .inner-width-constraint div:last-child {
+ }
+ #sticky-header .inner-width-constraint div:last-child {
   align-self: flex-end;
-}
-a.header-links {
+ }
+ a.header-links {
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-#header-el-2-contact {
+ }
+ #header-el-2-contact {
   align-items: flex-end;
   display: inline-flex;
   flex-direction: row;
   padding: 0.1rem 0.3rem;
   justify-content: center;
   border: solid 1px #fff;
-}
-#header-el-2-contact a {
+ }
+ #header-el-2-contact a {
   display: flex;
   flex-direction: column;
   color: #fff;
   text-align: right;
   font-size: 1rem;
-}
-#header-el-2-contact a:first-child {
+ }
+ #header-el-2-contact a:first-child {
   padding-right: 10px;
-}
-.desktop-header-display {
-    display:none;
-  }
-
-@media (min-width: 768px) {
+ }
+ .desktop-header-display {
+  display: none;
+ }
+ @media (min-width: 768px) {
   #sticky-header .inner-width-constraint {
     flex-direction: row;
     justify-content: space-between;
@@ -169,7 +153,7 @@ a.header-links {
     justify-content: flex-end;
     padding-left: 0;
     flex: 0;
-    border:none;
+    border: none;
     flex-direction: column;
   }
   #header-el-2-contact a:first-child {
@@ -181,20 +165,17 @@ a.header-links {
   .desktop-header-display {
     display: inline-block;
   }
-  #header-el-2-contact a{
-    font-size: clamp(1rem, 2.5vw, 1.75rem);
-  } 
-}
-
-
-#sticky-header .inner-width-constraint>div {}
-#sticky-header .inner-width-constraint a {
+  #header-el-2-contact a {
+    font-size: clamp(1rem, 2.3vw, 1.75rem);
+  }
+ }
+ #sticky-header .inner-width-constraint>div {}
+ #sticky-header .inner-width-constraint a {
   display: inline-block;
-}
-a.header-link {
+ }
+ a.header-link {
   font-family: "Times New Roman", Times, serif;
-}
-
+ }
  /*--------------------------
 Hearder
 ----------------------------*/
@@ -203,7 +184,6 @@ Hearder
   font-family: 'palatino', serif;
   display: inline-block;
   color: #fff;
-  
   font-size: clamp(1.5rem, 3vw, 3rem);
   padding: 0;
   margin: 0;
@@ -217,23 +197,15 @@ Hearder
   margin: 0;
   letter-spacing: 3px;
  }
-
  #logo-header {
   display: block;
   width: 50px;
   height: 50px;
-  
- 
- margin-right: 1vw;
- margin-left: 1.25vw;
+  margin-right: 1vw;
+  margin-left: 1.25vw;
   padding: 0.30vw;
-
- 
  }
-
- #sticky-header  * {
-  
- }
+ #sticky-header * {}
  /* ===========================
    Sticky Header
    =========================== */
@@ -241,8 +213,8 @@ Hearder
  #header-el-wrap {
   display: flex;
   flex-direction: row;
-align-items: center;
-padding: 1vh 0 1.5vh 0;
+  align-items: center;
+  padding: 1vh 0 1.5vh 0;
  }
  #header-text {
   display: flex;
@@ -253,7 +225,8 @@ padding: 1vh 0 1.5vh 0;
   /* or fixed if you want it always on top */
   top: 0;
   width: 100%;
-  background: var(--dark-blue);/* #355866;
+  background: var(--dark-blue);
+  /* #355866;
   /* or your site background */
   z-index: 997;
   border-bottom: solid 2px var(--blue);
@@ -270,7 +243,6 @@ padding: 1vh 0 1.5vh 0;
   display: flex;
   align-items: center;
   /* vertically center logo + nav */
-
   /* optional spacing around logo */
   height: auto;
   flex-direction: row;
@@ -305,9 +277,7 @@ padding: 1vh 0 1.5vh 0;
  /* Responsive adjustments */
 
  @media (max-width: 768px) {
-  #sticky-header {
-    
-  }
+  #sticky-header {}
   #sticky-header nav a {
     padding: 0.25rem 0.5rem;
   }
@@ -322,7 +292,6 @@ layout
  }
  #contact {
   max-width: 1000px;
-
  }
  /* layout  home */
 
@@ -342,7 +311,7 @@ layout
   align-content: center;
   justify-content: center;
   flex: 0;
-  padding-top: 4rem ;
+  padding-top: 4rem;
  }
  .home-page .section-content {
   background: rgb(255, 255, 255, 0.25);
@@ -355,22 +324,15 @@ layout
   align-self: center;
   max-width: 1000px;
   padding: clamp(1rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem) clamp(1rem, 6vw, 4rem) clamp(1rem, 4vw, 4rem);
-
-
-
-
  }
-.home-page .section-content p {
+ .home-page .section-content p {
   text-align: center;
-}
-
-@media (max-width: 1000px) {
+ }
+ @media (max-width: 1000px) {
   .home-page .section-content p {
     text-align: left;
   }
-}
-
-
+ }
  .fb-logo {
   width: 60px;
  }
@@ -389,7 +351,6 @@ layout
   justify-content: center;
   flex: 0;
   background: var(--dark-blue);
-
   background-size: 50%;
   background-attachment: fixed;
   padding: 0.5rem 0 1rem 0;
@@ -398,11 +359,8 @@ layout
   color: #fff;
   padding: 0 0 0.5rem 0;
   margin: 0;
-  font-size: clamp(1rem, 1.5vw , 1.25remrem);
-  
+  font-size: clamp(1rem, 1.5vw, 1.25remrem);
  }
-
-
  footer #footer-content {
   background: rgb(255, 255, 255, 0.75);
   display: flex;
@@ -440,7 +398,6 @@ single project page*/
   background: #fff;
   padding: clamp(1rem, 3vw, 4rem) clamp(1rem, 3vw, 4rem);
   height: auto;
-  
  }
  #project-contact-wrapper {
   background: #fff;
@@ -452,15 +409,15 @@ single project page*/
   justify-content: center;
   padding: 1rem;
  }
-/* Inner content visible when overlay active */
+ /* Inner content visible when overlay active */
 
-section#contact-section.active .section-content {
+ section#contact-section.active .section-content {
   opacity: 1;
   transform: translateY(0);
-}
-/* Light bx   */
+ }
+ /* Light bx   */
 
-#enlarged-image {
+ #enlarged-image {
   display: none;
   position: fixed;
   inset: 0;
@@ -468,49 +425,47 @@ section#contact-section.active .section-content {
   justify-content: center;
   align-items: center;
   z-index: 1000;
-}
-#enlarged-image img {
+ }
+ #enlarged-image img {
   max-width: 90%;
   max-height: 90%;
-}
-.hero-image img {
+ }
+ .hero-image img {
   width: 100%;
   height: auto;
   max-height: 80vh;
   border-radius: 8px;
   margin-bottom: 1.5rem;
-
-}
-p.project-txt {
+ }
+ p.project-txt {
   margin-bottom: 2rem;
   line-height: 1.6;
   padding: 0 clamp(10px, 2%, 100px);
   color: #444;
-  
-}
-/*  */
+ }
+ /*  */
 
-/* Thumbnails grid */
+ /* Thumbnails grid */
 
-#project-thumbs {
+ #project-thumbs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
-}
-#project-thumbs .img-frame img {
+ }
+ #project-thumbs .img-frame img {
   width: 100%;
   height: auto;
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.2s ease;
-}
-#project-thumbs .img-frame img:hover {
+ }
+ #project-thumbs .img-frame img:hover {
   transform: scale(1.05);
-}
-.image-wrap {
+ }
+ .image-wrap {
   border: solid 2px red;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
+ }

@@ -11,3 +11,9 @@ Thumbs.db
 node_modules/
 dist/
 build/
+
+
+# Ignore everything except this folder
+*
+!src/
+!README.md

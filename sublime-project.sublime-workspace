@@ -36,61 +36,18 @@
 	"buffers":
 	[
 		{
-			"file": "template-parts/content-project-thumbs.php",
+			"file": "/H/wamp64/www/samueljoseph.uk/wp-config.php",
 			"settings":
 			{
-				"buffer_size": 1343,
+				"buffer_size": 3546,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "single-projects.php",
+			"file": "home-2.php",
 			"settings":
 			{
-				"buffer_size": 2168,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "content-projects.php",
-			"settings":
-			{
-				"buffer_size": 1283,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "LICENSE",
-			"settings":
-			{
-				"buffer_size": 18046,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 1410,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "{\"name\":\"\",\"short_name\":\"\",\"icons\":[{\"src\":\"/android-chrome-192x192.png\",\"sizes\":\"192x192\",\"type\":\"image/png\"},{\"src\":\"/android-chrome-512x512.png\",\"sizes\":\"512x512\",\"type\":\"image/png\"}],\"theme_color\":\"#ffffff\",\"background_color\":\"#ffffff\",\"display\":\"standalone\"}",
-			"file": "favicon/site.webmanifest",
-			"file_size": 263,
-			"file_write_time": 133596317271653442,
-			"settings":
-			{
-				"buffer_size": 263,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/H/wamp64/www/sjhoney.co.uk/wp-content/themes/old for ref/header.php",
-			"settings":
-			{
-				"buffer_size": 2860,
+				"buffer_size": 5071,
 				"line_ending": "Windows"
 			}
 		},
@@ -98,19 +55,8 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 8731,
+				"buffer_size": 11384,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<?php\n/**\n * sjhoney functions and definitions\n *\n * @link https://developer.wordpress.org/themes/basics/theme-functions/\n *\n * @package sjhoney\n */\n\n\nfunction sjhoney_enqueue_scripts() {\n    $theme_dir = get_template_directory_uri() . '/js/';\n\n    wp_enqueue_script(\n        'fadein-scroll',\n        $theme_dir . 'fadein-scroll.js',\n        array(), // dependencies if any (like jQuery), empty here\n        filemtime(get_template_directory() . '/js/fadein-scroll.js'),\n        true // load in footer\n    );\n\n  wp_enqueue_script(\n        'parallax',\n        $theme_dir . 'parallax.js',\n        array(), // dependencies if any (like jQuery), empty here\n        filemtime(get_template_directory() . '/js/parallax.js'),\n        true // load in footer\n    );\n\n\n\n    wp_enqueue_script(\n        'light-box',\n        $theme_dir . 'light-box.js',\n        array(),\n        filemtime(get_template_directory() . '/js/light-box.js'),\n        true\n    );\n\n    wp_enqueue_script(\n        'fixed-header',\n        $theme_dir . 'fixed-header.js',\n        array(),\n        filemtime(get_template_directory() . '/js/fixed-header.js'),\n        true\n    );\n\n    wp_enqueue_script(\n        'float-contact-form',\n        $theme_dir . 'float-contact-form.js',\n        array(),\n        filemtime(get_template_directory() . '/js/float-contact-form.js'),\n        true\n    );\n\n    # wp_enqueue_script(\n    #     'contact',\n    #     $theme_dir . 'contact.js',\n    #     array(),\n    #     filemtime(get_template_directory() . '/js/contact.js'),\n    #     true\n    # );\n\n    wp_enqueue_script(\n        'main',\n        $theme_dir . 'main.js',\n        array('float-contact-form', 'fixed-header'),\n        filemtime(get_template_directory() . '/js/main.js'),\n        true\n    );\n}\nadd_action('wp_enqueue_scripts', 'sjhoney_enqueue_scripts');\n\n\n\n\n\nif ( ! defined( '_S_VERSION' ) ) {\n	// Replace the version number of the theme on each release.\n	define( '_S_VERSION', '1.0.0' );\n}\n\n\n/**\n * Sets up theme defaults and registers support for various WordPress features.\n *\n * Note that this function is hooked into the after_setup_theme hook, which\n * runs before the init hook. The init hook is too late for some features, such\n * as indicating support for post thumbnails.\n */\nfunction sjhoney_setup() {\n	/*\n		* Make theme available for translation.\n		* Translations can be filed in the /languages/ directory.\n		* If you're building a theme based on sjhoney, use a find and replace\n		* to change 'sjhoney' to the name of your theme in all the template files.\n		*/\n	load_theme_textdomain( 'sjhoney', get_template_directory() . '/languages' );\n\n	// Add default posts and comments RSS feed links to head.\n	add_theme_support( 'automatic-feed-links' );\n    add_image_size('project-thumb', 800, 600, true);\n\n	/*\n		* Let WordPress manage the document title.\n		* By adding theme support, we declare that this theme does not use a\n		* hard-coded <title> tag in the document head, and expect WordPress to\n		* provide it for us.\n		*/\n	add_theme_support( 'title-tag' );\n\n	/*\n		* Enable support for Post Thumbnails on posts and pages.\n		*\n		* @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/\n		*/\n	add_theme_support( 'post-thumbnails' );\n\n	// This theme uses wp_nav_menu() in one location.\n	register_nav_menus(\n		array(\n			'menu-1' => esc_html__( 'Primary', 'sjhoney' ),\n		)\n	);\n\n	/*\n		* Switch default core markup for search form, comment form, and comments\n		* to output valid HTML5.\n		*/\n	add_theme_support(\n		'html5',\n		array(\n			'search-form',\n			'comment-form',\n			'comment-list',\n			'gallery',\n			'caption',\n			'style',\n			'script',\n		)\n	);\n\n	// Set up the WordPress core custom background feature.\n	add_theme_support(\n		'custom-background',\n		apply_filters(\n			'sjhoney_custom_background_args',\n			array(\n				'default-color' => 'ffffff',\n				'default-image' => '',\n			)\n		)\n	);\n\n	// Add theme support for selective refresh for widgets.\n	add_theme_support( 'customize-selective-refresh-widgets' );\n\n	/**\n	 * Add support for core custom logo.\n	 *\n	 * @link https://codex.wordpress.org/Theme_Logo\n	 */\n	add_theme_support(\n		'custom-logo',\n		array(\n			'height'      => 250,\n			'width'       => 250,\n			'flex-width'  => true,\n			'flex-height' => true,\n		)\n	);\n}\nadd_action( 'after_setup_theme', 'sjhoney_setup' );\n\n/**\n * Set the content width in pixels, based on the theme's design and stylesheet.\n *\n * Priority 0 to make it available to lower priority callbacks.\n *\n * @global int $content_width\n */\nfunction sjhoney_content_width() {\n	$GLOBALS['content_width'] = apply_filters( 'sjhoney_content_width', 640 );\n}\nadd_action( 'after_setup_theme', 'sjhoney_content_width', 0 );\n\n/**\n * Register widget area.\n *\n * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar\n */\nfunction sjhoney_widgets_init() {\n	register_sidebar(\n		array(\n			'name'          => esc_html__( 'Sidebar', 'sjhoney' ),\n			'id'            => 'sidebar-1',\n			'description'   => esc_html__( 'Add widgets here.', 'sjhoney' ),\n			'before_widget' => '<section id=\"%1$s\" class=\"widget %2$s\">',\n			'after_widget'  => '</section>',\n			'before_title'  => '<h2 class=\"widget-title\">',\n			'after_title'   => '</h2>',\n		)\n	);\n}\nadd_action( 'widgets_init', 'sjhoney_widgets_init' );\n\n/**\n * Enqueue scripts and styles.\n */\nfunction sjhoney_enqueue_styles() {\n    // Enqueue the main style.css (required by WordPress)\n    wp_enqueue_style(\n        'main-style',\n        get_stylesheet_uri()\n    );\n\n    // Enqueue modular CSS files in proper dependency order\n    wp_enqueue_style(\n        'reset-style',\n        get_template_directory_uri() . '/css/reset.css',\n        array('main-style'), // dependent on main-style\n        '1.0.0'\n    );\n\n    wp_enqueue_style(\n        'variables-style',\n        get_template_directory_uri() . '/css/variables.css',\n        array('reset-style'), // dependent on reset-style\n        '1.0.0'\n    );\n\n    wp_enqueue_style(\n        'base-style',\n        get_template_directory_uri() . '/css/base.css',\n        array('variables-style'), // dependent on variables-style\n        '1.0.0'\n    );\n\n    wp_enqueue_style(\n        'layout-style',\n        get_template_directory_uri() . '/css/layout.css',\n        array('base-style'), // dependent on base-style\n        '1.0.0'\n    );\n\n    wp_enqueue_style(\n        'components-style',\n        get_template_directory_uri() . '/css/components.css',\n        array('layout-style'), // dependent on layout-style\n        '1.0.0'\n    );\n\n    wp_enqueue_style(\n        'custom-style',\n        get_template_directory_uri() . '/css/custom.css',\n        array('components-style'), // dependent on components-style\n        '1.0.0'\n    );\n}\nadd_action('wp_enqueue_scripts', 'sjhoney_enqueue_styles');\n\n\n/**\n * Implement the Custom Header feature.\n */\nrequire get_template_directory() . '/inc/custom-header.php';\n\n/**\n * Custom template tags for this theme.\n */\nrequire get_template_directory() . '/inc/template-tags.php';\n\n/**\n * Functions which enhance the theme by hooking into WordPress.\n */\nrequire get_template_directory() . '/inc/template-functions.php';\n\n/**\n * Customizer additions.\n */\nrequire get_template_directory() . '/inc/customizer.php';\n\n/**\n * Load Jetpack compatibility file.\n */\nif ( defined( 'JETPACK__VERSION' ) ) {\n	require get_template_directory() . '/inc/jetpack.php';\n}\n/**\n * Enqueue scripts and styles.\n */\n\nfunction display_image($sub_dir, $image_file, $alt = 'Image Alt Text', $width = null, $height = null) {\n    // Get the template directory URL\n    $template_directory_url = esc_url(get_template_directory_uri());\n\n    // Construct the image tag\n    $image_src = $template_directory_url . $sub_dir . $image_file;\n\n    // Build additional attributes based on provided values\n    $attributes = '';\n    if ($width !== null) {\n        $attributes .= ' width=\"' . esc_attr($width) . '\"';\n    }\n    if ($height !== null) {\n        $attributes .= ' height=\"' . esc_attr($height) . '\"';\n    }\n\n    // Construct the complete image tag\n    $image_tag = '<img src=\"' . $image_src . '\" alt=\"' . esc_attr($alt) . '\"' . $attributes . '>';\n\n    // Output the image tag\n    echo $image_tag;\n}\n\nregister_post_type('projects', array(\n    'labels' => array(\n        'name' => 'Projects',\n        'singular_name' => 'Project',\n    ),\n    'public' => true,\n    'has_archive' => true,\n    'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'), // include 'thumbnail'\n));\n\n// Set default alt text for project thumbnails if blank\nadd_filter( 'wp_get_attachment_image_attributes', 'sjhoney_project_image_alt', 20, 3 );\nfunction sjhoney_project_image_alt( $attr, $attachment, $size ) {\n    if ( get_post_type() === 'projects' ) {\n        if ( ! isset( $attr['alt'] ) || $attr['alt'] === '' ) {\n            $attr['alt'] = 'SJHoney Project Image';\n        }\n    }\n    return $attr;\n}\n",
-			"file": "/C/Users/samue/AppData/Local/Temp/fz3temp-3/functions.php",
-			"file_size": 9202,
-			"file_write_time": 134038010703283660,
-			"settings":
-			{
-				"buffer_size": 8867,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -150,11 +96,29 @@
 	},
 	"expanded_folders":
 	[
-		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney",
-		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney/template-parts"
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1"
 	],
 	"file_history":
 	[
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/H/wamp64/www/sjhoney.co.uk/index.php",
+		"/H/wamp64/www/samueljoseph.uk/index.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/index.php",
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney/index.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/index-xx.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-config-sample.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/create_autologin_pcmr6xubn5p060o.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/dbtest.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header.php",
+		"/H/wamp64/www/samueljoseph.uk/dbtest.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/content-projects.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/single-projects.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-3/functions.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/favicon/site.webmanifest",
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/old for ref/header.php",
 		"/G/node-pro-3/routes/user1Routes.js",
 		"/G/node-pro-3/controllers/user1ContentController.js",
 		"/G/node-pro-3/models/DecoratorProfile.js",
@@ -172,7 +136,6 @@
 		"/G/WP Backups/sjhoney.co.uk/Full Installation Backups/24-05-12/livel.sql",
 		"/C/Users/samue/Desktop/local.sql",
 		"/H/WAMP/www/sjhoney.co.uk/wp-config.php",
-		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/wp-config.php",
 		"/C/Users/samue/Desktop/sjhoney.co.uk/wp-config.php",
 		"/H/WAMPP/www/sjhoney.co.uk/wp-config.php",
 		"/G/node-pro-3/views/user1/create-profile-decorator.ejs",
@@ -264,25 +227,7 @@
 		"/G/node-pro-3/public/CSS/style.css",
 		"/G/node-pro-3/public/login.html",
 		"/G/node-pro-3/models/User1Content.js",
-		"/G/node-pro-3/views/partials/head.ejs",
-		"/G/node-pro-3/test.js",
-		"/G/node-pro-3/config/db.js",
-		"/G/node-pro-3/public/signup-user-2.html",
-		"/G/node-pro-3/views/user1-dashboard.ejs",
-		"/G/node-pro-3/views/user1-dashborad.ejs",
-		"/G/node-pro-3/views/user-1dashboard.ejs",
-		"/G/node-pro-3/public/X_index.html",
-		"/G/node-pro-3/views/admin/user1-dashboard.ejs",
-		"/G/node-pro-3/views/admin/users-list.ejs",
-		"/G/node-pro-3/public/signup-user-1.html",
-		"/G/node-pro-3/.gitignore",
-		"/G/node-pro-3/package.json",
-		"/G/node-pro-3/public/signup.html",
-		"/G/node-pro-3/server-3.js",
-		"/G/node-pro-3/server-xx.js",
-		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/css/style.css",
-		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/master-split-type.svg",
-		"/H/WAMPP/www/samueljhoney.com/wp-content/themes/samhoneydesign-theme/home-3.php"
+		"/G/node-pro-3/views/partials/head.ejs"
 	],
 	"find":
 	{
@@ -421,149 +366,59 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "template-parts/content-project-thumbs.php",
+					"file": "/H/wamp64/www/samueljoseph.uk/wp-config.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1343,
+						"buffer_size": 3546,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1067,
-								1067
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "single-projects.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2168,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1496,
-								1496
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "content-projects.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1283,
-								1283
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 240.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "LICENSE",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 18046,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1410,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								786,
-								786
+								1113,
+								1113
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "home-2.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5071,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								799,
+								799
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -573,12 +428,12 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "favicon/site.webmanifest",
+					"buffer": 2,
+					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 263,
+						"buffer_size": 11384,
 						"regions":
 						{
 						},
@@ -591,103 +446,15 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/H/wamp64/www/sjhoney.co.uk/wp-content/themes/old for ref/header.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2860,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1568,
-								820
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8731,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8503,
-								8503
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5460.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "/C/Users/samue/AppData/Local/Temp/fz3temp-3/functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 8867,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8866,
-								8866
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5538.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
 					"type": "text"
 				}
 			]

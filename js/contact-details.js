@@ -2,7 +2,7 @@ const addContactDetails = (() => {
 
   function init() {
     /* Email */
-    const emailParts = ["info", "@", "sjhoney", ".", "co", ".", "uk"];
+    const emailParts = ["info", "@", "samueljoesph", ".", "uk"];
     const emailFull = emailParts.join("");
     const emailLinks = document.querySelectorAll(".emailLink");
     
@@ -25,7 +25,7 @@ const addContactDetails = (() => {
 
     /* Address */
     const addressParts = [
-      "SJHoney Property Solutions, ",
+      "Samuel Joseph Decor, ",
       "55 Ringwood Rd, ",
       "Oldfield, Bath, ",
       "BA2 3JL"

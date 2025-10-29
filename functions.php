@@ -337,23 +337,74 @@ function display_image($sub_dir, $image_file, $alt = 'Image Alt Text', $width = 
     echo $image_tag;
 }
 
-register_post_type('projects', array(
-    'labels' => array(
-        'name' => 'Projects',
-        'singular_name' => 'Project',
-    ),
-    'public' => true,
-    'has_archive' => true,
-    'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'), // include 'thumbnail'
-));
+//-------------------------------
+// Register Custom Post Type: Projects
+// -------------------------------
+function sjh_register_projects_post_type() {
+    $labels = array(
+        'name'               => 'Projects',
+        'singular_name'      => 'Project',
+        'add_new'            => 'Add New Project',
+        'add_new_item'       => 'Add New Project',
+        'edit_item'          => 'Edit Project',
+        'new_item'           => 'New Project',
+        'view_item'          => 'View Project',
+        'search_items'       => 'Search Projects',
+        'not_found'          => 'No Projects found',
+        'not_found_in_trash' => 'No Projects found in Trash',
+        'all_items'          => 'All Projects',
+        'menu_name'          => 'Projects',
+    );
 
-add_filter( 'wp_get_attachment_image_attributes', function( $attr, $attachment, $size ) {
-    if ( get_post_type() === 'projects' ) {
-        if ( empty( $attr['alt'] ) ) {
-            $attr['alt'] = 'SJHoney Project Image';
+    $args = array(
+        'labels'             => $labels,
+        'public'             => true,
+        'has_archive'        => true,
+        'rewrite'            => array('slug' => 'projects'), // clean URLs
+        'menu_icon'          => 'dashicons-portfolio',
+        'menu_position'      => 5,
+        'show_in_rest'       => true, // enable Gutenberg & REST API
+        'supports'           => array(
+            'title',
+            'editor',
+            'thumbnail',
+            'excerpt',
+            'custom-fields',
+        ),
+    );
+
+    register_post_type('projects', $args);
+}
+add_action('init', 'sjh_register_projects_post_type');
+// -------------------------------
+// Default alt text for Project images
+// -------------------------------
+add_filter('wp_get_attachment_image_attributes', function($attr, $attachment, $size) {
+    // Get the parent post ID of the image (featured image or inserted)
+    $parent_id = $attachment->post_parent;
+
+    // Check if the parent post is of type 'projects'
+    if (get_post_type($parent_id) === 'projects') {
+
+        // Get the project title
+        $project_title = get_the_title($parent_id);
+
+        // Define your company name
+        $company_name = 'Samuel Joseph Decor';
+
+        // Build the alt text
+        if (empty($attr['alt'])) {
+            // If no alt set at all, use: "Project Title – Samuel Joseph Decor"
+            $attr['alt'] = esc_attr($project_title . ' – ' . $company_name);
+        } else {
+            // If an alt text already exists, make sure your company name is appended once
+            if (strpos($attr['alt'], $company_name) === false) {
+                $attr['alt'] .= ' – ' . $company_name;
+            }
         }
     }
+
     return $attr;
-}, 10, 3 );
+}, 10, 3);
 
 
