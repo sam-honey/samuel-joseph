@@ -81,7 +81,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
       </a>
     </div>
 
-    <?php echo do_shortcode('[contact-form-7 id="8" title="Contact form 1"]'); ?>
+    <?php echo do_shortcode('[contact-form-7 id="d79f602" title="Contact form 1"]'); ?>
 
     <p class="address" id="addressBlock"></p>
   </div>

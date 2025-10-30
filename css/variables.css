@@ -3,11 +3,18 @@
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "Fira Code", "Courier New", monospace;
   --color-text: #3B2F2F;/*Dark brown --contrast-1:#ba4864;*/
+  
   --blue: #69838d;
   --dark-blue : #355866;
 
+
   --contrast-1:#fbb03b; /*orange */
+  --contrast-1-alt: #fcb857;
+
+
   --contrast-2:#f9f3e0; /*cream */
+
+
   --contact-form-bg: #fff9f4;
   --max-width: 1200px;
   --max-width-1: 450px;

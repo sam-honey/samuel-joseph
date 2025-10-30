@@ -103,6 +103,11 @@
 /* =========================
    ## General contact section styling
 ========================= */
+section#contact-section h2{
+  color: #444;
+}
+
+
 
 #contact-options {
   display: flex;
@@ -142,6 +147,7 @@
 p.address {
   max-width: var(--max-width-1);
   width: 100%;
+  color: #555;
   display: block;
   margin: var(--px-16);
   background: #fff;
@@ -185,7 +191,7 @@ p.address {
   margin: 0 auto;
   /* center */
   padding: clamp( 5px, 2vw, 20px);
-  background: var(--contact-form-bg);
+  background: var(--blue);
   /* soft warm background */
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -378,7 +384,11 @@ section#contact-section {
   min-height: 100vh;
   /* space from top on small screens */
 }
+
 /* Overlay visible state */
+section#contact-section.active .section-content{
+  background: rgb(255, 255, 255, 0.7);
+}
 
 section#contact-section.active {
   opacity: 1;
@@ -399,7 +409,7 @@ section#contact-section .section-content{
   max-width: 600px;
   width: 90%;
   border-radius: 12px;
-  opacity: 0;
+  opacity:0;
   /* start hidden */
   transform: translateY(20px);
   /* slightly below final position */
@@ -407,7 +417,17 @@ section#contact-section .section-content{
   /* delay for stagger */
   width: 100%;
 }
+section#contact-section input[type="submit"]{
+  background: var(--contrast-1);
+}
 
 
+section#contact-section input[type="submit"]:hover{
+  background: var(--contrast-1-alt);
+}
+section#contact-section input[type="submit"]:active{
 
+  transform: scale(0.95);
+
+}
 
