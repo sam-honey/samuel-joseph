@@ -63,7 +63,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
     </section>
 
     <!-- Contact Section -->
-    <section id="contact-section" >
+<section id="contact-section" >
   <div class="section-content">
     <h2>Contact Me</h2>
     <div id="contact-options">
@@ -83,7 +83,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
 
     <?php echo do_shortcode('[contact-form-7 id="d79f602" title="Contact form 1"]'); ?>
 
-    <p class="address" id="addressBlock"></p>
+    <p class="address addressBlock" id="addressBlock"></p>
   </div>
 </section>
 

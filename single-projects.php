@@ -67,7 +67,7 @@ window.addEventListener('resize', adjustContentPadding);
       </a>
     </div>
     <?php echo do_shortcode('[contact-form-7 id="d79f602" title="Contact form 1"]'); ?>
-    <p class="address" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
+    <p class="address addressBlock" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
   </div>
 
 </section>
