@@ -70,14 +70,14 @@ if (DEBUG_ELEMENT_LOGGER) return;
 
       <!-- Email -->
       <a  href="#" class=" btn-contact emailLink">
-        <span class="mobile-label mobile-label-display">Email</span>
-        <span class="desktop-label desktop-label-display"></span>
+        <span class="mobile-label mobile-label-display contact-form-details">Email</span>
+        <span class="desktop-label desktop-label-display contact-form-extend-details"></span>
       </a>
 
       <!-- Telephone -->
       <a  href="#" class=" btn-contact callLink">
-        <span class="mobile-label mobile-label-display">Telephone</span>
-        <span class="desktop-label desktop-label-display"></span>
+        <span class="mobile-label mobile-label-display contact-form-details">Telephone</span>
+        <span class="desktop-label desktop-label-display contact-form-extend-details "></span>
       </a>
     </div>
 

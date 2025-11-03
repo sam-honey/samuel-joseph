@@ -56,14 +56,18 @@ window.addEventListener('resize', adjustContentPadding);
   <section id="contact-section">
     <div class="section-content" >
     <h2>Contact Me</h2>
-    <div id="contact-options">
-      <a class="btn-contact" href="mailto:info@sjhoney.co.uk">
-        <span class="mobile-label">Email</span>
-        <span class="desktop-label">info@sjhoney.co.uk</span>
+     <div id="contact-options">
+
+      <!-- Email -->
+      <a  href="#" class=" btn-contact emailLink">
+        <span class="mobile-label mobile-label-display contact-form-details">Email</span>
+        <span class="desktop-label desktop-label-display contact-form-extend-details"></span>
       </a>
-      <a class="btn-contact" href="#" id="callLink">
-        <span class="mobile-label">Telephone</span>
-        <span class="desktop-label">767676767</span>
+
+      <!-- Telephone -->
+      <a  href="#" class=" btn-contact callLink">
+        <span class="mobile-label mobile-label-display contact-form-details">Telephone</span>
+        <span class="desktop-label desktop-label-display contact-form-extend-details "></span>
       </a>
     </div>
     <?php echo do_shortcode('[contact-form-7 id="d79f602" title="Contact form 1"]'); ?>

@@ -115,6 +115,7 @@ section#contact-section h2{
   max-width: var(--max-width-1);
   justify-content: center;
   padding: 20px 0 30px 0;
+  
 }
 .desktop-form-display {
   display: none;
@@ -130,17 +131,21 @@ section#contact-section h2{
   padding: var(--px-8);
   font-weight: bold;
 }
+
 #contact-options a.btn-contact:first-child {
   margin: 0 20px 0 0;
 }
 #contact-options a.btn-contact {}
 #contact-options a.btn-contact:hover {
-  background: var(--orange-light);
+  background: var( --contrast-1-alt);
   box-shadow: 0 6px 18px rgba(255, 140, 66, 0.35);
   text-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+
 }
+
+
 #contact-options a.btn-contact:active {
-  background: var(--orange-dark);
+  background: var( --contrast-1-alt);
   transform: scale(0.98);
   box-shadow: 0 3px 8px rgba(255, 140, 66, 0.25);
 }
@@ -156,6 +161,13 @@ p.address {
   padding: clamp(0.2rem, 1.5vw, 1.5rem) clamp(0.3rem, 1vw, 1.5rem) clamp(0.3rem, 1.5vw, 1.5rem) clamp(0.3rem, 1.7vw, 1.5rem);
 }
 /* On wider screens, show the number instead */
+.contact-form-extend-details {
+    display: none;
+  }
+
+  .contact-form-details{
+    display: inline-block;
+  }
 
 @media (min-width: 1068px) {
   #contact-options {
@@ -165,16 +177,36 @@ p.address {
     /* vertical centering (optional) */
     width: 100%;
   }
+
   .mobile-form-display {
     display: none;
   }
   .desktop-form-display {
     display: inline;
   }
+
+  #desktop-label-display{
+    display: none;
+  }
+  
+
   #contact-options a.btn-contact {
     width: auto;
   }
+
+ .contact-form-extend-details {
+    display: inline-block;
+  }
+  .contact-form-details{
+    display: none;
+  }
 }
+
+
+
+
+
+
 .hidden {
   display: none!important;
   margin-top: 1.5rem;
@@ -336,6 +368,9 @@ p.address {
   position: relative;
   
 }
+a.fab-contact {
+   color: #fff;
+}
 .fab-contact {
   position: absolute;
   bottom: 100%;
@@ -372,21 +407,24 @@ p.address {
   }
 }
 
-.fab-contact:hover {
+a.fab-contact:hover {
   background: var(--contrast-1);
   box-shadow: 0 6px 18px rgba(255, 140, 66, 0.35);
   color: #fff;
   scale:1.05;
 }
-.fab-contact:active {
+a.fab-contact:active {
   background: var(--contrast-1);
   transform: scale(0.98);
   box-shadow: 0 3px 8px rgba(255, 140, 66, 0.25);
   color: #fff;
   scale:0.95;
 }
-.fab-contact:visited {
+a.fab-contact:visited {
   color: #ffffff;
+}
+a.fab-contact:active {
+   color: #ffffff;
 }
 /* --------------------
 ## fixed back button
