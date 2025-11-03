@@ -1,7 +1,7 @@
 const floatContact = (function() {
 
     function init() {
-        console.log("floatContact module loaded");
+       // console.log("floatContact module loaded");
         const contactSection = document.getElementById('contact-section');
         const toggleButtons = document.querySelectorAll('.contact-toggle'); // ⬅️ multiple buttons
         if (!contactSection || toggleButtons.length === 0) return;

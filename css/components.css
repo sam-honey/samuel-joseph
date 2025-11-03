@@ -104,7 +104,7 @@
    ## General contact section styling
 ========================= */
 section#contact-section h2{
-  color: #444;
+  color: #fff;
 }
 
 
@@ -112,7 +112,7 @@ section#contact-section h2{
 #contact-options {
   display: flex;
   width: 100%;
-  max-width: var(--max-width-1);
+  
   justify-content: center;
   padding: 20px 0 30px 0;
   
@@ -124,7 +124,7 @@ section#contact-section h2{
   background: var(--contrast-1);
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(255, 140, 66, 0.3);
-  width: auto;
+  width: 50%;
   display: block;
   text-align: center;
   color: #fff;
@@ -150,11 +150,12 @@ section#contact-section h2{
   box-shadow: 0 3px 8px rgba(255, 140, 66, 0.25);
 }
 p.address {
-  max-width: var(--max-width-1);
+  width: 100%
   width: 100%;
   color: #555;
   display: block;
-  margin: var(--px-16);
+  text-align: center;
+  margin: 0.75rem 0 1rem 0 ;
   background: #fff;
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -191,7 +192,7 @@ p.address {
   
 
   #contact-options a.btn-contact {
-    width: auto;
+    
   }
 
  .contact-form-extend-details {
@@ -218,12 +219,13 @@ p.address {
 ========================= */
 
 .wpcf7 {
-  max-width: var(--max-width-1);
-  /*eadable width */
-  margin: 0 auto;
-  /* center */
-  padding: clamp( 5px, 2vw, 20px);
+ 
+  width: 100%;
   background: var(--blue);
+  /*eadable width */
+  padding: clamp(0px, 5vw, 30px);
+  /* center 
+  
   /* soft warm background */
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -233,7 +235,7 @@ p.address {
 
 .wpcf7 label {
   font-weight: 500;
-  color: var(--color-text);
+  color: #ffffff;
   display: block;
   padding-top: var(--px-4);
 }
@@ -477,7 +479,7 @@ section#contact-section.active h2 {
 
 section#contact-section .section-content{
   background: #fff;
-  padding: 2rem clamp(4px, 2vw, 20px) 2rem clamp(4px, 2vw, 20px) ;
+  padding: 2rem clamp(4px, 2vw, 10px) 2rem clamp(4px, 2vw, 10px) ;
   margin: 0 auto;
   /* optional: prevent content from exceeding viewport too much */
   overflow: visible;
