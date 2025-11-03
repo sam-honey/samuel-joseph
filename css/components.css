@@ -278,6 +278,43 @@ p.address {
     transform: rotate(360deg);
   }
 }
+
+/* Conformation message */
+
+  
+.wpcf7 form .wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: none; /* Blue */
+    background: #fff;
+}
+ 
+.wpcf7 form.init .wpcf7-response-output {
+    display: none;
+}
+ 
+.wpcf7 form.sent .wpcf7-response-output {
+    border: none; /* Blue */
+    background: #fff;
+}
+ 
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.aborted .wpcf7-response-output {
+    border: none; /* Blue */
+    background: #fff;
+}
+ 
+.wpcf7 form.spam .wpcf7-response-output {
+    border: none; /* Blue */
+    background: #fff;
+}
+ 
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+   border: none; /* Blue */
+    background: #fff;
+}
+
 /* --------------------
 ## fixed contact button
 -----------------------------*/

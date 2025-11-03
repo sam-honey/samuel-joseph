@@ -69,13 +69,13 @@ if (DEBUG_ELEMENT_LOGGER) return;
     <div id="contact-options">
 
       <!-- Email -->
-      <a class="btn-contact" href="#" class="emailLink">
+      <a  href="#" class=" btn-contact emailLink">
         <span class="mobile-label mobile-label-display">Email</span>
         <span class="desktop-label desktop-label-display"></span>
       </a>
 
       <!-- Telephone -->
-      <a class="btn-contact" href="#" class="callLink">
+      <a  href="#" class=" btn-contact callLink">
         <span class="mobile-label mobile-label-display">Telephone</span>
         <span class="desktop-label desktop-label-display"></span>
       </a>

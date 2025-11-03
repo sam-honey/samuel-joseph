@@ -18,7 +18,7 @@
 
 <div id="footer-icons">
 
-<a href="https://www.facebook.com/sjhoneyps/" target="_blank"> <img class="fb-logo footer-icon"  src="<?php echo get_template_directory_uri(); ?>/img/footer/footer-icons-01.svg" alt="Logo For FAcebook"></a> 
+<a href="https://www.facebook.com/samueljosephdecor/" target="_blank"> <img class="fb-logo footer-icon"  src="<?php echo get_template_directory_uri(); ?>/img/footer/footer-icons-01.svg" alt="Logo For FAcebook"></a> 
 
 <a href="https://share.google/WOyUZNq8UEoaOy8u8" target="_blank"> <img class="fb-logo footer-icon"  src="<?php echo get_template_directory_uri(); ?>/img/footer/footer-icons-02.svg" alt="Logo For Google Business"></a>
 

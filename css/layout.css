@@ -201,9 +201,9 @@ Hearder
   display: block;
   width: 50px;
   height: 50px;
-  margin-right: 1vw;
+  margin-right: 0.5vw;
   margin-left: 1.25vw;
-  padding: 0.30vw;
+  padding: 0.20vw;
  }
  #sticky-header * {}
  /* ===========================
@@ -289,6 +289,10 @@ layout
 
  #container {
   padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
  }
  #contact {
   max-width: 1000px;

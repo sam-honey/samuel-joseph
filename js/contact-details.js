@@ -2,15 +2,17 @@ const addContactDetails = (() => {
 
   function init() {
     /* Email */
-    const emailParts = ["info", "@", "samueljoesph", ".", "uk"];
+    const emailParts = ["info", "@", "samueljoseph", ".", "uk"];
     const emailFull = emailParts.join("");
     const emailLinks = document.querySelectorAll(".emailLink");
     
     if (emailLinks.length === 0) {
       console.warn("⚠️ No elements found with class '.emailLink'");
     } else {
+      console.log("email!!");
       emailLinks.forEach(link => {
         link.href = "mailto:" + emailFull;
+        console.log("link " + link);
         const label = link.querySelector(".desktop-label");
         if (label) label.textContent = emailFull;
       });

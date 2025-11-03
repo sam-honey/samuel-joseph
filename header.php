@@ -7,9 +7,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<meta name="description" content="Samuel Joseph Decor provides expert painting and decorating services in Bath, delivering quality craftsmanship, attention to detail, and customer satisfaction." />
 
 
-	
+
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon.svg" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon.ico" />

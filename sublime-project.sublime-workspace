@@ -35,30 +35,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/H/wamp64/www/samueljoseph.uk/wp-config.php",
-			"settings":
-			{
-				"buffer_size": 3546,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "home-2.php",
-			"settings":
-			{
-				"buffer_size": 5071,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions.php",
-			"settings":
-			{
-				"buffer_size": 11384,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -96,10 +72,31 @@
 	},
 	"expanded_folders":
 	[
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1"
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js"
 	],
 	"file_history":
 	[
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/main-logo-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/contact-details.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/float-contact-form.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/variables.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-config.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/footer.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/layout.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/robots.txt",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/sitemap.xml",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/robots.txt",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/single-projects.php",
+		"/D/SJH-Business/Email/email-signature.html",
+		"/D/SamuelJoseph/Email signature/email-signature-v2.html",
+		"/D/SamuelJoseph/Artwork/Style/BIMI/logo-bimi.svg",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/content-projects.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/functions.php",
 		"/H/wamp64/www/sjhoney.co.uk/index.php",
 		"/H/wamp64/www/samueljoseph.uk/index.php",
@@ -110,11 +107,7 @@
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/create_autologin_pcmr6xubn5p060o.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/dbtest.php",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/wp-config.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header.php",
 		"/H/wamp64/www/samueljoseph.uk/dbtest.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/content-projects.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/single-projects.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs.php",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-3/functions.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/favicon/site.webmanifest",
@@ -212,26 +205,11 @@
 		"/G/node-pro-3/views/user1/content-list.ejs",
 		"/G/node-pro-3/views/user1/create-content.ejs",
 		"/G/node-pro-3/middleware/verifyCsrfToken.js",
-		"/G/node-pro-3/middleware/csrfProtection.js",
-		"/G/node-pro-3/middleware/xssSanitizer.js",
-		"/G/node-pro-3/utils/passwordPolicy.js",
-		"/G/node-pro-3/controllers/testExport.js",
-		"/G/node-pro-3/middleware/flashSession.js",
-		"/G/node-pro-3/middleware/validateInput.js",
-		"/G/node-pro-3/routes/testRoute.js",
-		"/G/node-pro-3/routes/hello.js",
-		"/G/node-pro-3/utils/emailTransporter.js",
-		"/G/node-pro-3/utils/sendVerification.js",
-		"/G/node-pro-3/utils/sendResetEmail.js",
-		"/G/node-pro-3/views/test-email.ejs",
-		"/G/node-pro-3/public/CSS/style.css",
-		"/G/node-pro-3/public/login.html",
-		"/G/node-pro-3/models/User1Content.js",
-		"/G/node-pro-3/views/partials/head.ejs"
+		"/G/node-pro-3/middleware/csrfProtection.js"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 50.0
 	},
 	"find_in_files":
 	{
@@ -245,6 +223,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"contact-section",
 			"http://192.168.1.109/sjhoney.co.uk/",
 			"1rem",
 			"--font-size:",
@@ -366,97 +345,13 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/H/wamp64/www/samueljoseph.uk/wp-config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3546,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1113,
-								1113
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "home-2.php",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5071,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								799,
-								799
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11384,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -477,11 +372,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.470829975198,
 			1.0
 		],
 		"rows":
