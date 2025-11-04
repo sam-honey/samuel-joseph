@@ -4,6 +4,8 @@ const floatContact = (function() {
        // console.log("floatContact module loaded");
         const contactSection = document.getElementById('contact-section');
         const toggleButtons = document.querySelectorAll('.contact-toggle'); // ⬅️ multiple buttons
+        contactSection.classList.toggle('active');
+
         if (!contactSection || toggleButtons.length === 0) return;
 
         toggleButtons.forEach(button => {

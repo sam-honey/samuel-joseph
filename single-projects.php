@@ -54,25 +54,10 @@ window.addEventListener('resize', adjustContentPadding);
 
 
   <section id="contact-section">
-    <div class="section-content" >
-    <h2>Contact Me</h2>
-     <div id="contact-options">
+ 
+ <?php get_template_part('template-parts/content', 'contact'); ?>
+  
 
-      <!-- Email -->
-      <a  href="#" class=" btn-contact emailLink">
-        <span class="mobile-label mobile-label-display contact-form-details">Email</span>
-        <span class="desktop-label desktop-label-display contact-form-extend-details"></span>
-      </a>
-
-      <!-- Telephone -->
-      <a  href="#" class=" btn-contact callLink">
-        <span class="mobile-label mobile-label-display contact-form-details">Telephone</span>
-        <span class="desktop-label desktop-label-display contact-form-extend-details "></span>
-      </a>
-    </div>
-    <?php echo do_shortcode('[contact-form-7 id="d79f602" title="Contact form 1"]'); ?>
-    <p class="address addressBlock" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>
-  </div>
 
 </section>
 
