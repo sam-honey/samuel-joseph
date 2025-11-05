@@ -1,4 +1,4 @@
-<h1 class="page-title">Gallery</h1>
+<h1 class="page-title">Projects</h1>
 <div id="thumb-wrap">
 
 <?php 
