@@ -38,7 +38,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
       
       <h1 id="samuel-joseph">SAMUEL JOSEPH</h1>
         <h2 id="decor">DECOR</h2>
-        
+      
     </section>
 
     <!-- About Section -->
@@ -79,7 +79,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
 <!-- Auto scroll  -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const enableAutoScroll = true;
+  const enableAutoScroll = false;
   if (!enableAutoScroll) return;
 
   // Track if user has scrolled
@@ -132,6 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 function adjustContentPadding() {
+  const enablePadding = false;
+  if (!enablePadding) return;
   const header = document.getElementById('sticky-header');
   const firstSection = document.querySelector('#projects'); // adjust to first content section
   if (header && firstSection) {
