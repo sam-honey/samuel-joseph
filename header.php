@@ -11,23 +11,21 @@
 
   gtag('config', 'G-5G8TPVPMBQ');
 </script>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
 
-
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <meta name="description" content="Samuel Joseph Decor provides expert painting and decorating services in Bath, delivering quality craftsmanship, attention to detail, and customer satisfaction." />
-
-
 
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon.svg" />
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/site.webmanifest" />
-<?php
+
+<?php/*
 $foo =  get_stylesheet_directory_uri();;
 echo "<script>console.log('test' + " . json_encode($foo) . ");</script>";
+*/
 ?>
 <script>
 document.documentElement.classList.remove('no-js');

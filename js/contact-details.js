@@ -37,7 +37,7 @@ const addContactDetails = (() => {
     const addressParts = [
       "Samuel Joseph Decor, ",
       "55 Ringwood Rd, ",
-      "Oldfield, Bath, ",
+      "Oldfield Park, Bath, ",
       "BA2 3JL"
     ];
     const fullAddress = addressParts.join("");
