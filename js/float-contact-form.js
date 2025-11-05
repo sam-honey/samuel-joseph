@@ -4,7 +4,7 @@ const floatContact = (function() {
        // console.log("floatContact module loaded");
         const contactSection = document.getElementById('contact-section');
         const toggleButtons = document.querySelectorAll('.contact-toggle'); // ⬅️ multiple buttons
-        contactSection.classList.toggle('active');
+       // contactSection.classList.toggle('active');
 
         if (!contactSection || toggleButtons.length === 0) return;
 
@@ -12,14 +12,14 @@ const floatContact = (function() {
             button.addEventListener('click', function(e){
                 e.preventDefault();
                 const isActive = contactSection.classList.toggle('active');
-                button.textContent = isActive ? '×' : 'Contact';
+               button.innerHTML = isActive ? '&nbsp;Close&nbsp;' : 'Contact';
             });
         });
 
         contactSection.addEventListener('click', function(e){
             if (e.target === contactSection) {
                 contactSection.classList.remove('active');
-                toggleButtons.forEach(button => button.textContent = 'Contact');
+                toggleButtons.forEach(button => button.textContent = ' Close ');
             }
         });
     }

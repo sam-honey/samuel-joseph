@@ -8,7 +8,7 @@ const fab = document.querySelector(".fab-contact");
 
   let hasFadedIn = false; // tracks if FAB has initially appeared
 
-  const sections = document.querySelectorAll("#section-about, #projects");
+  const sections = document.querySelectorAll("#section-about, #projects, #single-project-wrap");
   if (sections.length === 0) {
     console.log("Error: #section-about or #projects not found in the DOM!");
     return;

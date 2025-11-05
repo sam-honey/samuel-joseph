@@ -35,6 +35,68 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "home-2.php",
+			"settings":
+			{
+				"buffer_size": 4442,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\n\n	\n							\n\n<?php get_header(); ?>\n<!-- single-projexts.php -->\n<script>\n\n</script>\n\n\n <div id=\"enlarged-image\">\n  <div class=\"image-wrap\">\n    <button id=\"previous-btn\" class=\"navigation-btn\">&#8249;</button>\n    <img id=\"enlarged-img\" src=\"\" alt=\"SJHoney Project Image Example\">\n    <button id=\"next-btn\" class=\"navigation-btn\">&#8250;</button>\n    <span id=\"close-btn\">&times;</span>\n  </div>\n</div>\n\n\n  <section id=\"single-project-wrap\"> \n    <div id=\"fade-in-target\"></div>\n	 <article class=\"single-project-wrap\" id=\"post-<?php the_ID(); ?>\" <?php post_class(); ?>>\n			<?php get_template_part( 'content', 'projects' ); ?>	\n	 </article>\n    <div id=\"project-contact-wrapper\">\n      <a class=\"contact-link-projects-page\" href=\"<?php echo esc_url( home_url( '#projects' ) ); ?>\">\n        Back to Projects\n      </a> \n    </div>\n	</section>\n\n\n  <section id=\"contact-section\">\n \n <?php get_template_part('template-parts/content', 'contact'); ?>\n  \n\n\n</section>\n\n<?php get_footer(); ?>",
+			"file": "single-projects.php",
+			"file_size": 1670,
+			"file_write_time": 134067209677120563,
+			"settings":
+			{
+				"buffer_size": 986,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "<div class=\"section-content\" >\n    <h2>Contact Me</h2>\n     <div id=\"contact-options\">\n\n      <!-- Email -->\n        <a  href=\"#\" class=\" btn-contact emailLink\">\n          <span class=\"mobile-label mobile-label-display contact-form-details\">Email</span>\n          <span class=\"desktop-label desktop-label-display contact-form-extend-details\"></span>\n        </a>\n\n      <!-- Telephone -->\n         <a  href=\"#\" class=\" btn-contact callLink\">\n            <span class=\"mobile-label mobile-label-display contact-form-details\">Telephone</span>\n            <span class=\"desktop-label desktop-label-display contact-form-extend-details \"></span>\n          </a>\n        </div>\n    <p class=\"message-me\">Or send me a message:</p>\n    <?php echo do_shortcode('[contact-form-7 id=\"d79f602\" title=\"Contact form 1\"]'); ?>\n    <p class=\"address addressBlock\" >SJHoney Property Solutions 55 Ringwood Rd Oldfield Bath BA23JL</p>\n \n </div>\n",
+			"file": "template-parts/content-contact.php",
+			"file_size": 917,
+			"file_write_time": 134067213510371150,
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/fade-in-contact-button.js",
+			"settings":
+			{
+				"buffer_size": 1562,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/float-contact-form.js",
+			"settings":
+			{
+				"buffer_size": 1053,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 1681,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/components.css",
+			"settings":
+			{
+				"buffer_size": 10588,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -74,15 +136,16 @@
 	[
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js"
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts"
 	],
 	"file_history":
 	[
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/float-contact-form.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/main-logo-2.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/contact-details.js",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/float-contact-form.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/variables.css",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
 		"/H/wamp64/www/samueljoseph.uk/wp-config.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-2.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/footer.php",
@@ -223,6 +286,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"active",
 			"contact-section",
 			"http://192.168.1.109/sjhoney.co.uk/",
 			"1rem",
@@ -345,13 +409,224 @@
 	"groups":
 	[
 		{
+			"selected": 4,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "home-2.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2440,
+								2440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "single-projects.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								422,
+								441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "template-parts/content-contact.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 923,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								923,
+								923
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/fade-in-contact-button.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1562,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "js/float-contact-form.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1053,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1053,
+								1053
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		},
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 5,
+					"file": "footer.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1681,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1481,
+								1467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/components.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9748,
+								9748
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8773.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -443,7 +718,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 550.0,
+	"side_bar_width": 723.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
