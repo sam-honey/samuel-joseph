@@ -7,29 +7,10 @@
 <?php get_header(); ?>
 <!-- single-projexts.php -->
 <script>
-/*
-function adjustContentPadding() {
-    const header = document.getElementById('sticky-header');
-    const firstSection = document.querySelector('#single-project-wrap'); // or 'main' or first section
-
-    if (header && firstSection) {
-        const headerHeight = header.offsetHeight + 30; // actual rendered height
-        firstSection.style.paddingTop = `${headerHeight}px`;
-    }
-}
-
-// Run on page load
-document.addEventListener('DOMContentLoaded', adjustContentPadding);
-
-// Update on window resize (responsive)
-window.addEventListener('resize', adjustContentPadding);
 
 </script>
 
 
-<!-- V1 
-<div id="fullWidthElement"></div>
--->
  <div id="enlarged-image">
   <div class="image-wrap">
     <button id="previous-btn" class="navigation-btn">&#8249;</button>

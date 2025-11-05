@@ -2,6 +2,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G8TPVPMBQ"></script>
 <script>
@@ -22,11 +23,8 @@
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/site.webmanifest" />
 
-<?php/*
-$foo =  get_stylesheet_directory_uri();;
-echo "<script>console.log('test' + " . json_encode($foo) . ");</script>";
-*/
-?>
+
+
 <script>
 document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js-enabled');

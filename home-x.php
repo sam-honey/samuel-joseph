@@ -25,7 +25,7 @@
           professional finish.
         </p>
         <p>
-          View past <a href="#projects">projects</a> to see the range of services provided 
+          View past <a style="text-decoration:underline" href="#projects">projects</a> to see the range of services provided 
           or <a href="#" class="contact-toggle">get in touch</a> for a free and friendly consultation.
         </p>
       </div>
