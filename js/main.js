@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
      parallax.init();
    addContactDetails.init();
    fadeInContactButton.init();
-   siblingPadding.init();
+ // siblingPadding.init();
 
     //alert("Modules loaded"); // simple test
 });

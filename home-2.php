@@ -79,7 +79,7 @@ if (DEBUG_ELEMENT_LOGGER) return;
 <!-- Auto scroll  -->
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const enableAutoScroll = false;
+  const enableAutoScroll = true;
   if (!enableAutoScroll) return;
 
   // Track if user has scrolled
@@ -132,8 +132,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <script>
 function adjustContentPadding() {
-  const enablePadding = false;
+
+  const enablePadding = true;
   if (!enablePadding) return;
+ 
   const header = document.getElementById('sticky-header');
   const firstSection = document.querySelector('#projects'); // adjust to first content section
   if (header && firstSection) {
