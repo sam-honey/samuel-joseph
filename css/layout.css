@@ -444,7 +444,7 @@ single project page*/
  p.project-txt {
   margin-bottom: 2rem;
   line-height: 1.6;
-  padding: 0 clamp(10px, 2%, 100px);
+  padding: 2rem clamp(10px, 2%, 100px);
   color: #444;
  }
  /*  */

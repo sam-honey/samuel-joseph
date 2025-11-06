@@ -529,10 +529,19 @@ section#contact-section input[type="submit"]:active{
 }
 
 /* Move reCAPTCHA badge up slightly on mobile */
+
+.grecaptcha-badge {
+  position: fixed !important;   /* detach from flow */
+  bottom: 10px !important;      /* distance from bottom */
+  right: 10px !important;       /* distance from right */
+  transform: scale(0.9);
+  transform-origin: bottom right;
+  z-index: 9999;
+}
 @media (max-width: 1068px) {
   .grecaptcha-badge {
-    bottom: 80px !important;   /* space from bottom */
-    right: 10px !important;    /* space from right */
+    bottom: 10px !important;   /* space from bottom */
+    right: -100px !important;    /* space from right */
     left: auto !important;      /* reset left */
     z-index: 9999;             /* make sure it's above other elements */
   }
@@ -541,8 +550,12 @@ section#contact-section input[type="submit"]:active{
 /* Optional: slightly smaller badge on small screens */
 @media (max-width: 880px) {
   .grecaptcha-badge {
-    transform: scale(0.5);      /* shrink badge a bit */
+    transform: scale(0.5)!important;      /* shrink badge a bit */
     transform-origin: bottom right;
   }
 }
 
+
+#rc-anchor-alert, .rc-anchor-alert{
+
+}
