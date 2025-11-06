@@ -528,3 +528,21 @@ section#contact-section input[type="submit"]:active{
 
 }
 
+/* Move reCAPTCHA badge up slightly on mobile */
+@media (max-width: 1068px) {
+  .grecaptcha-badge {
+    bottom: 80px !important;   /* space from bottom */
+    right: 10px !important;    /* space from right */
+    left: auto !important;      /* reset left */
+    z-index: 9999;             /* make sure it's above other elements */
+  }
+}
+
+/* Optional: slightly smaller badge on small screens */
+@media (max-width: 880px) {
+  .grecaptcha-badge {
+    transform: scale(0.5);      /* shrink badge a bit */
+    transform-origin: bottom right;
+  }
+}
+

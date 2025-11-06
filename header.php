@@ -12,7 +12,11 @@
 
   gtag('config', 'G-5G8TPVPMBQ');
 </script>
-
+<link rel="preload"
+      as="image"
+      href="<?php echo get_stylesheet_directory_uri(); ?>/img/blue-wallpaper.jpg"
+      type="image/jpeg"
+      fetchpriority="high" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Samuel Joseph Decor provides expert painting and decorating services in Bath, delivering quality craftsmanship, attention to detail, and customer satisfaction." />
