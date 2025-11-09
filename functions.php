@@ -246,6 +246,13 @@ function sjhoney_enqueue_styles() {
         '1.0.0'
     );
 
+     wp_enqueue_style(
+        'fonts',
+        get_template_directory_uri() . '/css/fonts.css',
+        array('main-style'), // dependent on main-style
+        '1.0.0'
+    );
+
     wp_enqueue_style(
         'variables-style',
         get_template_directory_uri() . '/css/variables.css',
@@ -282,6 +289,8 @@ function sjhoney_enqueue_styles() {
     );
 }
 add_action('wp_enqueue_scripts', 'sjhoney_enqueue_styles');
+
+
 
 
 /**
