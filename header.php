@@ -2,6 +2,8 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+<title>Local Decorator in Bath | Professional Painting &amp; Decorating Services</title>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5G8TPVPMBQ"></script>
@@ -19,7 +21,15 @@
       fetchpriority="high" />
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Samuel Joseph Decor provides expert painting and decorating services in Bath, delivering quality craftsmanship, attention to detail, and customer satisfaction." />
+
+ 
+<meta name="keywords" content="local decorator, local decorator Bath, painter Bath, professional decorator Bath, painting and decorating Bath, interior decorator Bath, home decorating Bath, residential painting Bath, property renovation Bath, Bath decorator services">
+
+
+<meta name="description" content="Local decorator in Bath providing expert painting and decorating services with quality craftsmanship, attention to detail, and customer satisfaction.">
+
+
+
 
 <link rel="icon" type="image/png" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon/favicon.svg" />
