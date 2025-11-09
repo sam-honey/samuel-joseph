@@ -62,7 +62,7 @@
  h1#samuel-joseph {
   color: #fff;
   margin: clamp(0vw, 7vh, 3rem) 0 4% 0;
-  font-family: 'palatino', serif;
+  
   font-size: clamp(0.5rem, 10vw, 6rem);
   text-align: center;
   opacity: 0;
@@ -81,7 +81,7 @@
   /*
   font-family: 'JosefinSansSubset', serif;
 */
-font-family: 'JosefinSansSub2', serif;
+
 
   letter-spacing: 3px;
   font-size: clamp(1.3rem, 5.5vw, 4rem);
