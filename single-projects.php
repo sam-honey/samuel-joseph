@@ -16,8 +16,9 @@
     <button id="previous-btn" class="navigation-btn">&#8249;</button>
     <img id="enlarged-img" src="" alt="SJHoney Project Image Example">
     <button id="next-btn" class="navigation-btn">&#8250;</button>
-    <span id="close-btn">&times;</span>
+   
   </div>
+   <span id="close-btn">&times;</span>
 </div>
 
 

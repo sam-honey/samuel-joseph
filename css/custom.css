@@ -39,6 +39,32 @@ h1.project-title{
   color: var(--contrast-1);
 }
 
-.contact-link-projects-page{
+a.contact-link-projects-page{
   color: var(--contrast-1);
+  border: solid 2px var(--contrast-1);
+  border-radius: 5px;
+  padding : 1rem;
+}
+a.contact-link-projects-page:hover{
+  scale(1.5);
+}
+
+#section-about a{
+  color: var(--contrast-1);
+
+}
+
+#section-about a:hover{
+
+  text-decoration: underline;
+}
+
+#previous-btn, #next-btn, #close-btn{
+  background: var(--contrast-1);
+}
+
+#close-btn{
+  padding: 1rem;
+  border-radius: 10px; 
+  color: #fff;
 }

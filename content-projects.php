@@ -6,7 +6,9 @@
 ?>	
 <h1 class="project-title"><?php the_title(); ?></h1>
 <h2 class="project-details" aria-label="Project by Samuel Joseph Decorator – Professional Painter and Decorator in Bath">Project Details</h2>
-
+<a class="contact-link-projects-page" href="<?php echo esc_url( home_url( '#projects' ) ); ?>">
+        Back to Projects
+      </a> 
 <?php if( get_field('img-1')): 
     $image = get_field('img-1'); 
     $alt   = !empty($image['alt']) 

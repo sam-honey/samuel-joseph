@@ -458,6 +458,7 @@ single project page*/
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  flex-direction: column;
  }
  #enlarged-image img {
   max-width: 90%;
@@ -496,7 +497,7 @@ single project page*/
   transform: scale(1.05);
  }
  .image-wrap {
-  border: solid 2px red;
+  
   display: flex;
   flex-direction: row;
   align-items: center;
