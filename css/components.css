@@ -417,6 +417,41 @@ a.fab-contact {
   transition: all 2s ease;
   padding: 0.5rem 1.5rem;
 }
+.pulse-button{
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+  animation: pulse 2.5s infinite;
+}
+
+ {
+  display: inline-block;
+  background-color: #2e8bda; /* adjust to your theme */
+  color: #fff;
+  padding: 0.8em 1.6em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(46, 139, 218, 0.4);
+  }
+  70% {
+    transform: scale(1.10);
+    box-shadow: 0 0 0 10px rgba(46, 139, 218, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(46, 139, 218, 0);
+  }
+}
+ {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(46, 139, 218, 0.4);
+}
 
 .fab-contact.fade-in-contact-button {
   opacity: 1;

@@ -1,4 +1,5 @@
-<h1 class="page-title">Projects</h1>
+
+<h2 class="page-title" aria-label="Projects by Samuel Joseph Decorator – Professional Painting and Decorating Work in Bath">Projects</h2>
 <div id="thumb-wrap">
 
 <?php 

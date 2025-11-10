@@ -34,3 +34,11 @@
 h1.project-title{
    color: var(--dark-blue);
 }
+
+.style-inline-link{
+  color: var(--contrast-1);
+}
+
+.contact-link-projects-page{
+  color: var(--contrast-1);
+}

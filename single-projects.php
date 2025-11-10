@@ -42,4 +42,21 @@
 
 </section>
 
+<script>
+function adjustContentPadding() {
+
+  const enablePadding = true;
+  if (!enablePadding) return;
+ 
+  const header = document.getElementById('sticky-header');
+  const firstSection = document.querySelector('#single-project-wrap'); // adjust to first content section
+  if (header && firstSection) {
+    const headerHeight = header.offsetHeight + 30;
+    firstSection.style.paddingTop = `${headerHeight}px`;
+  }
+}
+document.addEventListener('DOMContentLoaded', adjustContentPadding);
+window.addEventListener('resize', adjustContentPadding);
+</script>
+
 <?php get_footer(); ?>
