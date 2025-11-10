@@ -40,6 +40,9 @@ p {
   height: auto;
   color: #fff;
 }
+strong {
+  font-weight: inherit;
+}
 
 
 /* Links */

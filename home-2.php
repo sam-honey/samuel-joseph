@@ -46,11 +46,9 @@ if (DEBUG_ELEMENT_LOGGER) return;
       <div id="fade-in-target"></div>
       <div class="section-content">
         <p>
-           Samuel Joseph Decor provides an exceptional decorating services backed by years of professional experience. Every project is approached with meticulous attention to detail, creativity, and a commitment to exceeding expectations. From small refreshes to full-scale renovations, each space is transformed with care, professionalism, and a passion for quality. Customer satisfaction is always the top priority.
+           Samuel Joseph Decorator provides an exceptional decorating service in Bath and the surrounding areas. Backed by years of professional experience, every project is approached with attention to detail, creativity, and a commitment to exceeding expectations. From small refreshes to full-scale renovations, each space is transformed with care, professionalism, and a passion for quality. Customer satisfaction is always the top priority.
         </p>
-        <p>
-As a trusted local decorator in Bath, Samuel Joseph Decor delivers expert painting and decorating services for homes and businesses. Every project is handled with meticulous attention to detail, creativity, and a commitment to quality craftsmanship. From small refreshes to full-scale renovations, each space is transformed with care and professionalism, ensuring complete customer satisfaction.
-        </p>
+       
         <p>
           View past <a href="#projects">projects</a> to see the range of services provided 
           or <a href="#" class="contact-toggle">get in touch</a> for a free and friendly consultation.

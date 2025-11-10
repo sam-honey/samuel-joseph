@@ -59,8 +59,10 @@
  svg#sj-logo {
   padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
  }
- h1#samuel-joseph {
-  color: #fff;
+
+ .logo-text-1 {
+  font-family: 'palatino', serif;
+    color: #fff;
   margin: clamp(0vw, 7vh, 3rem) 0 4% 0;
   
   font-size: clamp(0.5rem, 10vw, 6rem);
@@ -69,12 +71,24 @@
   animation: fadeText 3s ease-in-out 2s forwards;
   display: inline-block;
   width: auto;
+ }
+
+.logo-text-2 {
+font-family: 'JosefinSansSub2', serif; color: #eee;
+  padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
+  margin: 0;
+  /*
+}
+
+
+p#samuel-joseph {
+
   /*
   background: #355866;
   background: rgb(53, 88, 102, 0.5);
   */
  }
- h2#decor {
+ p#decor {
   color: #eee;
   padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
   margin: 0;
@@ -184,23 +198,34 @@
 Hearder
 ----------------------------*/
 
- h1#header-title-name {
-  font-family: 'palatino', serif;
-  display: inline-block;
-  color: #fff;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  padding: 0;
-  margin: 0;
- }
- h2#header-title-service {
-  font-family: 'JosefinSansSubset', serif;
-  display: inline-block;
-  color: #fff;
-  font-size: clamp(1.3rem, 2.8vw, 2rem);
-  padding: 5px 0 0 0;
-  margin: 0;
-  letter-spacing: 3px;
- }
+
+
+/* Main header header-title-name-new-style*/
+.header-title {
+   font-family: 'palatino', serif;
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+
+
+/* New header style */
+
+
+.header-subtitle-new {
+    font-family: 'JosefinSansSub2', serif;
+    display: block;
+    color: #fff;
+    font-size: clamp(1.3rem, 2.8vw, 2rem);
+    padding-top: 5px;
+    margin: 0;
+}
+
+
+
+
  #logo-header {
   display: block;
   width: 50px;

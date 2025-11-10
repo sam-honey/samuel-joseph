@@ -2,7 +2,7 @@
 <!doctype html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-<title>Local Decorator in Bath | Professional Painting &amp; Decorating Services</title>
+<title>Samuel Joseph Decorator | Local Painter &amp; Decorator in Bath</title>
 <style>
 
 
@@ -33,11 +33,12 @@ font-family: 'JosefinSansSub2', serif;
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
  
-<meta name="keywords" content="local decorator, local decorator Bath, painter Bath, professional decorator Bath, painting and decorating Bath, interior decorator Bath, home decorating Bath, residential painting Bath, property renovation Bath, Bath decorator services">
+<meta name="keywords" content="local painter &amp; decorator,local painter &amp; decorator Bath, local painter decorator, local decorator, local decorator Bath, painter Bath, professional decorator Bath, painting and decorating Bath, interior decorator Bath, home decorating Bath, residential painting Bath, property renovation Bath, Bath decorator services">
 
 
-<meta name="description" content="Local decorator in Bath providing expert painting and decorating services with quality craftsmanship, attention to detail, and customer satisfaction.">
 
+
+<meta name="description" content="Trusted local painter and decorator in Bath. Quality craftsmanship, attention to detail, and honest pricing. Contact Samuel Joseph Decorator for your free quote.">
 
 
 
@@ -68,7 +69,7 @@ document.documentElement.classList.add('js-enabled');
 				<img id="logo-header"  src="<?php echo get_template_directory_uri(); ?>/img/logo-transbg.svg" alt="LOgo">
 				<div id="header-text">
 					<h1 id="header-title-name">SAMUEL JOSEPH</h1>
-					<h2 id="header-title-service">DECOR</h2>
+					<h2 id="header-title-service">DECORATOR</h2>
 				</div>
 			</div>
 
