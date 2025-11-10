@@ -201,7 +201,7 @@ Hearder
 
 
 /* Main header header-title-name-new-style*/
-.header-title {
+.header-title-new {
    font-family: 'palatino', serif;
     color: #fff;
     font-size: clamp(2rem, 5vw, 3rem);
@@ -222,6 +222,8 @@ Hearder
     padding-top: 5px;
     margin: 0;
 }
+
+
 
 
 

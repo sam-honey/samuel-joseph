@@ -36,34 +36,26 @@
 	"buffers":
 	[
 		{
-			"file": "header.php",
+			"file": "header-2.php",
 			"settings":
 			{
-				"buffer_size": 4355,
+				"buffer_size": 4401,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "home-2.php",
+			"file": "single-projects.php",
 			"settings":
 			{
-				"buffer_size": 4542,
+				"buffer_size": 1543,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "css/fonts.css",
+			"file": "content-projects.php",
 			"settings":
 			{
-				"buffer_size": 20874,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "functions.php",
-			"settings":
-			{
-				"buffer_size": 11563,
+				"buffer_size": 1564,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,7 +63,23 @@
 			"file": "css/layout.css",
 			"settings":
 			{
-				"buffer_size": 9744,
+				"buffer_size": 10038,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/base.css",
+			"settings":
+			{
+				"buffer_size": 3452,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/custom.css",
+			"settings":
+			{
+				"buffer_size": 1183,
 				"line_ending": "Windows"
 			}
 		},
@@ -121,14 +129,23 @@
 	"expanded_folders":
 	[
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css"
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts"
 	],
 	"file_history":
 	[
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/footer.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-3c.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/variables.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-contact.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/main-logo-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/fonts.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/base.css",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-2.php",
 		"/D/!Business/SamuelJoseph/Artwork/Fonts/josefinsansmedium-subset2-decorat/stylesheet.css",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/base.css",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/sitemap.xml",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/Hold/.htaccess",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/sitemap.xml",
@@ -136,22 +153,16 @@
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/main.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/siblingPadding.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fixed-header.js",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fadein-scroll.js",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/ajax-load-thumbs.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs-old.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/float-contact-form.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-x.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-contact.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/footer.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/contact-details.js",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/single-projects.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fade-in-contact-button.js",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-3/header.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/main-logo-2.php",
-		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/variables.css",
 		"/H/wamp64/www/samueljoseph.uk/wp-config.php",
 		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/layout.css",
 		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/robots.txt",
@@ -250,9 +261,7 @@
 		"/G/node-pro-3/models/logFailedLogin.js",
 		"/G/node-pro-3/models/LoginLog.js",
 		"/G/node-pro-3/models/Lockout.js",
-		"/G/node-pro-3/Notes/Security system brute force.txt",
-		"/G/node-pro-3/middleware/checkLockout.js",
-		"/G/node-pro-3/utils/logTemporaryLockout.js"
+		"/G/node-pro-3/Notes/Security system brute force.txt"
 	],
 	"find":
 	{
@@ -394,24 +403,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "header.php",
+					"file": "header-2.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4355,
+						"buffer_size": 4401,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								282,
-								244
+								1808,
+								1808
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 940.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "single-projects.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								400,
+								400
 							]
 						],
 						"settings":
@@ -428,50 +467,116 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "home-2.php",
+					"buffer": 2,
+					"file": "content-projects.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4542,
+						"buffer_size": 1564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1207,
-								1202
+								387,
+								387
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 2,
-					"file": "css/fonts.css",
+					"buffer": 3,
+					"file": "css/layout.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 20874,
+						"buffer_size": 10038,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								20874,
-								20874
+								8831,
+								8831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8751.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "css/base.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3452,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								948,
+								948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 300.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/custom.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1180,
+								1180
 							]
 						],
 						"settings":
@@ -488,73 +593,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "functions.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 11563,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6018,
-								7630
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4510.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "css/layout.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4078,
-								4078
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3172.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "style.css",
 					"semi_transient": false,
 					"settings":
@@ -580,7 +619,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -614,7 +653,7 @@
 		"cols":
 		[
 			0.0,
-			0.58348256635,
+			0.580479001235,
 			1.0
 		],
 		"rows":
@@ -674,7 +713,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 723.0,
+	"side_bar_width": 578.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
