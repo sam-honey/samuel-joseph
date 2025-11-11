@@ -147,10 +147,9 @@ p#samuel-joseph {
   align-items: flex-end;
   display: inline-flex;
   flex-direction: row;
-  padding: 0.1rem 0.3rem;
-  justify-content: center;
+    justify-content: center;
   
-  margin-right: 6vw;
+  margin-right: clamp(0px, 1vw, 60px);
   
  }
 
@@ -159,11 +158,11 @@ p#samuel-joseph {
   flex-direction: column;
   color: #fff;
   text-align: right;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   border: solid 1px #fff;
   padding:0.5rem 1rem;
   border-radius: 20px;
- 
+  padding:  0.025rem 0.5rem;
   background-color: var(--blue);
   transition: background-color 0.5s ease;
  }
@@ -179,7 +178,7 @@ p#samuel-joseph {
 }
 
  #header-el-2-contact a:first-child {
-  margin-right: 1rem;
+  margin-right: 0.5rem;
  }
 
 
@@ -244,7 +243,8 @@ Hearder
 .header-title-new {
    font-family: 'palatino', serif;
     color: #fff;
-    font-size: clamp(2rem, 7vw, 3rem);
+    font-size: clamp(1.3rem, 7vw, 3rem);
+    
     margin: 0;
     letter-spacing: 3px;
     
@@ -286,7 +286,7 @@ Hearder
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 1vh 0 1.5vh 0;
+  padding: 1vh 0 1.6vh 0;
  }
  #header-text {
   display: flex;
