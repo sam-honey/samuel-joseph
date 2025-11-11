@@ -141,28 +141,54 @@ p#samuel-joseph {
  a.header-links {
   font-family: Georgia, "Times New Roman", Times, serif;
  }
+
+
  #header-el-2-contact {
   align-items: flex-end;
   display: inline-flex;
   flex-direction: row;
   padding: 0.1rem 0.3rem;
   justify-content: center;
-  border: solid 1px #fff;
+  
+  margin-right: 6vw;
+  
  }
+
  #header-el-2-contact a {
   display: flex;
   flex-direction: column;
   color: #fff;
   text-align: right;
-  font-size: 1rem;
+  font-size: 1.25rem;
+  border: solid 1px #fff;
+  padding:0.5rem 1rem;
+  border-radius: 20px;
+ 
+  background-color: var(--blue);
+  transition: background-color 0.5s ease;
  }
+
+
+#header-el-2-contact a:hover{
+  background-color: var(--contrast-1);
+}
+#header-el-2-contact a:active{
+  background-color: var(--contrast-2);
+  transform: scale(0.95);
+  color: var(--dark-blue);
+}
+
  #header-el-2-contact a:first-child {
-  padding-right: 10px;
+  margin-right: 1rem;
  }
+
+
  .desktop-header-display {
   display: none;
  }
- @media (min-width: 768px) {
+
+
+ @media (min-width:900px) {
   #sticky-header .inner-width-constraint {
     flex-direction: row;
     justify-content: space-between;
@@ -173,9 +199,11 @@ p#samuel-joseph {
     flex: 0;
     border: none;
     flex-direction: column;
+    margin-right: 1vw;
   }
   #header-el-2-contact a:first-child {
     padding-right: 0px;
+    margin-right: 0;
   }
   .mobile-header-display {
     display: none;
@@ -184,9 +212,21 @@ p#samuel-joseph {
     display: inline-block;
   }
   #header-el-2-contact a {
-    font-size: clamp(1rem, 2.3vw, 1.75rem);
+    font-size: clamp(1.75rem, 2.3vw, 2rem);
+    border: none;
+    padding:0;
+    background: none;
+
+  }
+
+  #header-el-2-contact a:hover,
+  #header-el-2-contact a:active{
+    background: none;
+    color: #fff;
+    text-decoration: underline;
   }
  }
+
  #sticky-header .inner-width-constraint>div {}
  #sticky-header .inner-width-constraint a {
   display: inline-block;
@@ -204,9 +244,10 @@ Hearder
 .header-title-new {
    font-family: 'palatino', serif;
     color: #fff;
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(2rem, 7vw, 3rem);
     margin: 0;
     letter-spacing: 3px;
+    
 }
 
 
@@ -218,7 +259,7 @@ Hearder
     font-family: 'JosefinSansSub2', serif;
     display: block;
     color: #fff;
-    font-size: clamp(1.3rem, 2.8vw, 2rem);
+    font-size: clamp(1rem, 4vw, 2rem);
     padding-top: 5px;
     margin: 0;
 }
@@ -232,9 +273,9 @@ Hearder
   display: block;
   width: 50px;
   height: 50px;
-  margin-right: 0.5vw;
+  margin-right: 1vw;
   margin-left: 1.25vw;
-  padding: 0.20vw;
+  padding: 0.20vw 0.4vw ;
  }
  #sticky-header * {}
  /* ===========================
@@ -349,7 +390,7 @@ layout
   padding-top: 4rem;
  }
  .home-page .section-content {
-  background: rgb(255, 255, 255, 0.25);
+  background: rgb(255, 255, 255, 0.1);
   display: flex;
   border-radius: 10px;
   justify-content: center;

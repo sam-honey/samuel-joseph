@@ -50,13 +50,17 @@ a.contact-link-projects-page:hover{
 }
 
 #section-about a{
-  color: var(--contrast-1);
+  text-decoration: underline;
+  color: #fff;
 
 }
 
-#section-about a:hover{
-
-  text-decoration: underline;
+#section-about a:hover,
+#section-about a:visited,
+#section-about a:active{
+ color: #fff;
+ text-decoration: none;
+  
 }
 
 #previous-btn, #next-btn, #close-btn{
