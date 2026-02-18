@@ -1,0 +1,697 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"--",
+				"--colour-1"
+			],
+			[
+				"--color",
+				"--colour-2"
+			],
+			[
+				"li",
+				"linear"
+			],
+			[
+				"al",
+				"align-items"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"dark",
+				"darkGrey"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/D/MyApps/Exports/timetots-1.02/App.tsx",
+			"settings":
+			{
+				"buffer_size": 9441,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/MyApps/Exports/timetots-1.02/dist/index.html",
+			"settings":
+			{
+				"buffer_size": 1106,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/MyApps/Exports/timetots-1.02/components/SunMoonBackground.tsx",
+			"settings":
+			{
+				"buffer_size": 5653,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEJS\n---\n\n  Thanks for installing EJS 2 :)\n\n  Here are some tips to help you get started with this package:\n\n\n  ### Color Scheme\n\n  EJS 2 comes with the \"Dracula EJS\" color scheme which you can select from:\n  `Preferences` -> `Color Scheme` -> `EJS 2`.\n\n  Oceanic Next (https://github.com/voronianski/oceanic-next-color-scheme) is also a\n  good color scheme for EJS that works right out of the box.\n\n\n  ### Setting the default syntax\n\n  By default, files with the extension `.ejs` are opened with the `EJS (<% %>)` syntax.\n\n  If you'd like to open files with a different extension as EJS or you want to use delimiters\n  other than \"<% %>\", follow these steps to set the default EJS syntax for an extension:\n\n  1. Open an EJS file\n  2. Select `View` from the menu\n  3. Then `Syntax` -> `Open all with current extension as...` -> `EJS 2` -> `EJS (<delimiter>)`\n  4. Repeat this for each extension you want to open as EJS\n\n  This package includes syntax definitions for the following additional delimiters: `<? ?>`, `<$ $>`, `<@ @>`.\n\n\n  ### Snippets\n\n  In the HTML scope:\n\n  + `if`+`TAB` - Inserts EJS `if` statement\n  + `for`+`TAB` - Inserts EJS `for` loop",
+			"settings":
+			{
+				"buffer_size": 1205,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "/D/MyApps/Exports/timetots-1.02/components/DigitalClock.tsx",
+			"settings":
+			{
+				"buffer_size": 1496,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/MyApps/Exports/timetots-1.02/components/AnalogClock.tsx",
+			"settings":
+			{
+				"buffer_size": 7896,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 183.0,
+		"last_filter": "Insta",
+		"selected_items":
+		[
+			[
+				"Insta",
+				"Package Control: Install Local Dependency"
+			],
+			[
+				"",
+				"Package Control: User CA bundle"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 600.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts"
+	],
+	"file_history":
+	[
+		"/C/Users/samue/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.user-ca-bundle",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/layout.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-3c.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/.gitignore",
+		"/H/wamp64/www/samueljoseph.uk/wp-config.php",
+		"/D/!Business/DNS/dns.txt",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/reset.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/header.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/variables.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/components.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/base.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/custom.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/style.css",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/parallax.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/single-projects.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/content-projects.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/footer.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-contact.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/main-logo-2.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/functions.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/css/fonts.css",
+		"/D/!Business/SamuelJoseph/Artwork/Fonts/josefinsansmedium-subset2-decorat/stylesheet.css",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/sitemap.xml",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/Hold/.htaccess",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/sitemap.xml",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/main.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/siblingPadding.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fixed-header.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fadein-scroll.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/ajax-load-thumbs.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/template-parts/content-project-thumbs-old.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/float-contact-form.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/home-x.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/contact-details.js",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/js/fade-in-contact-button.js",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-3/header.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/robots.txt",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/robots.txt",
+		"/D/SJH-Business/Email/email-signature.html",
+		"/D/SamuelJoseph/Email signature/email-signature-v2.html",
+		"/D/SamuelJoseph/Artwork/Style/BIMI/logo-bimi.svg",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/functions.php",
+		"/H/wamp64/www/sjhoney.co.uk/index.php",
+		"/H/wamp64/www/samueljoseph.uk/index.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/index.php",
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/sjhoney/index.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/index-xx.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-config-sample.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/create_autologin_pcmr6xubn5p060o.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/dbtest.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/H/wamp64/www/samueljoseph.uk/dbtest.php",
+		"/C/Users/samue/AppData/Local/Temp/fz3temp-3/functions.php",
+		"/H/wamp64/www/samueljoseph.uk/wp-content/themes/samueljoseph-1/favicon/site.webmanifest",
+		"/H/wamp64/www/sjhoney.co.uk/wp-content/themes/old for ref/header.php",
+		"/G/node-pro-3/routes/user1Routes.js",
+		"/G/node-pro-3/controllers/user1ContentController.js",
+		"/G/node-pro-3/models/DecoratorProfile.js",
+		"/G/node-pro-3/routes/authRoutes.js",
+		"/G/node-pro-3/server.js",
+		"/G/node-pro-3/views/login.ejs",
+		"/G/node-pro-3/scripts/seed.js",
+		"/G/node-pro-3/createAdmin.js",
+		"/G/node-pro-3/routes/adminRoutes.js",
+		"/G/node-pro-3/models/User.js",
+		"/G/node-pro-3/.env",
+		"/G/node-pro-3/public/CSS/user.css",
+		"/G/node-pro-3/views/partials/user1-head.ejs",
+		"/D/SJH-P-S/Email/email-signature.html",
+		"/G/WP Backups/sjhoney.co.uk/Full Installation Backups/24-05-12/livel.sql",
+		"/C/Users/samue/Desktop/local.sql",
+		"/H/WAMP/www/sjhoney.co.uk/wp-config.php",
+		"/C/Users/samue/Desktop/sjhoney.co.uk/wp-config.php",
+		"/H/WAMPP/www/sjhoney.co.uk/wp-config.php",
+		"/G/node-pro-3/views/user1/create-profile-decorator.ejs",
+		"/G/node-pro-3/routes/decoratorRoutes.js",
+		"/G/node-pro-3/views/signup-user-1.ejs",
+		"/G/node-pro-3/views/partials/decorators-head.ejs",
+		"/G/node-pro-3/models/decoratorProfile.js",
+		"/G/node-pro-3/views/user1/user1-dashboard.ejs",
+		"/G/node-pro-3/views/decorator/signup-decorator.ejs",
+		"/G/node-pro-3/views/partials/admin-header.ejs",
+		"/G/node-pro-3/public/index.html",
+		"/G/node-pro-3/views/admin/users-accounts.ejs",
+		"/G/node-pro-3/public/CSS/admin-style.css",
+		"/G/node-pro-3/views/admin/dashboard.ejs",
+		"/G/node-pro-3/views/partials/admin-footer.ejs",
+		"/G/node-pro-3/views/user2/user2-dashboard.ejs",
+		"/D/SamuelJoseph/Webpage-holding/index-v2.html",
+		"/D/SamuelJoseph/Webpage-holding/index-v1.html",
+		"/D/SamuelJoseph/Styles/logo-dev/restroked for ani/test-stroke.svg",
+		"/D/Downloads_PC/sj-logo-master-cut-for-ani-basic (2).svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/test.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/sj-logo-master-cut-for-ani.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Animation/sj-logo-master-cut-for-ani-2.svg",
+		"/D/SamuelJoseph/Styles/MASTERS/Logo/sj-logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/test.svg",
+		"/D/SamuelJoseph/Styles/logo-version/test stuff/logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/logo.svg",
+		"/D/SamuelJoseph/Webpage-holding/images/favicon/site.webmanifest",
+		"/G/node-pro-3/jobs/ipBanMonitor.js",
+		"/G/node-pro-3/middleware/checkIpBan.js",
+		"/G/node-pro-3/views/admin/dev.ejs",
+		"/G/node-pro-3/middleware/loginLimiter.js",
+		"/G/node-pro-3/middleware/checkBanStatus.js",
+		"/G/node-pro-3/views/admin/ip-activity.ejs",
+		"/G/node-pro-3/utils/isUserOrIpBanned.js",
+		"/G/node-pro-3/middleware/securityManager.js",
+		"/G/node-pro-3/views/admin/ip-bans.ejs",
+		"/G/node-pro-3/views/admin/bans.ejs",
+		"/G/node-pro-3/models/LogAllLogins.js",
+		"/G/node-pro-3/models/bannedIp.js",
+		"/G/node-pro-3/models/loglockout.js",
+		"/G/node-pro-3/models/logSemiPermBlock.js",
+		"/G/node-pro-3/models/logTempBlock.js",
+		"/G/node-pro-3/scripts/test-login.js",
+		"/G/node-pro-3/middleware/authMiddleware.js",
+		"/G/node-pro-3/middleware/validateSignUp.js",
+		"/G/node-pro-3/utils/sendConfirmationEmail.js",
+		"/G/node-pro-3/views/reset-password.ejs",
+		"/G/node-pro-3/middleware/ipMonitor.js",
+		"/G/node-pro-3/middleware/checkBanStatus-x.js",
+		"/G/node-pro-3/middleware/checkBannedIp.js",
+		"/G/node-pro-3/controllers/authController.js",
+		"/G/node-pro-3/views/forgot-password.ejs"
+	],
+	"find":
+	{
+		"height": 50.0
+	},
+	"find_in_files":
+	{
+		"height": 138.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"getCelestialPosition ",
+			"<div className=\"absolute inset-0 -z-10 w-full",
+			"className=\"absolute",
+			"section-content",
+			"header-text",
+			"header-title-new",
+			"decor",
+			"active",
+			"contact-section",
+			"http://192.168.1.109/sjhoney.co.uk/",
+			"1rem",
+			"--font-size:",
+			"#0056b3",
+			"var(--primary-color);;",
+			"#007bff",
+			"ff0000",
+			"</g>",
+			"<g>",
+			"block-user",
+			"checkBannedIp",
+			"handleSignup",
+			"admin",
+			"LockOuted",
+			"\"Lockout\"",
+			"Lockout",
+			"LockOuted",
+			"await",
+			"logTemporaryLockout",
+			"LoginAttempt ",
+			"},\n",
+			"sendVerificationEmail",
+			"authMiddleware",
+			"ffffff",
+			"red",
+			"samhoney.design",
+			"##",
+			"h1",
+			"##P",
+			"## Pos]",
+			"scrolldelay",
+			"target",
+			"navigation",
+			"initiate-header-fade-effect ",
+			"#hp-sct-1 ",
+			"home-section-more",
+			" home-section-reviews",
+			"home-section-profile",
+			"hp-sct-3",
+			"profile-grid",
+			"orange",
+			"home-section-brief",
+			"#hp-sct-3",
+			"paintdec",
+			"home-section",
+			"slide-up-on-load",
+			"autoScrollup",
+			"fade-out",
+			"scaleAnimationForwards",
+			"home-page-section-1",
+			"home-page-section-2",
+			"home-page-section-3",
+			"home-page-section-2",
+			"home-page-section-1",
+			"home-page",
+			"rockAndScroll",
+			"targetEl",
+			"backgrounds",
+			"home-section-about",
+			"init-fade-in-element",
+			"contact-items",
+			"contact-content",
+			"static-form-wrap",
+			"extension=json",
+			"logo",
+			"logo-trigger",
+			"##",
+			"row",
+			"floatingbutton",
+			"home-s2",
+			"rgb(0,0,1",
+			"rgb(224,126,60)",
+			"https://sjhoney.co.uk",
+			"content",
+			"contact",
+			"#container ",
+			"thumb-wrap",
+			".page-title",
+			"#thumb-wrap",
+			"gallery.php",
+			"container",
+			"static-form-wrap",
+			"floating-form-wrap",
+			"contact",
+			"contact-page",
+			"	\n@import",
+			"fonts.googleapis.com",
+			"ul"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://sjhoney.co.uk/",
+			"--font-size-1:",
+			"var(--primary-color-variation);",
+			"var(--primary-color);",
+			"LogTempBlock",
+			"SemiPermBlock",
+			"samueljhoney.com",
+			"home-sections",
+			"hp-sct-1",
+			"hp-sct-2",
+			"hp-sct-3",
+			"hp-sct-2",
+			"hp-sct-1",
+			"rgb(9,68,99",
+			"rgb(243,189,72)",
+			"http://192.168.1.109/sjhoney.co.uk/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/D/MyApps/Exports/timetots-1.02/App.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								9441
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3448.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/D/MyApps/Exports/timetots-1.02/dist/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1106,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								771,
+								771
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/D/MyApps/Exports/timetots-1.02/components/SunMoonBackground.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5653,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4098,
+								4098
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2133.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1205,
+								1205
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/MyApps/Exports/timetots-1.02/components/DigitalClock.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1496,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1366,
+								1366
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 66.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/D/MyApps/Exports/timetots-1.02/components/AnalogClock.tsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4685,
+								4685
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 780.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.0423183863811,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime-project.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"css\\style.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 425.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

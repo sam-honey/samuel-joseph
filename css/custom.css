@@ -1,0 +1,74 @@
+
+  /* layout  temp */
+  #temp-container {
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #temp-container img {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 0 var(--space-32) 0;
+    ;
+  }
+  #temp-container p {
+    font-size: var(--space-32);
+  }
+  #temp-container a {
+    color: #333;
+    font-size: var(--space-20);
+ 
+}
+
+.parallax {
+    background-size: cover;
+    background-attachment: fixed; /* optional, for classic parallax */
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1.project-title{
+   color: var(--dark-blue);
+}
+
+.style-inline-link{
+  color: var(--contrast-1);
+}
+
+a.contact-link-projects-page{
+  color: var(--contrast-1);
+  border: solid 2px var(--contrast-1);
+  border-radius: 5px;
+  padding : 1rem;
+}
+a.contact-link-projects-page:hover{
+  scale(1.5);
+}
+
+#section-about a{
+  text-decoration: underline;
+  color: #fff;
+
+}
+
+#section-about a:hover,
+#section-about a:visited,
+#section-about a:active{
+ color: #fff;
+ text-decoration: none;
+  
+}
+
+#previous-btn, #next-btn, #close-btn{
+  background: var(--contrast-1);
+}
+
+#close-btn{
+  padding: 1rem;
+  border-radius: 10px; 
+  color: #fff;
+}

@@ -1,0 +1,26 @@
+# BEGIN Force HTTPS and remove www
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.samueljoseph\.uk$ [NC]
+RewriteRule ^(.*)$ https://samueljoseph.uk/$1 [L,R=301]
+
+# Redirect HTTP to HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://samueljoseph.uk/$1 [L,R=301]
+</IfModule>
+# END Force HTTPS and remove www
+
+# BEGIN WordPress
+# WordPress core rules — do not modify within these markers
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress

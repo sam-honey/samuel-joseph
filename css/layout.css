@@ -1,0 +1,588 @@
+ /* layout  temp */
+
+ #temp-container {
+  min-height: 100vh;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ #temp-container img {
+  width: 90%;
+  max-width: 1000px;
+  padding: 0 0 var(--space-32) 0;
+  ;
+ }
+ #temp-container p {
+  font-size: var(--space-32);
+ }
+ #temp-container a {
+  color: #333;
+  font-size: var(--space-20);
+ }
+ /* ========================================
+   ## Logo fade presentation
+   ======================================== */
+
+ div#section-logo {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  flex: 1 1 0;
+  /* flex-grow and shrink properly */
+  display: flex;
+  flex-direction: column;
+  /* stack vertically */
+  height: 100%;
+  /* fill the section */
+  width: 100%;
+  justify-content: center;
+  max-width: 1900px;
+  max-height: 100vh;
+  height: 100vh;
+  align-items: center;
+ }
+ #logo-wrap {}
+ #main-logo-svg {
+  display: block;
+  padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
+  width: 50%;
+  padding: 0;
+  max-width: 20rem;
+ }
+ svg#sj-logo {
+  padding: 10vh clamp(0rem, 20vw, 10rem) 0 clamp(0rem, 20vw, 10rem);
+ }
+
+ .logo-text-1 {
+  font-family: 'palatino', serif;
+    color: #fff;
+  margin: clamp(0vw, 7vh, 3rem) 0 4% 0;
+  
+  font-size: clamp(0.5rem, 10vw, 6rem);
+  text-align: center;
+  opacity: 0;
+  animation: fadeText 3s ease-in-out 2s forwards;
+  display: inline-block;
+  width: auto;
+ }
+
+.logo-text-2 {
+font-family: 'JosefinSansSub2', serif; color: #eee;
+  padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
+  margin: 0;
+  /*
+}
+
+
+p#samuel-joseph {
+
+  /*
+  background: #355866;
+  background: rgb(53, 88, 102, 0.5);
+  */
+ }
+ p#decor {
+  color: #eee;
+  padding: 0 0 clamp(0.5rem, 6vw, 4rem) 0;
+  margin: 0;
+  /*
+  font-family: 'JosefinSansSubset', serif;
+*/
+
+
+  letter-spacing: 3px;
+  font-size: clamp(1.3rem, 5.5vw, 4rem);
+  opacity: 0;
+  animation: fadeText 3s ease-in-out 3s forwards;
+  text-align: center;
+ }
+ @keyframes fadeText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+ }
+ /*This trigger slide up of home screen "
+"
+
+
+ #logo {
+  opacity: 1;
+  transition: opacity 2.5s ease;
+  /* slow, subtle fade */
+
+ }
+ #logo.fade-out {
+  opacity: 0;
+ }
+ /* -----------------------------------   */
+
+ /* ## Header   */
+
+ /* -----------------------------------   */
+
+ #sticky-header .inner-width-constraint {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+ }
+ #sticky-header .inner-width-constraint div:last-child {
+  align-self: flex-end;
+ }
+ a.header-links {
+  font-family: Georgia, "Times New Roman", Times, serif;
+ }
+
+
+ #header-el-2-contact {
+  align-items: flex-end;
+  display: inline-flex;
+  flex-direction: row;
+    justify-content: center;
+  
+  margin-right: clamp(0px, 1vw, 60px);
+  
+ }
+
+ #header-el-2-contact a {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: right;
+  font-size: 1.15rem;
+  border: solid 1px #fff;
+  padding:0.5rem 1rem;
+  border-radius: 20px;
+  padding:  0.025rem 0.5rem;
+  background-color: var(--blue);
+  transition: background-color 0.5s ease;
+ }
+
+
+#header-el-2-contact a:hover{
+  background-color: var(--contrast-1);
+}
+#header-el-2-contact a:active{
+  background-color: var(--contrast-2);
+  transform: scale(0.95);
+  color: var(--dark-blue);
+}
+
+ #header-el-2-contact a:first-child {
+  margin-right: 0.5rem;
+ }
+
+
+ .desktop-header-display {
+  display: none;
+ }
+
+
+ @media (min-width:900px) {
+  #sticky-header .inner-width-constraint {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #header-el-2-contact {
+    justify-content: flex-end;
+    padding-left: 0;
+    flex: 0;
+    border: none;
+    flex-direction: column;
+    margin-right: 1vw;
+  }
+  #header-el-2-contact a:first-child {
+    padding-right: 0px;
+    margin-right: 0;
+  }
+  .mobile-header-display {
+    display: none;
+  }
+  .desktop-header-display {
+    display: inline-block;
+  }
+  #header-el-2-contact a {
+    font-size: clamp(1.75rem, 2.3vw, 2rem);
+    border: none;
+    padding:0;
+    background: none;
+
+  }
+
+  #header-el-2-contact a:hover,
+  #header-el-2-contact a:active{
+    background: none;
+    color: #fff;
+    text-decoration: underline;
+  }
+ }
+
+ #sticky-header .inner-width-constraint>div {}
+ #sticky-header .inner-width-constraint a {
+  display: inline-block;
+ }
+ a.header-link {
+  font-family: "Times New Roman", Times, serif;
+ }
+ /*--------------------------
+Hearder
+----------------------------*/
+
+
+
+/* Main header header-title-name-new-style*/
+.header-title-new {
+   font-family: 'palatino', serif;
+    color: #fff;
+    font-size: clamp(1.3rem, 7vw, 3rem);
+    
+    margin: 0;
+    letter-spacing: 3px;
+    
+}
+
+
+
+/* New header style */
+
+
+.header-subtitle-new {
+    font-family: 'JosefinSansSub2', serif;
+    display: block;
+    color: #fff;
+    font-size: clamp(1rem, 4vw, 2rem);
+    padding-top: 5px;
+    margin: 0;
+}
+
+
+
+
+
+
+ #logo-header {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 1vw;
+  margin-left: 1.25vw;
+  padding: 0.20vw 0.4vw ;
+ }
+ #sticky-header * {}
+ /* ===========================
+   Sticky Header
+   =========================== */
+
+ #header-el-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1vh 0 1.6vh 0;
+ }
+ #header-text {
+  display: flex;
+  flex-direction: column;
+ }
+ #sticky-header {
+  position: fixed;
+  /* or fixed if you want it always on top */
+  top: 0;
+  width: 100%;
+  background: var(--dark-blue);
+  /* #355866;
+  /* or your site background */
+  z-index: 997;
+  border-bottom: solid 2px var(--blue);
+  padding: 0.75rem 1rem;
+  /* vertical + horizontal padding defines height */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  /* vertically center content */
+  justify-content: center;
+  opacity: 0;
+  /* start hidden for home page fade-in */
+  transition: opacity 1s ease;
+  display: flex;
+  align-items: center;
+  /* vertically center logo + nav */
+  /* optional spacing around logo */
+  height: auto;
+  flex-direction: row;
+ }
+ .inner-width-constraint {
+  width: 100%;
+  max-width: 1100px;
+  position: relative;
+ }
+ #sticky-header img.logo {
+  display: block;
+  max-height: 60px;
+  /* constrain if needed */
+  width: auto;
+  /* maintain aspect ratio */
+  max-height: clamp(40px, 10vw, 80px);
+  padding-left: 10%;
+  /* min 40px, scales with viewport, max 80px */
+ }
+ /* Show after fade-in trigger */
+
+ #sticky-header.visible {
+  opacity: 1;
+ }
+ #sticky-header nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  color: #333;
+ }
+ /* Responsive adjustments */
+
+ @media (max-width: 768px) {
+  #sticky-header {}
+  #sticky-header nav a {
+    padding: 0.25rem 0.5rem;
+  }
+ }
+ /*--------------------------
+}
+layout 
+----------------------------*/
+
+ #container {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ }
+ #contact {
+  max-width: 1000px;
+ }
+ /* layout  home */
+
+ #home-page {
+  background: url('../img/blue-wallpaper.jpg') top center repeat fixed;
+ }
+ }
+ #home-page #container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ }
+ #project-single section, .home-page section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 0;
+  padding-top: 4rem;
+ }
+ .home-page .section-content {
+  background: rgb(255, 255, 255, 0.1);
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  align-self: center;
+  max-width: 1000px;
+  padding: clamp(1rem, 4vw, 3rem) clamp(1rem, 4vw, 4rem) clamp(1rem, 6vw, 4rem) clamp(1rem, 4vw, 4rem);
+
+display: block;
+ }
+
+
+
+ #home-page h2{
+  text-align: center;
+ }
+
+ #home-page .section-content p {
+  text-align: center;
+
+ }
+
+
+ @media (min-width: 900px) {
+  #home-page .section-content p {
+    text-align:left;
+    
+  }
+ }
+
+ .profile-image {
+  width: 100%;       /* full width on mobile */
+  height: auto;
+  display: block;    /* stops awkward baseline spacing */
+  margin: 1.5rem 0  2rem 0;  /* good spacing on mobile */
+}
+
+/* Larger screens: float and shrink */
+@media (min-width: 900px) {
+  .profile-image {
+    width: 40%;      /* adjust to taste */
+    float: right;
+    margin: 0 0 1.5rem 1.5rem; 
+    display: inline;  /* <— important *//* space around image */
+  }
+}
+
+
+ .fb-logo {
+  width: 60px;
+ }
+ .width-constraints {
+  width: 90%;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+ }
+ footer#footer-container {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex: 0;
+  background: var(--dark-blue);
+  background-size: 50%;
+  background-attachment: fixed;
+  padding: 0.5rem 0 1rem 0;
+ }
+ footer#footer-container p {
+  color: #fff;
+  padding: 0 0 0.5rem 0;
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw, 1.25remrem);
+ }
+ footer #footer-content {
+  background: rgb(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  align-self: center;
+  max-width: 1000px;
+  position: relative;
+  padding: clamp(1rem, 3vw + 20rem, 4rem) clamp(1rem, 3vw, 4rem);
+ }
+ #footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+ }
+ .footer-icon {}
+
+
+ /*--------
+}
+single project page*/
+
+ #single-project-wrap {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  width: 100%;
+  background: #f7f8f3 url('../img/backgrounds/pattern-white-01.jpg') top center;
+ }
+ .single-project-wrap {
+  width: 100%;
+  max-width: var(--max-width);
+  background: #fff;
+  padding: clamp(1rem, 3vw, 4rem) clamp(1rem, 3vw, 4rem);
+  height: auto;
+ }
+ #project-contact-wrapper {
+  background: #fff;
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 2rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+ }
+ /* Inner content visible when overlay active */
+
+ section#contact-section.active .section-content {
+  opacity: 1;
+  transform: translateY(0);
+ }
+ /* Light bx   */
+
+ #enlarged-image {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+ }
+ #enlarged-image img {
+  max-width: 90%;
+  max-height: 90%;
+ }
+ .hero-image img {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+ }
+ p.project-txt {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding: 2rem clamp(10px, 2%, 100px);
+  color: #444;
+ }
+ /*  */
+
+ /* Thumbnails grid */
+
+ #project-thumbs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+ }
+ #project-thumbs .img-frame img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+ }
+ #project-thumbs .img-frame img:hover {
+  transform: scale(1.05);
+ }
+ .image-wrap {
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .project-details{
+  color: var(--dark-blue);
+  font-size: 1.7rem;
+ }
